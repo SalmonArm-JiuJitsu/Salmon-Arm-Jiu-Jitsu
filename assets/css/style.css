@@ -389,6 +389,7 @@ i {
 /* Form */
 
 form {
+	margin: 0;
 	padding: 50px;
 	padding-right: 75px;
 	border-bottom: solid 1px #252525;
