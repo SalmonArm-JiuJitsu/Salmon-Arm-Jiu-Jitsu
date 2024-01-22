@@ -30,13 +30,19 @@
 }
 
 html {
-    scroll-behavior: smooth;
     box-sizing: border-box;
+	scroll-behavior: smooth;
+	scroll-padding-top: 50px;
 }
+
+	@media screen and (max-width: 720px) {
+		html {
+			scroll-padding-top: 35px;
+		}		
+	}
 
 main {
     padding: 20px;
-    font-size: 12pt;
 }
 
 
@@ -81,7 +87,10 @@ button, form, input, label, textarea {
 
 	textarea {
 		background: linear-gradient(90deg, #505050, #909090, #ddd, #909090, #555555);
+		resize: vertical;
+		min-height: 29px;
 	}
+
 
 h1, h2, h3, h4 {
 	font-weight: 600;
@@ -126,14 +135,16 @@ p {
 
 header {
 	position: sticky;
-	background: linear-gradient(180deg, #000, #222);
+	top: 0;
 	margin: 0 auto;
 	padding: 5px 0 5px 15px;
+	background: linear-gradient(180deg, #000, #222);
 	font-family: "Source Sans Pro";
 	font-size: 12pt;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 3px;
+	z-index: 999;
   }
   
 	header .navbar {
@@ -229,7 +240,7 @@ header {
 		top: 0px;
 		gap: 0;
 		flex-direction: column;
-		background-color: rgba(0, 0, 0, 0.85);
+		background-color: rgba(0, 0, 0, 0.93);
 		width: 100%;
 		text-align: center;
 		justify-content: center;
@@ -283,12 +294,96 @@ i {
 #footer {
 	background: linear-gradient(180deg, #000, #202020);
 	display: grid;
-	grid-template-columns: 48% 30%;
+	grid-template-columns: 48% 25%;
 	justify-content: center;
 	grid-template-areas:
 		"form contact-info"
 		"socials socials";
 }
+
+	@media screen and (max-width: 1500px) {
+		#footer {
+			grid-template-columns: 55% 30%;
+		}
+	}
+
+	@media screen and (max-width: 1400px) {
+		#footer {
+			grid-template-columns: 60% 35%;
+		}
+	}
+
+	@media screen and (max-width: 1200px) {
+		#footer {
+			grid-template-columns: 65% 35%;
+		}
+	}
+
+	@media screen and (max-width: 1100px) {
+		#footer {
+			grid-template-columns: 80%;
+			grid-template-areas:
+				"form"
+				"contact-info"
+				"socials";
+		}
+
+			#footer .contact-info {
+				border-left: none;
+				border-bottom: solid 1px #333;
+				grid-template-columns: 8% 92%;
+				height: 380px;
+			}
+	}
+
+	@media screen and (max-width: 900px) {
+		#footer {
+			padding: 0 20px;
+			grid-template-columns: 100%;
+		}
+	}
+
+	@media screen and (max-width: 720px) {
+		#footer {
+			padding: 0;
+		}
+	}
+
+	@media screen and (max-width: 640px) {
+		#footer form .field-left,
+		#footer form .field-right {
+			width: 100%;
+			margin-bottom: 30px;			
+		}
+
+		#footer form .field-left input,
+		#footer form .field-right input {
+			background: linear-gradient(90deg, #505050, #909090, #ddd, #909090, #555555);
+		}
+
+		#footer button, #footer label {
+			font-size: 12pt;
+		}
+
+		#footer .contact-info {
+			grid-template-columns: 12% 88%;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		#footer form {
+			padding: 50px 30px;
+			padding-right: 55px;
+		}
+
+		#footer .contact-info {
+			padding: 50px 30px;
+		}
+
+		#footer .socials {
+			padding: 40px 30px;
+		}
+	}
 
 
 /* Form */
@@ -305,7 +400,7 @@ form {
 	}
 
 	form .field-left {
-		max-width: 46%;
+		width: 46%;
 		float: left;
 		margin-bottom: 40px;
 	}
@@ -315,7 +410,7 @@ form {
 		}
 
 	form .field-right {
-		max-width: 46%;
+		width: 46%;
 		float: right;
 		margin-bottom: 40px;
 	}
@@ -331,7 +426,7 @@ form {
 	border-left: solid 1px #252525;
 	border-bottom: solid 1px #252525;
 	display: grid;
-	padding: 50px 40px;
+	padding: 50px;
 	grid-template-columns: 15% 85%;
 	grid-template-rows: 1fr 1fr;
 	grid-gap: 20px;
