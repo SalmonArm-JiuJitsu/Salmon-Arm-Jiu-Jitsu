@@ -42,8 +42,14 @@ html {
 	}
 
 main {
-    padding: 20px;
+    padding: 50px;
 }
+
+	@media screen and (max-width: 480px) {
+		main {
+			padding: 50px 30px;
+		}		
+	}
 
 
 /* Text */
@@ -52,6 +58,11 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+	a.style1:hover,
+	a.style1:hover i {
+		color: #1281dc;
+	}
 
 body {
 	background: #222;
@@ -98,7 +109,12 @@ h1, h2, h3, h4 {
 }
 
 	h1 {
-		font-size: 24pt;
+		font-size: 40pt;
+		font-weight: 300;
+		padding: 50px 0;
+		letter-spacing: 8px;
+		text-transform: uppercase;
+		text-align: center;
 	}
 
 	h2 {
@@ -288,6 +304,36 @@ i {
 	font-size: 18pt;
 }
 
+	i.style1 {
+		background-clip: text;
+		color: transparent;
+		font-size: 12pt;
+		text-align: center;
+		padding: 0;
+		margin-right: 10px;
+	}
+
+
+/* Iframe */
+
+iframe {
+	display: flex;
+	width: 100%; 
+	max-width: 600px;
+	height: 575px; 
+	margin: 0 auto;
+	border: 0;
+	vertical-align: middle;
+	filter: invert(95%) contrast(100%);
+}
+
+
+/* Image */
+
+img {
+	width: 100%;
+}
+
 
 /* Footer */
 
@@ -424,10 +470,10 @@ form {
 /* Contact Info */
 
 .contact-info {
-	border-left: solid 1px #252525;
-	border-bottom: solid 1px #252525;
 	display: grid;
 	padding: 50px;
+	border-left: solid 1px #252525;
+	border-bottom: solid 1px #252525;
 	grid-template-columns: 15% 85%;
 	grid-template-rows: 1fr 1fr;
 	grid-gap: 20px;
