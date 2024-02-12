@@ -620,7 +620,6 @@ i {
 			@media screen and (max-width: 640px) {
 				.home .heading .subtitle {
 					margin: 50px 0 0 40px;
-					font-stretch: normal;
 					letter-spacing: 6px;
 				}
 			}
@@ -629,8 +628,7 @@ i {
 				.home .heading .subtitle {
 					margin: 50px 0 0 40px;
 					font-size: 12pt;
-					font-stretch: normal;
-					letter-spacing: 5px;
+					letter-spacing: 4px;
 				}
 			}
 
