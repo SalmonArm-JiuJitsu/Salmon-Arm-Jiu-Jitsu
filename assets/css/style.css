@@ -403,7 +403,7 @@ button {
             top: 2px;
             width: calc(100% - 4px);
             height: calc(100% - 4px);
-            background: #090909;
+            background: #151515;
             z-index: -1;
         }
 
@@ -426,7 +426,7 @@ button {
 				top: 2px;
 				width: calc(100% - 4px);
 				height: calc(100% - 26px);
-				background: #090909;
+				background: #040404;
 				z-index: 2;
 			}
 
@@ -515,9 +515,8 @@ i {
 	.home:after {
 		display: block;
 		position: absolute;
-		/*background-color: #000;
-		opacity: 0.7;*/
-		background-image: linear-gradient(transparent, #000);
+		background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.75)); 
+		/*background-image: linear-gradient(90deg, rgba(0, 0, 255, 0.5), rgba(237, 87, 42, 0.5));*/
 		background-color: rgba(0, 0, 0, 0.6);
 		content: '';
 		height: 100%;
@@ -535,87 +534,115 @@ i {
 		}
   	}
 
+
+	/* Heading */
+
 	.home .heading {
 		margin: 0 auto;
 		margin-bottom: 100px;
 		z-index: 2;
 	}
 
-	.home .heading .title {
-		max-width: 1100px;
-		margin: 0 50px;
-		animation: fly-right ease 1.25s;
-	}
 
-		@keyframes fly-right {
-			from {
-				transform: translateX(-100%);
-			}
-			to {
-				transform: translateX(0%);
-			}
+		/* Title */
+
+		.home .heading .title {
+			max-width: 1100px;
+			margin: 0 50px;
+			animation: fly-right ease 1.25s;
 		}
 
-		@media screen and (max-width: 640px) {
-			.home .heading .title {
-				margin: 0 20px;
+			@keyframes fly-right {
+				from {
+					transform: translateX(-100%);
+				}
+				to {
+					transform: translateX(0%);
+				}
 			}
+
+			@media screen and (max-width: 640px) {
+				.home .heading .title {
+					margin: 0 20px;
+				}
+			}
+
+			.home .heading .title img.desktop {
+				display: none;
+			}
+
+				@media screen and (min-width: 801px) {
+					.home .heading .title img.desktop {
+						display: block;
+					}				
+				}
+
+			.home .heading .title img.mobile {
+				display: block;
+			}
+
+				@media screen and (min-width: 801px) {
+					.home .heading .title img.mobile {
+						display: none;
+					}				
+				}
+
+
+		/* Subtitle */
+
+		.home .heading .subtitle {
+			margin: 35px 50px 0 70px;
+			display: block;
+			position: absolute;
+			visibility: hidden;
+			letter-spacing: 8px;
+			font-size: 16pt;
+			animation: appear 2s forwards;
+			animation-delay: 1.25s;
 		}
 
-
-	.home .heading .subtitle {
-		margin: 35px 50px 0 70px;
-		display: block;
-		position: absolute;
-		visibility: hidden;
-		letter-spacing: 8px;
-		font-size: 16pt;
-		animation: appear 2s forwards;
-		animation-delay: 1.25s;
-	}
-
-		@keyframes appear {
-			0% {
-				visibility: hidden;
-				opacity: 0;
+			@keyframes appear {
+				0% {
+					visibility: hidden;
+					opacity: 0;
+				}
+				100% {
+					visibility: visible;
+					opacity: 1;
+				}
 			}
-			100% {
-				visibility: visible;
-				opacity: 1;
+
+			@media screen and (max-width: 800px) {
+				.home .heading .subtitle {
+					margin: 50px 0 0 75px;
+					font-size: 14pt;
+				}
 			}
+
+			@media screen and (max-width: 640px) {
+				.home .heading .subtitle {
+					margin: 50px 0 0 40px;
+					font-stretch: normal;
+					letter-spacing: 6px;
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				.home .heading .subtitle {
+					margin: 50px 0 0 40px;
+					font-size: 12pt;
+					font-stretch: normal;
+					letter-spacing: 5px;
+				}
+			}
+
+		.home .heading .subtitle .text {
+			background: var(--platinum-90-text);
+			background-clip: text;
+			color: transparent;
+			text-transform: uppercase;
+			font-weight: 600;
 		}
-
-		@media screen and (max-width: 800px) {
-			.home .heading .subtitle {
-				margin: 50px 0 0 75px;
-				font-size: 14pt;
-			}
-		}
-
-		@media screen and (max-width: 640px) {
-			.home .heading .subtitle {
-				margin: 50px 0 0 40px;
-				font-stretch: normal;
-				letter-spacing: 6px;
-			}
-		}
-
-		@media screen and (max-width: 480px) {
-			.home .heading .subtitle {
-				margin: 50px 0 0 40px;
-				font-size: 12pt;
-				font-stretch: normal;
-				letter-spacing: 5px;
-			}
-		}
-
-	.home .heading .subtitle .text {
-		background: var(--platinum-90-text);
-		background-clip: text;
-		color: transparent;
-		text-transform: uppercase;
-		font-weight: 600;
-	}
 
 
 /* Iframe */
