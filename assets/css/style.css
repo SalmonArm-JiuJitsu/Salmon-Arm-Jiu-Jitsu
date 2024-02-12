@@ -497,7 +497,7 @@ i {
 	background-position: center 50px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: calc(100vh - 50px);
+	height: calc(100vh - 50px);
 	animation: fadeIn 6s;
 	user-select: none;
 }
