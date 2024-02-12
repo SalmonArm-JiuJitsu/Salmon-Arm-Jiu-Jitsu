@@ -403,7 +403,7 @@ button {
             top: 2px;
             width: calc(100% - 4px);
             height: calc(100% - 4px);
-            background: #151515;
+            background: #090909;
             z-index: -1;
         }
 
@@ -426,7 +426,7 @@ button {
 				top: 2px;
 				width: calc(100% - 4px);
 				height: calc(100% - 26px);
-				background: #040404;
+				background: #090909;
 				z-index: 2;
 			}
 
@@ -528,8 +528,7 @@ i {
 	@media screen and (max-width: 720px) {
 		.home {
 			background-position: center 35px;
-			min-height: calc(100vh - 35px);
-			max-height: calc(100vh - 35px);
+			height: calc(100vh - 35px);
 		}
   	}
 
