@@ -195,6 +195,7 @@ header {
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 3px;
+	overflow: hidden;
 	z-index: 999;
   }
   
