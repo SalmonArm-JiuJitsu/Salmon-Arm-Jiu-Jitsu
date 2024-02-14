@@ -502,7 +502,7 @@ i {
 	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
-	height: calc(100vh - 50px);
+	height: calc(100dvh - 50px);
 	width: 100%;
 	animation: fadeIn 6s;
 	user-select: none;
