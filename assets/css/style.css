@@ -229,6 +229,7 @@ header {
 
 		header a:hover,
 		header a:active {
+			background: transparent;
 			color: #03e9f4;
 			transition: 0.15s ease-in-out;
 			transform: scale(1.12);
@@ -500,6 +501,7 @@ i {
 	background-position: center 50px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	-webkit-background-size: cover;
 	height: calc(100vh - 50px);
 	width: 100%;
 	animation: fadeIn 6s;
