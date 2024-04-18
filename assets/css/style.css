@@ -81,10 +81,7 @@ a {
 			transform: scale(1.08) translateX(10px);
 		}
 
-			a.style2.alt:hover {
-				display: none;
-			}
-
+			a.style2.alt:hover,
 			a.style2.alt:active {
 				transform: scale(1.08) translateX(6px);
 			}
