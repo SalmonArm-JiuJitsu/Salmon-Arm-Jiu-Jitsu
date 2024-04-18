@@ -65,6 +65,7 @@ a {
 	}
 
 	a.style2 {
+		overflow: hidden;
 		display: inline-block;
 		position: relative;
 		padding: 20px;
