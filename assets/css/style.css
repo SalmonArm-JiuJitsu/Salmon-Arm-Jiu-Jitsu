@@ -725,6 +725,20 @@ img {
 		}
 	}
 
+	@media screen and (min-width: 1940px) {
+		#footer form, #footer .contact-info {
+			padding-left: 20vw;
+			max-width: 1500px;
+			min-width: 1100px;
+		}		
+
+		#footer .location, #footer .socials {
+			padding-right: 20vw;
+			max-width: 1500px;
+			width: 1100px;
+		}
+	}
+
 	@media screen and (max-width: 1600px) {
 		#footer {
 			grid-template-columns: 61.1% 38.9%;
