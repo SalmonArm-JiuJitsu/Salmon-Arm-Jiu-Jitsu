@@ -895,13 +895,13 @@ img {
 	/* Contact Info */
 
 	.contact-info {
+		overflow: hidden;
 		align-items: center;
 		padding: 50px;
 		background: #131313;
 	}
 
 		.contact-info li {
-			overflow: hidden;
 			font-family: "nimbus-sans-regular";
 			letter-spacing: 2.5px;
 			list-style: none;
