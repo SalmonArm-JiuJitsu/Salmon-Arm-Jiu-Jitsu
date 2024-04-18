@@ -65,9 +65,9 @@ a {
 	}
 
 	a.style2 {
-		overflow: hidden;
 		display: inline-block;
 		position: relative;
+		align-items: center;
 		padding: 20px;
 		margin: -20px;
 		transform: scale(1);
@@ -81,7 +81,10 @@ a {
 			transform: scale(1.08) translateX(10px);
 		}
 
-			a.style2.alt:hover,
+			a.style2.alt:hover {
+				display: none;
+			}
+
 			a.style2.alt:active {
 				transform: scale(1.08) translateX(6px);
 			}
@@ -898,6 +901,7 @@ img {
 	}
 
 		.contact-info li {
+			overflow: hidden;
 			font-family: "nimbus-sans-regular";
 			letter-spacing: 2.5px;
 			list-style: none;
