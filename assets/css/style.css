@@ -34,11 +34,6 @@ html {
 	scroll-padding-top: 50px;
 }
 
-	@media screen and (max-width: 720px) {
-		html {
-			scroll-padding-top: 35px;
-		}		
-	}
 
 main {
 	background: var(--haze-invert);
@@ -294,17 +289,6 @@ header {
 		font-weight: 300;
 		cursor: pointer;
 	}
-
-	@media screen and (max-width: 720px) {
-		header .navbar {
-			height: 35px;
-		}
-
-		header .logo {
-			height: 33px;
-			width: 33px;
-		}
-  	}
   
   
 /* Menu */
@@ -589,17 +573,6 @@ i {
 		width: 100%;
 		z-index: 1;
 	}
-
-	@media screen and (max-width: 720px) {
-		.home {
-			background-position: center 35px;
-			height: calc(100vh - 35px);
-		}
-
-		.home:after {
-			height: calc(100vh - 35px);
-		}
-  	}
 
 
 	/* Heading */
