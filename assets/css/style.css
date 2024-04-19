@@ -175,6 +175,8 @@ h1, h2, h3, h4 {
 
 	h3 {
 		font-size: 20pt;
+		font-family: "nimbus-sans-bold";
+		margin: 30px 0;
 	}
 
 	h4 {
@@ -188,7 +190,7 @@ p {
 
     p.style1 {
         font-family: "nimbus-sans-light";
-        color: #242943;
+        color: #131313;
         font-size: 16pt;
     }
 
@@ -504,10 +506,12 @@ button {
 /* Icon */
 
 i {
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-around;
 	background: var(--platinum-45);
 	border-radius: 100%;
 	color: #131313;
-	margin-right: 20px; 
 	padding: 6px;
 	text-align: center;
 	width: 28pt;
@@ -531,7 +535,18 @@ i {
 		background-clip: text;
 		color: transparent;
 		border-radius: 0;
+		margin-right: 20px; 
 		font-size: 22pt;
+	}
+
+	i.style3 {
+		display: inline-flex;
+		border-radius: 100%;
+		font-size: 36pt;
+		text-align: center;
+		height: 56pt;
+		width: 56pt;
+		line-height: 56pt;
 	}
 
 
@@ -547,7 +562,7 @@ i {
 	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
-	height: calc(100lvh - 50px);
+	height: calc(100svh - 50px);
 	width: 100%;
 	animation: fadeIn 6s;
 	user-select: none;
@@ -972,26 +987,26 @@ img {
     }
 	
 	
-/* Grid */
+/* Trial */
 
-.grid {
+.trial {
 	place-content: center;
 	display: grid;
-	padding: 3em 0;
+	padding: 50px 0;
 	width: 100%;
 	height: 100%;
 	grid-template-columns: 30% 30% 30%;
 	grid-template-rows: 1fr auto;
 	grid-gap: 1rem;
 	grid-template-areas:
-		"header header header"
+		"title1 title1 title1"
 		"content-1 content-2 content-3"
-		"footer footer footer"
+		"title2 title2 title2"
 		"content-4 content-5 content-6";
 }
 
 	@media screen and (max-width: 980px) {
-		.grid {
+		.trial {
 			place-content: center;
 			display: grid;
 			padding: 3em 0;
@@ -1001,17 +1016,17 @@ img {
 			grid-template-rows: 1fr auto;
 			grid-gap: 1rem;
 			grid-template-areas:
-				"header header"
+				"title1 title1"
 				"content-1 content-2"
 				"content-3 content-3"
-				"footer footer"
+				"title2 title2"
 				"content-4 content-5"
 				"content-6 content-6";
 		}	
 	}
 
 	@media screen and (max-width: 736px) {
-		.grid {
+		.trial {
 			place-content: center;
 			display: grid;
 			padding: 3em 0;
@@ -1021,11 +1036,11 @@ img {
 			grid-template-rows: 1fr auto;
 			grid-gap: 1rem;
 			grid-template-areas:
-				"header"
+				"title1"
 				"content-1"
 				"content-2"
 				"content-3"
-				"footer"
+				"title2"
 				"content-4"
 				"content-5"
 				"content-6";
@@ -1034,28 +1049,19 @@ img {
 	
 	.item {
 		padding: 12% 6% 8% 6%;
-		font-size: 20pt;
-		font-family: "nimbus-sans-light";
 		text-align: center;
 		background: linear-gradient(45deg, #505050, #909090, #fff, #909090, #505050);
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.8);
 		border: 0;
 		justify-content: center;
-		color: #242943;
+		color: #131313;
 		border-radius: 4px;
 		align-items: center;
 		font-weight: bold;
 	}
 
-	.item h3 {
-		font-size: 20pt;
-		font-family: "nimbus-sans-bold";
-		margin: 0.5em 0;
-		color: #242943;
-	}
-
-	.header {
-		grid-area: header;
+	.title1 {
+		grid-area: title1;
 		justify-content: center;
 		font-family: "nimbus-sans-bold";
 		font-size: 30pt;
@@ -1065,7 +1071,7 @@ img {
 	}
 
 		@media screen and (max-width: 480px) {
-			.header {
+			.title1 {
 				font-size: 26pt;
 				letter-spacing: 0.75pt;
 				padding: 5% 5%;
@@ -1096,8 +1102,8 @@ img {
 		grid-area: content-6;
 	}
 	
-	.footer {
-		grid-area: footer;
+	.title2 {
+		grid-area: title2;
 		justify-content: center;
 		font-family: "nimbus-sans-bold";
 		font-size: 30pt;
@@ -1107,7 +1113,7 @@ img {
 	}
 
 		@media screen and (max-width: 480px) {
-			.footer {
+			.title2 {
 				font-size: 26pt;
 				letter-spacing: 0.75pt;
 				margin-top: 1.5em;
