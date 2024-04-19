@@ -81,12 +81,23 @@ a {
 			transform: scale(1.08) translateX(10px);
 		}
 
-			a.style2.alt:hover,
-			a.style2.alt:active {
-				display: none;
+		a.style3 {
+			display: inline-block;
+			position: relative;
+			align-items: center;
+			padding: 20px;
+			margin: -20px;
+			transform: scale(1);
+			transition: 0.2s ease-in-out;
+		}
+
+			a.style3:hover,
+			a.style3:active {
+				background: transparent;
+				color: #03e9f4;
 				transform: scale(1.08) translateX(6px);
 			}
-        
+			
 
 address {
 	display: inline-flex;
@@ -772,6 +783,12 @@ img {
 		}
 	}
 
+	@media screen and (min-width: 1101px) {
+		#footer .contact-info a.style3 {
+			pointer-events: none;
+		}
+	}
+
 	@media screen and (max-width: 1100px) {
 		#footer {
 			grid-template-columns: 100%;
@@ -799,10 +816,6 @@ img {
 
 				#footer .socials h2 {
 					display: none;
-				}
-
-				#footer .contact-info a.style2.alt {
-					display: inline-block;
 				}
 	}
 
