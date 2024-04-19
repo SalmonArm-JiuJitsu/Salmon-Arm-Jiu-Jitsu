@@ -83,6 +83,7 @@ a {
 
 			a.style2.alt:hover,
 			a.style2.alt:active {
+				display: none;
 				transform: scale(1.08) translateX(6px);
 			}
         
@@ -798,6 +799,10 @@ img {
 
 				#footer .socials h2 {
 					display: none;
+				}
+
+				#footer .contact-info a.style2.alt {
+					display: inline-block;
 				}
 	}
 
