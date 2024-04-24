@@ -31,13 +31,26 @@
 
 html {
 	scroll-behavior: smooth;
-	scroll-padding-top: 50px;
+	scroll-padding-top: 60px;
 }
 
 main {
 	background: var(--haze-invert);
-    padding: 0 10px 0px 10px;
+	padding: 0 50px;
 }
+
+	@media screen and (max-width: 480px) {
+		main {
+			padding: 0 30px;
+		}
+	}
+
+	@media screen and (max-width: 380px) {
+		main {
+			padding: 0 10px;
+		}
+	}
+	
 
 
 /* Text */
@@ -98,6 +111,7 @@ address {
 }
 
 body {
+	background: #131313;
 	color: #efefef;
 	font-family: "nimbus-sans-regular";
 	font-size: 14pt;
@@ -216,12 +230,14 @@ p {
 :root {
 	--haze: linear-gradient(#070707, #222);
 }
-
 	:root {
 		--haze-footer: linear-gradient(#070707, #292929);
 	}
 	:root {
 		--haze-invert: linear-gradient(#222, #070707);
+	}
+	:root {
+		--haze-light: radial-gradient(ellipse at left top, #181818, #333);
 	}
 	
 
@@ -296,16 +312,10 @@ header {
 .menu {
 	display: flex;
 	align-items: center;
-	gap: 60px;
+	gap: 65px;
 	z-index: 1000;
 }
 
-	@media screen and (min-width: 900px) {
-		.menu {
-			gap: 80px;
-		}
-	}
-  
 	.menu .close {
 		display: none;
 		position: absolute;
@@ -492,12 +502,12 @@ button {
 i {
 	display: inline-flex;
 	align-items: center;
+	text-align: center;
 	justify-content: space-around;
 	background: var(--platinum-45);
 	border-radius: 100%;
 	color: #131313;
 	padding: 6px;
-	text-align: center;
 	width: 28pt;
 	height: 28pt;
 	font-size: 18pt;
@@ -542,14 +552,13 @@ i {
 	align-items: center;
 	background-image: url("../../images/index/index.png");
 	background-attachment: fixed;
-	background-position: center 50px;
+	background-position: center 60px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
-	height: calc(100svh - 50px);
+	height: calc(100svh - 60px);
 	width: 100%;
 	animation: fadeIn 6s;
-	user-select: none;
 }
 
 	@keyframes fadeIn {  
@@ -851,6 +860,39 @@ img {
 		}
 	}
 
+	@media screen and (max-width: 420px) {
+		#footer button {
+			padding: 15px 20px;
+		}
+
+		#footer .contact-info {
+			font-size: 12.5pt;
+		}
+	}
+
+	@media screen and (max-width: 380px) {
+		#footer form, #footer .location,
+		#footer .contact-info, #footer .socials {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		#footer .contact-info {
+			font-size: 12pt;
+			letter-spacing: 0;
+			padding-top: 30px;
+		}
+
+			#footer .contact-info i.style1 {
+				transform: scale(0.7);
+				margin-right: 12px;
+			}
+
+		#footer .socials {
+			padding-top: 50px;
+		}
+	}
+
 
 	/* Form */
 
@@ -864,10 +906,13 @@ img {
 			margin-bottom: 40px;
 		}
 
-		form .field-left {
+		form .field-left, form .field-right {
 			width: 46%;
-			float: left;
 			margin-bottom: 40px;
+		}
+
+		form .field-left {
+			float: left;
 		}
 
 			form .field-left input {
@@ -875,9 +920,7 @@ img {
 			}
 
 		form .field-right {
-			width: 46%;
 			float: right;
-			margin-bottom: 40px;
 		}
 
 			form .field-right input {
@@ -966,41 +1009,36 @@ img {
 .trial {
 	display: grid;
 	place-content: center;
-	padding: 50px 0;
+	padding: 0 15px;
 	width: 100%;
 	height: 100%;
-	grid-template-columns: 30% 30% 30%;
+	grid-template-columns: 33.33% 33.33% 33.33%;
 	grid-template-rows: 1fr auto;
 	grid-gap: 15px;
 	grid-template-areas:
-		"title1 title1 title1"
 		"tile1 tile2 tile3"
-		"title2 title2 title2"
 		"tile4 tile5 tile6";
 }
 
 	@media screen and (max-width: 980px) {
 		.trial {
-			grid-template-columns: 45% 45%;
+			padding: 0 7.5px;
+			grid-template-columns: 50% 50%;
 			grid-template-areas:
-				"title1 title1"
 				"tile1 tile2"
-				"tile3 tile3"
-				"title2 title2"
-				"tile4 tile5"
-				"tile6 tile6";
+				"tile3 tile4"
+				"tile5 tile6";
 		}	
 	}
 
 	@media screen and (max-width: 736px) {
 		.trial {
-			grid-template-columns: 95%;
+			padding: 0;
+			grid-template-columns: 100%;
 			grid-template-areas:
-				"title1"
 				"tile1"
 				"tile2"
 				"tile3"
-				"title2"
 				"tile4"
 				"tile5"
 				"tile6";
@@ -1008,12 +1046,12 @@ img {
 	}
 	
 	.tile1, .tile2, .tile3,
-	.tile4, .tile5, .tile6,
-	.title1, .title2 {
+	.tile4, .tile5, .tile6 {
 		padding: 12% 6% 8% 6%;
 		text-align: center;
-		background: linear-gradient(45deg, #505050, #909090, #fff, #909090, #505050);
-		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.8);
+		background: var(--platinum-45);
+		/*background: var(--haze-light);
+		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.8);*/
 		border: 0;
 		justify-content: center;
 		color: #131313;
@@ -1022,53 +1060,29 @@ img {
 		font-weight: bold;
 	}
 
-	.title1, .title2 {
-		font-family: "nimbus-sans-bold";
-		font-size: 30pt;
-		letter-spacing: 2px;
-		padding: 20px 0;
-		background: linear-gradient(130deg, #0000ff 0%, #00b3ff 50%, #00ffff 100%);
+	.tile1 {
+		grid-area: tile1;
 	}
-
-		@media screen and (max-width: 480px) {
-			.title1, .title2 {
-				font-size: 26pt;
-				letter-spacing: 0.75pt;
-				padding: 5%;
-			}
-		}
 	
-	.title1 {
-		grid-area: title1;
+	.tile2 {
+		grid-area: tile2;
+	}
+	
+	.tile3 {
+		grid-area: tile3;
 	}
 
-		.tile1 {
-			grid-area: tile1;
-		}
-		
-		.tile2 {
-			grid-area: tile2;
-		}
-		
-		.tile3 {
-			grid-area: tile3;
-		}
-
-	.title2 {
-		grid-area: title2;
+	.tile4 {
+		grid-area: tile4;
 	}
-
-		.tile4 {
-			grid-area: tile4;
-		}
-		
-		.tile5 {
-			grid-area: tile5;
-		}
-		
-		.tile6 {
-			grid-area: tile6;
-		}
+	
+	.tile5 {
+		grid-area: tile5;
+	}
+	
+	.tile6 {
+		grid-area: tile6;
+	}
 	
 	
 /* Card */
