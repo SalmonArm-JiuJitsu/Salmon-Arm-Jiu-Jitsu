@@ -1,4 +1,3 @@
-//Home
 //Menu
 
 const burger = document.querySelector(".burger");
@@ -26,7 +25,6 @@ function contactForm() {
 	var name = document.getElementById('name');
 	var email = document.getElementById('email');
 	var message = document.getElementById('message');
-    const valid = /[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}/;
 
 	if(name.value === '' || email.value === '' || message.value === '') {
 		alert("Please Fill Out Each Field.")
@@ -39,7 +37,6 @@ function contactForm() {
 	}
 
 	else {
-		//alert("You're Almost Done! Click OK To Proceed To The CAPTCHA.")
 		return true;
     }
 }
