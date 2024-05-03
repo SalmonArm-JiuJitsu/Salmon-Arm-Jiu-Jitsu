@@ -843,6 +843,10 @@ img {
 	}
 
 	@media screen and (max-width: 720px) {
+		#footer .form-location {
+			margin-top: 75px;
+		}
+
 		#footer .form-location form .field-left, 
 		#footer .form-location form .field-right {
 			float: none;
