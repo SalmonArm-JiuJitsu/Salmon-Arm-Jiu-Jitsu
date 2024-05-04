@@ -129,7 +129,7 @@ button, form, input, label, textarea {
 	textarea {
 		width: 100%;
 		padding: 8px 12px;
-		font-size: 16pt;
+		font-size: ;
 		font-family: "nimbus-sans-regular";
 		letter-spacing: 0.5px;
 	}
@@ -880,11 +880,6 @@ img {
 
 		#footer .contact-socials .contact a, #footer .contact-socials .contact address {
 			font-size: 12pt;
-		}
-
-		#footer .contact-socials .contact i {
-			font-size: 16pt;
-			line-height: 16pt;
 		}
 	}
 
