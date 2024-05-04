@@ -129,7 +129,7 @@ button, form, input, label, textarea {
 	textarea {
 		width: 100%;
 		padding: 8px 12px;
-		font-size: ;
+		font-size: 16pt;
 		font-family: "nimbus-sans-regular";
 		letter-spacing: 0.5px;
 	}
@@ -489,9 +489,9 @@ button {
 
 i {
 	display: inline-flex;
+	justify-content: space-around;
 	align-items: center;
 	text-align: center;
-	justify-content: space-around;
 	background: var(--platinum-45);
 	border-radius: 100%;
 	color: #131313;
@@ -523,9 +523,7 @@ i {
 
 	i.style3 {
 		display: inline-flex;
-		border-radius: 100%;
 		font-size: 36pt;
-		text-align: center;
 		height: 56pt;
 		width: 56pt;
 	}
@@ -891,6 +889,7 @@ img {
 
 	@media screen and (max-width: 340px) {
 		#footer .contact-socials .contact i {
+			display: inline-flex;
 			margin-right: 15px; 
 			padding: 3px;
 			width: 21pt;
