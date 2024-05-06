@@ -40,3 +40,16 @@ function contactForm() {
 		return true;
     }
 }
+
+// Home Icon Disappear On Scoll
+
+const home = document.querySelector(".home");
+const icon = document.querySelector(".icon");
+
+
+
+function onScroll() {
+	if (home.height < window.height ) {
+		home.classList.remove("icon");
+	}
+}

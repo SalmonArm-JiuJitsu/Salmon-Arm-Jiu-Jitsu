@@ -1,0 +1,2397 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+
+<svg
+   xml:space="preserve"
+   width="1860"
+   height="960"
+   version="1.1"
+   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+   viewBox="0 0 1860 960"
+   id="svg498"
+   sodipodi:docname="schedule.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   inkscape:export-filename="../../../images/schedule/schedule.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   id="namedview500"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#464646"
+   showgrid="false"
+   inkscape:zoom="0.645317339062"
+   inkscape:cx="845.320537633"
+   inkscape:cy="464.112742477"
+   inkscape:window-width="1920"
+   inkscape:window-height="1011"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="layer15"
+   showguides="false"
+   inkscape:lockguides="false"
+   inkscape:document-units="px"><sodipodi:guide
+     position="984.90535,716.119"
+     orientation="1512.2497,-2e-05"
+     id="guide1487"
+     inkscape:locked="false" /><sodipodi:guide
+     position="660.25249,385.381"
+     orientation="577.38054,0"
+     id="guide17370"
+     inkscape:locked="false" /><sodipodi:guide
+     position="1355.8578,185.064"
+     orientation="377.06433,0"
+     id="guide17372"
+     inkscape:locked="false" /></sodipodi:namedview>
+ <defs
+   id="defs458"><linearGradient
+   inkscape:collect="always"
+   id="linearGradient17"><stop
+     style="stop-color:#00a4cc;stop-opacity:1;"
+     offset="0"
+     id="stop14" /><stop
+     style="stop-color:#00cdff;stop-opacity:1;"
+     offset="0.3273821473"
+     id="stop15" /></linearGradient><linearGradient
+   id="linearGradient28571"><stop
+     style="stop-color:#49dcb1;stop-opacity:1;"
+     offset="0"
+     id="stop28561" /><stop
+     style="stop-color:#95ead1;stop-opacity:1;"
+     offset="0.34126365"
+     id="stop29077" /><stop
+     style="stop-color:#49dcb1;stop-opacity:1;"
+     offset="1"
+     id="stop28569" /></linearGradient><linearGradient
+   id="adult"><stop
+     style="stop-color:#f17105;stop-opacity:1;"
+     offset="0"
+     id="stop23534" /><stop
+     style="stop-color:#facca7;stop-opacity:1;"
+     offset="0.33000001"
+     id="stop12494" /><stop
+     style="stop-color:#f78630;stop-opacity:1;"
+     offset="0.5"
+     id="stop23538" /><stop
+     style="stop-color:#facca7;stop-opacity:1;"
+     offset="0.67000002"
+     id="stop12960" /><stop
+     style="stop-color:#f17105;stop-opacity:1;"
+     offset="1"
+     id="stop23542" /></linearGradient><linearGradient
+   inkscape:collect="always"
+   id="linearGradient8036"><stop
+     style="stop-color:#00ffff;stop-opacity:1;"
+     offset="0"
+     id="stop8030" /><stop
+     style="stop-color:#78ffff;stop-opacity:1;"
+     offset="0.31671509"
+     id="stop8032" /><stop
+     style="stop-color:#00cdff;stop-opacity:1;"
+     offset="0.85973233"
+     id="stop8034" /></linearGradient><linearGradient
+   inkscape:collect="always"
+   id="tues"><stop
+     style="stop-color:#00cdff;stop-opacity:1;"
+     offset="0"
+     id="stop5595" /><stop
+     style="stop-color:#3ce6ff;stop-opacity:1;"
+     offset="0.22949369"
+     id="stop9989" /><stop
+     style="stop-color:#78ffff;stop-opacity:1;"
+     offset="0.69857073"
+     id="stop5599" /><stop
+     style="stop-color:#00ffff;stop-opacity:1;"
+     offset="1"
+     id="stop5593" /></linearGradient><linearGradient
+   id="open-mat"><stop
+     style="stop-color:#49dcb1;stop-opacity:1;"
+     offset="0"
+     id="stop1958" /><stop
+     style="stop-color:#afefdc;stop-opacity:1;"
+     offset="0.33000001"
+     id="stop27056" /><stop
+     style="stop-color:#49dcb1;stop-opacity:1;"
+     offset="0.5"
+     id="stop18579" /><stop
+     style="stop-color:#8de9ce;stop-opacity:1;"
+     offset="0.67000002"
+     id="stop27557" /><stop
+     style="stop-color:#49dcb1;stop-opacity:1;"
+     offset="1"
+     id="stop1960" /></linearGradient><linearGradient
+   id="linearGradient87433"
+   gradientUnits="userSpaceOnUse"
+   x1="873.65002"
+   y1="885.22998"
+   x2="669.17999"
+   y2="963.06"
+   gradientTransform="matrix(0.82417695,0,0,0.82417695,187.30679,-249.28549)">
+   <stop
+   offset="0"
+   style="stop-color:#1e1e1e;stop-opacity:1;"
+   id="stop87423" /><stop
+   offset="0.24865535"
+   style="stop-color:#464646;stop-opacity:1;"
+   id="stop87425" /><stop
+   offset="0.5"
+   style="stop-color:#787878;stop-opacity:1;"
+   id="stop87427" /><stop
+   offset="0.75276148"
+   style="stop-color:#464646;stop-opacity:1;"
+   id="stop87429" />
+   <stop
+   offset="1"
+   style="stop-color:#1e1e1e;stop-opacity:1;"
+   id="stop87431" />
+  </linearGradient><linearGradient
+   id="linearGradient87417"
+   gradientUnits="userSpaceOnUse"
+   x1="873.65002"
+   y1="885.22998"
+   x2="669.17999"
+   y2="963.06"
+   gradientTransform="matrix(0.82417695,0,0,0.82417695,187.30679,-249.28549)">
+   <stop
+   offset="0"
+   style="stop-color:#323232;stop-opacity:1;"
+   id="stop87409" /><stop
+   offset="0.24865535"
+   style="stop-color:#5a5a5a;stop-opacity:1;"
+   id="stop87411" /><stop
+   offset="0.5"
+   style="stop-color:#878787;stop-opacity:1;"
+   id="stop87413" /><stop
+   offset="0.75276148"
+   style="stop-color:#5a5a5a;stop-opacity:1;"
+   id="stop87421" />
+   <stop
+   offset="1"
+   style="stop-color:#323232;stop-opacity:1;"
+   id="stop87415" />
+  </linearGradient><linearGradient
+   id="open_mat-1"
+   gradientUnits="userSpaceOnUse"
+   x1="873.65002"
+   y1="885.22998"
+   x2="669.17999"
+   y2="963.06"
+   gradientTransform="matrix(0.82417695,0,0,0.82417695,187.30679,-249.28549)">
+   <stop
+   offset="0"
+   style="stop-color:#000000;stop-opacity:1;"
+   id="stop87396" /><stop
+   offset="0.12764704"
+   style="stop-color:#141414;stop-opacity:1;"
+   id="stop87398" /><stop
+   offset="0.41389313"
+   style="stop-color:#323232;stop-opacity:1;"
+   id="stop87400" /><stop
+   offset="0.50552303"
+   style="stop-color:#464646;stop-opacity:1;"
+   id="stop87402" />
+   <stop
+   offset="1"
+   style="stop-color:#141414;stop-opacity:1;"
+   id="stop87404" />
+  </linearGradient><linearGradient
+   id="linearGradient17631"
+   gradientUnits="userSpaceOnUse"
+   x1="873.65002"
+   y1="885.22998"
+   x2="669.17999"
+   y2="963.06"
+   gradientTransform="matrix(0.82417695,0,0,0.82417695,187.30679,-249.28549)">
+   <stop
+   offset="0.23846726"
+   style="stop-color:#000000;stop-opacity:1;"
+   id="stop84895" /><stop
+   offset="0.51536489"
+   style="stop-color:#141414;stop-opacity:1;"
+   id="stop84897" /><stop
+   offset="0.88298118"
+   style="stop-color:#323232;stop-opacity:1;"
+   id="stop84899" />
+   <stop
+   offset="1"
+   style="stop-color:#464646;stop-opacity:1;"
+   id="stop84901" />
+  </linearGradient><linearGradient
+   id="youth"
+   gradientUnits="userSpaceOnUse"
+   x1="916.32001"
+   y1="780.72998"
+   x2="782.90002"
+   y2="841.26001"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#CC3D1D"
+   id="stop82933" /><stop
+   offset="0.5"
+   style="stop-color:#f36a1c;stop-opacity:1;"
+   id="stop82935" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#F36A1C"
+   id="stop82937" />
+  </linearGradient><linearGradient
+   id="open_mat-6"
+   gradientUnits="userSpaceOnUse"
+   x1="874.96997"
+   y1="936.40002"
+   x2="764.96002"
+   y2="1245.46"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0.41697717"
+   style="stop-color:#007fff;stop-opacity:1;"
+   id="stop82443" /><stop
+   offset="0.81547475"
+   style="stop-color:#00bfff;stop-opacity:1;"
+   id="stop82445" /><stop
+   offset="1"
+   style="stop-color:#00dfff;stop-opacity:1;"
+   id="stop82447" />
+   
+   
+  </linearGradient><linearGradient
+   id="open_mat-7"
+   gradientUnits="userSpaceOnUse"
+   x1="874.96997"
+   y1="936.40002"
+   x2="764.96002"
+   y2="1245.46"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-color:#007fff;stop-opacity:1;"
+   id="stop78277" /><stop
+   offset="0.5"
+   style="stop-color:#00bfff;stop-opacity:1;"
+   id="stop78283" /><stop
+   offset="1"
+   style="stop-color:#007fff;stop-opacity:1;"
+   id="stop78285" />
+   
+   
+  </linearGradient><linearGradient
+   id="open_mat-0"
+   gradientUnits="userSpaceOnUse"
+   x1="874.96997"
+   y1="936.40002"
+   x2="764.96002"
+   y2="1245.46"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0.41697717"
+   style="stop-color:#007fff;stop-opacity:1;"
+   id="stop77318" />
+   
+   <stop
+   offset="1"
+   style="stop-color:#00ffff;stop-opacity:1;"
+   id="stop77320" />
+  </linearGradient><linearGradient
+   id="linearGradient39872"
+   gradientUnits="userSpaceOnUse"
+   x1="874.96997"
+   y1="936.40002"
+   x2="764.96002"
+   y2="1245.46"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-color:#00dfff;stop-opacity:1;"
+   id="stop73994" /><stop
+   offset="0.2"
+   style="stop-color:#00bfff;stop-opacity:1;"
+   id="stop73996" /><stop
+   offset="0.41697717"
+   style="stop-color:#007fff;stop-opacity:1;"
+   id="stop73998" /><stop
+   offset="0.78478813"
+   style="stop-color:#003fff;stop-opacity:1;"
+   id="stop74000" />
+   
+   <stop
+   offset="1"
+   style="stop-color:#0000ff;stop-opacity:1;"
+   id="stop74002" />
+  </linearGradient><linearGradient
+   id="schedule_contents"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-color:#4b4b4b;stop-opacity:1;"
+   id="stop51251" /><stop
+   offset="0.25"
+   style="stop-color:#7d7d7d;stop-opacity:1;"
+   id="stop51253" />
+   <stop
+   offset="0.52263534"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop51255" /><stop
+   offset="0.75"
+   style="stop-color:#7d7d7d;stop-opacity:1;"
+   id="stop85892" />
+   <stop
+   offset="1"
+   style="stop-color:#4b4b4b;stop-opacity:1;"
+   id="stop51257" />
+   
+   
+  </linearGradient><linearGradient
+   id="linearGradient7982"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-color:#3c3c3c;stop-opacity:1;"
+   id="stop50464" /><stop
+   offset="0.109804"
+   style="stop-color:#7d7d7d;stop-opacity:1;"
+   id="stop50466" />
+   <stop
+   offset="0.219608"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop50468" />
+   <stop
+   offset="0.521569"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop50470" />
+   <stop
+   offset="0.780392"
+   style="stop-opacity:1; stop-color:#EDEDED"
+   id="stop50472" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4F4F4F"
+   id="stop50474" />
+  </linearGradient><rect
+   x="1619.5053"
+   y="1329.95"
+   width="595.7426"
+   height="369.94998"
+   id="rect50410" /><linearGradient
+   id="id13"
+   gradientUnits="userSpaceOnUse"
+   x1="423.64999"
+   y1="797.39001"
+   x2="1601.5601"
+   y2="839.34998">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#B3B3B3"
+   id="stop42245" />
+   <stop
+   offset="0.458824"
+   style="stop-opacity:1; stop-color:white"
+   id="stop42247" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#B8B8B8"
+   id="stop42249" />
+  </linearGradient><linearGradient
+   id="background_mon_to_fri"
+   gradientUnits="userSpaceOnUse"
+   x1="874.96997"
+   y1="936.40002"
+   x2="764.96002"
+   y2="1245.46"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0.2"
+   style="stop-color:#0000ff;stop-opacity:1;"
+   id="stop39874" /><stop
+   offset="0.41697717"
+   style="stop-color:#007fff;stop-opacity:1;"
+   id="stop39866" />
+   
+   <stop
+   offset="1"
+   style="stop-color:#0000ff;stop-opacity:1;"
+   id="stop39870" />
+  </linearGradient><linearGradient
+   id="id7"
+   gradientUnits="userSpaceOnUse"
+   x1="846.21002"
+   y1="964.48999"
+   x2="755.17999"
+   y2="949.84998"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-color:#19b1cf;stop-opacity:1;"
+   id="stop37085" /><stop
+   offset="0.5"
+   style="stop-color:#0cd8e7;stop-opacity:1;"
+   id="stop37087" />
+   <stop
+   offset="1"
+   style="stop-color:#06e9ff;stop-opacity:1;"
+   id="stop37089" />
+  </linearGradient><linearGradient
+   id="cyan1"
+   gradientUnits="userSpaceOnUse"
+   x1="874.96997"
+   y1="936.40002"
+   x2="764.96002"
+   y2="1245.46"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-color:#00ffff;stop-opacity:1;"
+   id="stop34417" />
+   
+   <stop
+   offset="1"
+   style="stop-color:#0000ff;stop-opacity:1;"
+   id="stop34419" />
+  </linearGradient><linearGradient
+   id="linearGradient33617"
+   gradientUnits="userSpaceOnUse"
+   x1="916.32001"
+   y1="780.72998"
+   x2="782.90002"
+   y2="841.26001"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#CC3D1D"
+   id="stop33613" /><stop
+   offset="0.5"
+   style="stop-color:#df531c;stop-opacity:1;"
+   id="stop33619" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#F36A1C"
+   id="stop33615" />
+  </linearGradient><linearGradient
+   id="linearGradient33595"
+   gradientUnits="userSpaceOnUse"
+   x1="916.32001"
+   y1="780.72998"
+   x2="782.90002"
+   y2="841.26001"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#CC3D1D"
+   id="stop33591" /><stop
+   offset="0.5"
+   style="stop-color:#df531c;stop-opacity:1;"
+   id="stop33597" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#F36A1C"
+   id="stop33593" />
+  </linearGradient><linearGradient
+   id="id1"
+   gradientUnits="userSpaceOnUse"
+   x1="916.32001"
+   y1="780.72998"
+   x2="782.90002"
+   y2="841.26001"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#CC3D1D"
+   id="stop33586" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#F36A1C"
+   id="stop33588" />
+  </linearGradient><linearGradient
+   id="cobalt_2"
+   gradientUnits="userSpaceOnUse"
+   x1="874.96997"
+   y1="936.40002"
+   x2="764.96002"
+   y2="1245.46"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-color:#00bfff;stop-opacity:1;"
+   id="stop34424" /><stop
+   offset="0.41697717"
+   style="stop-color:#007fff;stop-opacity:1;"
+   id="stop34422" /><stop
+   offset="0.78478813"
+   style="stop-color:#003fff;stop-opacity:1;"
+   id="stop34428" />
+   
+   <stop
+   offset="1"
+   style="stop-color:#0000ff;stop-opacity:1;"
+   id="stop32571" />
+  </linearGradient><rect
+   x="1680"
+   y="505"
+   width="180"
+   height="54.651091"
+   id="rect25017" /><linearGradient
+   id="cobalt"
+   gradientUnits="userSpaceOnUse"
+   x1="874.96997"
+   y1="936.40002"
+   x2="764.96002"
+   y2="1245.46"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-color:#007fff;stop-opacity:1;"
+   id="stop32574" />
+   
+   <stop
+   offset="1"
+   style="stop-color:#0000ff;stop-opacity:1;"
+   id="stop18724" />
+  </linearGradient><linearGradient
+   id="id5"
+   gradientUnits="userSpaceOnUse"
+   x1="874.96997"
+   y1="936.40002"
+   x2="764.96002"
+   y2="1245.46"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-color:#00ffff;stop-opacity:1;"
+   id="stop10933" /><stop
+   offset="0.41812995"
+   style="stop-color:#19b1cf;stop-opacity:1;"
+   id="stop10935" />
+   <stop
+   offset="0.66000003"
+   style="stop-color:#1a6096;stop-opacity:1;"
+   id="stop10937" />
+   <stop
+   offset="1"
+   style="stop-color:#0000ff;stop-opacity:1;"
+   id="stop10939" />
+  </linearGradient><linearGradient
+   id="open_mat-2"
+   gradientUnits="userSpaceOnUse"
+   x1="873.65002"
+   y1="885.22998"
+   x2="669.17999"
+   y2="963.06"
+   gradientTransform="matrix(0.82417695,0,0,0.82417695,187.30679,-249.28549)">
+   <stop
+   offset="0"
+   style="stop-color:#000000;stop-opacity:1;"
+   id="stop17625" /><stop
+   offset="0.12764704"
+   style="stop-color:#141414;stop-opacity:1;"
+   id="stop17627" /><stop
+   offset="0.41389313"
+   style="stop-color:#323232;stop-opacity:1;"
+   id="stop18375" /><stop
+   offset="0.50552303"
+   style="stop-color:#464646;stop-opacity:1;"
+   id="stop84904" />
+   <stop
+   offset="1"
+   style="stop-color:#141414;stop-opacity:1;"
+   id="stop17629" />
+  </linearGradient><linearGradient
+   id="linearGradient13889"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   
+   <stop
+   offset="0"
+   style="stop-color:#aaaaaa;stop-opacity:1;"
+   id="stop13881" />
+   <stop
+   offset="0.5"
+   style="stop-color:#ffffff;stop-opacity:1;"
+   id="stop13883" />
+   <stop
+   offset="1"
+   style="stop-color:#b9b9b9;stop-opacity:1;"
+   id="stop13885" />
+   
+  </linearGradient><linearGradient
+   id="schedule_contents-1"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-color:#3c3c3c;stop-opacity:1;"
+   id="stop7970" /><stop
+   offset="0.30818892"
+   style="stop-color:#7d7d7d;stop-opacity:1;"
+   id="stop7972" />
+   <stop
+   offset="0.79161072"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop7974" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop7976" />
+   
+   
+  </linearGradient><linearGradient
+   id="linearGradient7956"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-color:#3c3c3c;stop-opacity:1;"
+   id="stop7944" /><stop
+   offset="0.109804"
+   style="stop-color:#7d7d96;stop-opacity:1;"
+   id="stop7946" />
+   <stop
+   offset="0.219608"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop7948" />
+   <stop
+   offset="0.521569"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop7950" />
+   <stop
+   offset="0.780392"
+   style="stop-opacity:1; stop-color:#EDEDED"
+   id="stop7952" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4F4F4F"
+   id="stop7954" />
+  </linearGradient><linearGradient
+   id="linearGradient7930"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-color:#3c3c3c;stop-opacity:1;"
+   id="stop7918" /><stop
+   offset="0.109804"
+   style="stop-color:#7d9696;stop-opacity:1;"
+   id="stop7920" />
+   <stop
+   offset="0.219608"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop7922" />
+   <stop
+   offset="0.521569"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop7924" />
+   <stop
+   offset="0.780392"
+   style="stop-opacity:1; stop-color:#EDEDED"
+   id="stop7926" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4F4F4F"
+   id="stop7928" />
+  </linearGradient><linearGradient
+   id="linearGradient7904"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-color:#3c3c3c;stop-opacity:1;"
+   id="stop7892" /><stop
+   offset="0.109804"
+   style="stop-color:#959696;stop-opacity:1;"
+   id="stop7894" />
+   <stop
+   offset="0.219608"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop7896" />
+   <stop
+   offset="0.521569"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop7898" />
+   <stop
+   offset="0.780392"
+   style="stop-opacity:1; stop-color:#EDEDED"
+   id="stop7900" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4F4F4F"
+   id="stop7902" />
+  </linearGradient><linearGradient
+   id="linearGradient7874"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-color:#3c3c3c;stop-opacity:1;"
+   id="stop7864" /><stop
+   offset="0.109804"
+   style="stop-color:#969696;stop-opacity:1;"
+   id="stop7876" />
+   <stop
+   offset="0.219608"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop7866" />
+   <stop
+   offset="0.521569"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop7868" />
+   <stop
+   offset="0.780392"
+   style="stop-opacity:1; stop-color:#EDEDED"
+   id="stop7870" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4F4F4F"
+   id="stop7872" />
+  </linearGradient><linearGradient
+   id="linearGradient2060"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-color:#3c3c3c;stop-opacity:1;"
+   id="stop2050" />
+   <stop
+   offset="0.219608"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop2052" />
+   <stop
+   offset="0.521569"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop2054" />
+   <stop
+   offset="0.780392"
+   style="stop-opacity:1; stop-color:#EDEDED"
+   id="stop2056" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4F4F4F"
+   id="stop2058" />
+  </linearGradient><linearGradient
+   id="linearGradient2036"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-color:#3c3c30;stop-opacity:1;"
+   id="stop2026" />
+   <stop
+   offset="0.219608"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop2028" />
+   <stop
+   offset="0.521569"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop2030" />
+   <stop
+   offset="0.780392"
+   style="stop-opacity:1; stop-color:#EDEDED"
+   id="stop2032" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4F4F4F"
+   id="stop2034" />
+  </linearGradient><linearGradient
+   id="linearGradient1286"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-color:#313030;stop-opacity:1;"
+   id="stop1276" />
+   <stop
+   offset="0.219608"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop1278" />
+   <stop
+   offset="0.521569"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop1280" />
+   <stop
+   offset="0.780392"
+   style="stop-opacity:1; stop-color:#EDEDED"
+   id="stop1282" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4F4F4F"
+   id="stop1284" />
+  </linearGradient><linearGradient
+   id="linearGradient1262"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-color:#3c3030;stop-opacity:1;"
+   id="stop1252" />
+   <stop
+   offset="0.219608"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop1254" />
+   <stop
+   offset="0.521569"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop1256" />
+   <stop
+   offset="0.780392"
+   style="stop-opacity:1; stop-color:#EDEDED"
+   id="stop1258" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4F4F4F"
+   id="stop1260" />
+  </linearGradient><linearGradient
+   id="linearGradient5941"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-color:#3c3030;stop-opacity:1;"
+   id="stop5931" />
+   <stop
+   offset="0.219608"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop5933" />
+   <stop
+   offset="0.521569"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop5935" />
+   <stop
+   offset="0.780392"
+   style="stop-opacity:1; stop-color:#EDEDED"
+   id="stop5937" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4F4F4F"
+   id="stop5939" />
+  </linearGradient><linearGradient
+   id="linearGradient5913"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-color:#3c3030;stop-opacity:1;"
+   id="stop5903" />
+   <stop
+   offset="0.219608"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop5905" />
+   <stop
+   offset="0.521569"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop5907" />
+   <stop
+   offset="0.780392"
+   style="stop-opacity:1; stop-color:#EDEDED"
+   id="stop5909" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4F4F4F"
+   id="stop5911" />
+  </linearGradient><linearGradient
+   id="linearGradient5860"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-color:#3c3030;stop-opacity:1;"
+   id="stop5850" />
+   <stop
+   offset="0.219608"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop5852" />
+   <stop
+   offset="0.521569"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop5854" />
+   <stop
+   offset="0.780392"
+   style="stop-opacity:1; stop-color:#EDEDED"
+   id="stop5856" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4F4F4F"
+   id="stop5858" />
+  </linearGradient><linearGradient
+   id="id0"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#303030"
+   id="stop5839" />
+   <stop
+   offset="0.219608"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop5841" />
+   <stop
+   offset="0.521569"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop5843" />
+   <stop
+   offset="0.780392"
+   style="stop-opacity:1; stop-color:#EDEDED"
+   id="stop5845" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4F4F4F"
+   id="stop5847" />
+  </linearGradient><rect
+   x="957.49738"
+   y="743.46204"
+   width="954.13379"
+   height="256.53799"
+   id="rect3539" /><linearGradient
+   id="linearGradient4618"
+   inkscape:swatch="solid"><stop
+     style="stop-color:#ffffff;stop-opacity:1;"
+     offset="0"
+     id="stop4616" /></linearGradient><linearGradient
+   id="sched_background"
+   gradientUnits="userSpaceOnUse"
+   x1="423.64999"
+   y1="797.39001"
+   x2="1601.5601"
+   y2="839.34998">
+   <stop
+   offset="0"
+   style="stop-color:#9b9b9b;stop-opacity:1;"
+   id="stop2374" />
+   <stop
+   offset="0.458824"
+   style="stop-opacity:1; stop-color:white"
+   id="stop2376" />
+   <stop
+   offset="1"
+   style="stop-color:#969696;stop-opacity:1;"
+   id="stop2378" />
+  </linearGradient><rect
+   x="584.80389"
+   y="423.14984"
+   width="833.03613"
+   height="216.65018"
+   id="rect87621" /><linearGradient
+   id="linearGradient78316"
+   gradientUnits="userSpaceOnUse"
+   x1="857.13"
+   y1="789.37"
+   x2="868.31"
+   y2="1087.1899"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#FF8B00"
+   id="stop78308" /><stop
+   offset="0.19637898"
+   style="stop-color:#ed572a;stop-opacity:1;"
+   id="stop78310" /><stop
+   offset="0.67111236"
+   style="stop-color:#e43d3f;stop-opacity:1;"
+   id="stop84364" />
+   
+   <stop
+   offset="1"
+   style="stop-color:#ac340f;stop-opacity:1;"
+   id="stop78314" />
+  </linearGradient><linearGradient
+   id="linearGradient78294"
+   gradientUnits="userSpaceOnUse"
+   x1="857.13"
+   y1="789.37"
+   x2="868.31"
+   y2="1087.1899"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#FF8B00"
+   id="stop78286" /><stop
+   offset="0.2"
+   style="stop-color:#ed572a;stop-opacity:1;"
+   id="stop78288" />
+   <stop
+   offset="0.4"
+   style="stop-opacity:1; stop-color:#DB2455"
+   id="stop78290" />
+   
+  </linearGradient><linearGradient
+   id="linearGradient78284"
+   gradientUnits="userSpaceOnUse"
+   x1="857.13"
+   y1="789.37"
+   x2="868.31"
+   y2="1087.1899">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#FF8B00"
+   id="stop78276" /><stop
+   offset="0.2"
+   style="stop-color:#ed572a;stop-opacity:1;"
+   id="stop78278" />
+   <stop
+   offset="0.4"
+   style="stop-opacity:1; stop-color:#DB2455"
+   id="stop78280" />
+   
+  </linearGradient><linearGradient
+   id="linearGradient47350"
+   gradientUnits="userSpaceOnUse"
+   x1="590.82001"
+   y1="970.98999"
+   x2="653.27002"
+   y2="1036.17">
+   <stop
+   offset="0"
+   style="stop-color:#1eb6c8;stop-opacity:1;"
+   id="stop47346" /><stop
+   offset="0.47540298"
+   style="stop-color:#21a4c5;stop-opacity:1;"
+   id="stop67958" />
+   <stop
+   offset="1"
+   style="stop-color:#2492c2;stop-opacity:1;"
+   id="stop47348" />
+  </linearGradient><linearGradient
+   id="linearGradient47140"
+   gradientUnits="userSpaceOnUse"
+   x1="590.82001"
+   y1="970.98999"
+   x2="653.27002"
+   y2="1036.17">
+   <stop
+   offset="0"
+   style="stop-color:#00ffff;stop-opacity:1;"
+   id="stop47134" /><stop
+   offset="0.7500248"
+   style="stop-color:#1fa1c9;stop-opacity:1;"
+   id="stop47136" />
+   <stop
+   offset="1"
+   style="stop-color:#2492c2;stop-opacity:1;"
+   id="stop47138" />
+  </linearGradient><linearGradient
+   id="linearGradient46833"
+   gradientUnits="userSpaceOnUse"
+   x1="590.82001"
+   y1="970.98999"
+   x2="653.27002"
+   y2="1036.17">
+   <stop
+   offset="0"
+   style="stop-color:#1aaece;stop-opacity:1;"
+   id="stop46827" />
+   <stop
+   offset="1"
+   style="stop-color:#1e92c4;stop-opacity:1;"
+   id="stop46831" />
+  </linearGradient><inkscape:path-effect
+   effect="fill_between_many"
+   method="originald"
+   linkedpaths="#path44175,0,1"
+   id="path-effect46077"
+   is_visible="true"
+   lpeversion="0"
+   join="true"
+   close="true"
+   autoreverse="true" />
+  <style
+   type="text/css"
+   id="style364">
+   <![CDATA[
+    .fil0 {fill:white}
+    .fil1 {fill:black;fill-rule:nonzero}
+    .fil2 {fill:white;fill-rule:nonzero}
+    .fil5 {fill:url(#id0)}
+    .fil12 {fill:url(#id1)}
+    .fil15 {fill:url(#id2)}
+    .fil11 {fill:url(#id3)}
+    .fil10 {fill:url(#id4)}
+    .fil7 {fill:url(#id5)}
+    .fil16 {fill:url(#id6)}
+    .fil13 {fill:url(#id7)}
+    .fil6 {fill:url(#id8)}
+    .fil14 {fill:url(#id9)}
+    .fil9 {fill:url(#id10)}
+    .fil8 {fill:url(#id11)}
+    .fil4 {fill:url(#id12);fill-rule:nonzero}
+    .fil3 {fill:url(#id13);fill-rule:nonzero}
+   ]]>
+  </style>
+  <linearGradient
+   id="id15"
+   gradientUnits="userSpaceOnUse"
+   x1="1197.54"
+   y1="734.91998"
+   x2="1200.05"
+   y2="1242.72"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#303030"
+   id="stop366" />
+   <stop
+   offset="0.219608"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop368" />
+   <stop
+   offset="0.521569"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop370" />
+   <stop
+   offset="0.780392"
+   style="stop-opacity:1; stop-color:#EDEDED"
+   id="stop372" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4F4F4F"
+   id="stop374" />
+  </linearGradient>
+  <linearGradient
+   id="youth-1"
+   gradientUnits="userSpaceOnUse"
+   x1="916.32001"
+   y1="780.72998"
+   x2="782.90002"
+   y2="841.26001"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#CC3D1D"
+   id="stop377" /><stop
+   offset="0.43241435"
+   style="stop-color:#ff781e;stop-opacity:1;"
+   id="stop79493" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#F36A1C"
+   id="stop379" />
+  </linearGradient>
+  <linearGradient
+   id="id2"
+   gradientUnits="userSpaceOnUse"
+   x1="681.87"
+   y1="1005.08"
+   x2="825.79999"
+   y2="1068.09"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0.14425844"
+   style="stop-color:#16c8d5;stop-opacity:1;"
+   id="stop382" />
+   <stop
+   offset="0.18680455"
+   style="stop-color:#1eb6c8;stop-opacity:1;"
+   id="stop384" /><stop
+   offset="0.43038145"
+   style="stop-color:#0a7d8f;stop-opacity:1;"
+   id="stop50558" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#1AAECE"
+   id="stop386" />
+  </linearGradient>
+  <linearGradient
+   id="id3"
+   gradientUnits="userSpaceOnUse"
+   x1="978.71997"
+   y1="1028.4301"
+   x2="843.44"
+   y2="1004.34"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-color:#3c066b;stop-opacity:1;"
+   id="stop389" /><stop
+   offset="0.78043771"
+   style="stop-color:#ac340f;stop-opacity:1;"
+   id="stop84976" /><stop
+   offset="1"
+   style="stop-color:#cc3d1d;stop-opacity:1;"
+   id="stop84854" />
+   
+  </linearGradient>
+  <linearGradient
+   id="id4"
+   gradientUnits="userSpaceOnUse"
+   x1="857.13"
+   y1="789.37"
+   x2="868.31"
+   y2="1087.1899"
+   gradientTransform="translate(855.56099,40.680405)"
+   spreadMethod="pad">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#FF8B00"
+   id="stop394" /><stop
+   offset="0.2"
+   style="stop-color:#ed572a;stop-opacity:1;"
+   id="stop68267" />
+   <stop
+   offset="0.4"
+   style="stop-opacity:1; stop-color:#DB2455"
+   id="stop396" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#4F017F"
+   id="stop398" />
+  </linearGradient>
+  <linearGradient
+   id="cyan2"
+   gradientUnits="userSpaceOnUse"
+   x1="874.96997"
+   y1="936.40002"
+   x2="764.96002"
+   y2="1245.46"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-color:#3b3bff;stop-opacity:1;"
+   id="stop21557" /><stop
+   offset="1"
+   style="stop-color:#ffffff;stop-opacity:1;"
+   id="stop18727" />
+   
+   
+  </linearGradient>
+  <linearGradient
+   id="id6"
+   gradientUnits="userSpaceOnUse"
+   x1="873.65002"
+   y1="885.22998"
+   x2="669.17999"
+   y2="963.06"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0.23846726"
+   style="stop-opacity:1; stop-color:#6B0E56"
+   id="stop408" /><stop
+   offset="0.63752478"
+   style="stop-color:#ac340f;stop-opacity:1;"
+   id="stop84727" />
+   <stop
+   offset="1"
+   style="stop-color:#e43d3f;stop-opacity:1;"
+   id="stop410" />
+  </linearGradient>
+  <linearGradient
+   id="open_mat"
+   gradientUnits="userSpaceOnUse"
+   x1="846.21002"
+   y1="964.48999"
+   x2="755.17999"
+   y2="949.84998"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-color:#19b1cf;stop-opacity:1;"
+   id="stop413" /><stop
+   offset="0.5"
+   style="stop-color:#0cd8e7;stop-opacity:1;"
+   id="stop72727" />
+   <stop
+   offset="1"
+   style="stop-color:#00ffff;stop-opacity:1;"
+   id="stop415" />
+  </linearGradient>
+  <linearGradient
+   id="id8"
+   gradientUnits="userSpaceOnUse"
+   x1="1202.65"
+   y1="789.88"
+   x2="1199.9"
+   y2="1235.08">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#757575"
+   id="stop418" />
+   <stop
+   offset="0.219608"
+   style="stop-opacity:1; stop-color:#F0F0F0"
+   id="stop420" />
+   <stop
+   offset="0.521569"
+   style="stop-opacity:1; stop-color:#7D7D7D"
+   id="stop422" />
+   <stop
+   offset="0.780392"
+   style="stop-opacity:1; stop-color:#EDEDED"
+   id="stop424" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#2B2B2B"
+   id="stop426" />
+  </linearGradient>
+  <linearGradient
+   id="id9"
+   gradientUnits="userSpaceOnUse"
+   x1="847.12"
+   y1="1238.89"
+   x2="851.14001"
+   y2="1119.62"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#2D166E"
+   id="stop429" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#2492C4"
+   id="stop431" />
+  </linearGradient>
+  <linearGradient
+   id="id10"
+   gradientUnits="userSpaceOnUse"
+   x1="603.91998"
+   y1="796.54999"
+   x2="656.97998"
+   y2="841.41998"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#FF8B00"
+   id="stop434" /><stop
+   offset="0.75"
+   style="stop-color:#dc3b42;stop-opacity:1;"
+   id="stop84486" />
+   
+  </linearGradient>
+  <linearGradient
+   id="id11"
+   gradientUnits="userSpaceOnUse"
+   x1="590.82001"
+   y1="970.98999"
+   x2="653.27002"
+   y2="1036.17"
+   gradientTransform="matrix(0.13786582,0,0,0.13786582,30.724292,-42.051259)">
+   <stop
+   offset="0"
+   style="stop-color:#00ffff;stop-opacity:1;"
+   id="stop439" /><stop
+   offset="0.5"
+   style="stop-color:#1fa1c9;stop-opacity:1;"
+   id="stop25963" />
+   <stop
+   offset="1"
+   style="stop-color:#1f68c9;stop-opacity:1;"
+   id="stop441" />
+  </linearGradient>
+  <linearGradient
+   id="id12"
+   gradientUnits="userSpaceOnUse"
+   x1="523.07001"
+   y1="1460.17"
+   x2="1505.97"
+   y2="1441.6">
+   <stop
+   offset="0"
+   style="stop-opacity:1; stop-color:#B5B5B5"
+   id="stop444" />
+   <stop
+   offset="0.458824"
+   style="stop-opacity:1; stop-color:#F7F7F7"
+   id="stop446" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#B0B0B0"
+   id="stop448" />
+  </linearGradient>
+  <linearGradient
+   id="id14"
+   gradientUnits="userSpaceOnUse"
+   x1="423.64999"
+   y1="797.39001"
+   x2="1601.5601"
+   y2="839.34998">
+   <stop
+   offset="0"
+   style="stop-color:#b2b2b2;stop-opacity:1;"
+   id="stop451" />
+   <stop
+   offset="0.46000001"
+   style="stop-color:#fafafa;stop-opacity:1;"
+   id="stop453" />
+   <stop
+   offset="1"
+   style="stop-opacity:1; stop-color:#B8B8B8"
+   id="stop455" />
+  </linearGradient>
+ <inkscape:path-effect
+   effect="fill_between_many"
+   method="originald"
+   linkedpaths="#path44175,0,1"
+   id="path-effect45221"
+   is_visible="true"
+   lpeversion="0"
+   join="true"
+   close="true"
+   autoreverse="true" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#id14"
+   id="linearGradient4634"
+   x1="444.25021"
+   y1="609.15314"
+   x2="1589.3127"
+   y2="609.15314"
+   gradientUnits="userSpaceOnUse"
+   spreadMethod="pad"
+   gradientTransform="translate(-114.9221,-70.685809)" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#id14"
+   id="linearGradient12501"
+   gradientUnits="userSpaceOnUse"
+   x1="661.23462"
+   y1="1525.2581"
+   x2="1372.3284"
+   y2="1525.2581"
+   gradientTransform="translate(-2189.0001)" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#id14"
+   id="linearGradient13113"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="translate(-2189.0001)"
+   x1="661.23462"
+   y1="1525.2581"
+   x2="1372.3284"
+   y2="1525.2581" /><rect
+   x="957.49738"
+   y="743.46204"
+   width="954.13379"
+   height="256.53799"
+   id="rect3840" /><rect
+   x="957.49738"
+   y="743.46204"
+   width="954.13379"
+   height="256.53799"
+   id="rect3848" /><rect
+   x="957.49738"
+   y="743.46204"
+   width="1317.9919"
+   height="231.49632"
+   id="rect5547" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#sched_background"
+   id="linearGradient18127"
+   x1="-9.9999988e-07"
+   y1="576"
+   x2="2016"
+   y2="576"
+   gradientUnits="userSpaceOnUse"
+   gradientTransform="matrix(0.92261907,0,0,0.83333335,5.783668e-6,1.6666669e-6)" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#id13"
+   id="linearGradient38742"
+   x1="5.9082345e-07"
+   y1="505"
+   x2="210"
+   y2="505"
+   gradientUnits="userSpaceOnUse" /><filter
+   inkscape:label="In and Out"
+   inkscape:menu="Shadows and Glows"
+   inkscape:menu-tooltip="Inner colorized shadow, outer black shadow"
+   style="color-interpolation-filters:sRGB;"
+   id="filter50871"
+   x="-0.24548825"
+   y="-0.59916165"
+   width="1.5237059"
+   height="2.2782057"><feGaussianBlur
+     result="result0"
+     in="SourceAlpha"
+     stdDeviation="15.626135537790697"
+     id="feGaussianBlur50865" /><feOffset
+     dx="5"
+     dy="5"
+     result="result4"
+     id="feOffset50867" /><feComposite
+     in="SourceGraphic"
+     in2="result4"
+     operator="xor"
+     result="result3"
+     id="feComposite50869" /></filter><filter
+   inkscape:menu-tooltip="In and out glow with a possible offset and colorizable flood"
+   inkscape:menu="Shadows and Glows"
+   inkscape:label="Cutout Glow"
+   style="color-interpolation-filters:sRGB;"
+   id="filter52843"
+   x="-0.047130318"
+   y="-0.11503067"
+   width="1.1204441"
+   height="1.2939673"><feOffset
+     dy="4"
+     dx="4"
+     id="feOffset52833" /><feGaussianBlur
+     stdDeviation="3"
+     result="blur"
+     id="feGaussianBlur52835" /><feFlood
+     flood-color="rgb(0,0,0)"
+     flood-opacity="1"
+     result="flood"
+     id="feFlood52837" /><feComposite
+     in="flood"
+     in2="SourceGraphic"
+     operator="in"
+     result="composite"
+     id="feComposite52839" /><feBlend
+     in="blur"
+     in2="composite"
+     mode="normal"
+     id="feBlend52841" /></filter><filter
+   inkscape:label="In and Out"
+   inkscape:menu="Shadows and Glows"
+   inkscape:menu-tooltip="Inner colorized shadow, outer black shadow"
+   style="color-interpolation-filters:sRGB;"
+   id="filter55544"
+   x="-0.080862539"
+   y="-0.63202247"
+   width="1.1898023"
+   height="2.4834972"><feGaussianBlur
+     result="result0"
+     in="SourceAlpha"
+     stdDeviation="6"
+     id="feGaussianBlur55538" /><feOffset
+     dx="5"
+     dy="5"
+     result="result4"
+     id="feOffset55540" /><feComposite
+     in="SourceGraphic"
+     in2="result4"
+     operator="xor"
+     result="result3"
+     id="feComposite55542" /></filter><linearGradient
+   inkscape:collect="always"
+   xlink:href="#tues"
+   id="linearGradient3635"
+   x1="700"
+   y1="435"
+   x2="945"
+   y2="435"
+   gradientUnits="userSpaceOnUse" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#linearGradient8036"
+   id="linearGradient3645"
+   gradientUnits="userSpaceOnUse"
+   x1="1190"
+   y1="435"
+   x2="1435"
+   y2="435" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#adult"
+   id="linearGradient13425"
+   x1="820.5"
+   y1="-1679.5"
+   x2="820.5"
+   y2="-455"
+   gradientUnits="userSpaceOnUse" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#open-mat"
+   id="linearGradient25050"
+   x1="455"
+   y1="890"
+   x2="1680"
+   y2="890"
+   gradientUnits="userSpaceOnUse" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#linearGradient28571"
+   id="linearGradient28559"
+   x1="330"
+   y1="-455"
+   x2="330"
+   y2="-210"
+   gradientUnits="userSpaceOnUse" /><filter
+   inkscape:collect="always"
+   style="color-interpolation-filters:sRGB"
+   id="filter10"
+   x="-0.278446132115"
+   y="-0.324853820801"
+   width="1.55689226423"
+   height="1.6497076416"><feGaussianBlur
+     inkscape:collect="always"
+     stdDeviation="28.4247099493"
+     id="feGaussianBlur10" /></filter><clipPath
+   clipPathUnits="userSpaceOnUse"
+   id="clipPath22"><rect
+     style="clip-rule:evenodd;display:inline;opacity:1;fill:#00ffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+     id="rect22"
+     width="245"
+     height="210"
+     x="834.454833984"
+     y="1189.80249023"
+     inkscape:label="Monday" /></clipPath><linearGradient
+   inkscape:collect="always"
+   xlink:href="#linearGradient17"
+   id="linearGradient14"
+   x1="455"
+   y1="435"
+   x2="700"
+   y2="435"
+   gradientUnits="userSpaceOnUse" /></defs>
+ <g
+   inkscape:groupmode="layer"
+   id="layer1"
+   inkscape:label="Background"
+   style="display:inline"><rect
+     style="clip-rule:evenodd;display:inline;opacity:1;fill:url(#linearGradient18127);fill-opacity:1;fill-rule:evenodd;stroke:#ff01c9;stroke-width:0;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+     id="rect1739"
+     width="1860"
+     height="960"
+     x="5.9082345e-07"
+     y="2.1860615e-06"
+     inkscape:label="Schedule Background"
+     sodipodi:insensitive="true" /><rect
+     style="clip-rule:evenodd;display:inline;opacity:0.15;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+     id="rect6821"
+     width="1860"
+     height="50"
+     x="5.9082345e-07"
+     y="2.1860615e-06"
+     inkscape:label="Days of the Week"
+     sodipodi:insensitive="true" /><g
+     inkscape:groupmode="layer"
+     id="layer22"
+     inkscape:label="Block Colors"
+     style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><rect
+       style="clip-rule:evenodd;opacity:1;fill:url(#linearGradient38742);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect37754"
+       width="210"
+       height="910"
+       x="5.9082345e-07"
+       y="50.000004"
+       inkscape:label="Time Blocks"
+       sodipodi:insensitive="true" /><rect
+       style="clip-rule:evenodd;opacity:0.067;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect17874"
+       width="180"
+       height="910"
+       x="1680"
+       y="50.000004"
+       inkscape:label="Saturday"
+       sodipodi:insensitive="true" /><rect
+       style="clip-rule:evenodd;display:inline;opacity:1;fill:url(#linearGradient25050);fill-opacity:1.0;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect69352"
+       width="1225"
+       height="140"
+       x="455"
+       y="820"
+       inkscape:label="7:00 PM" /><rect
+       style="clip-rule:evenodd;display:inline;opacity:1;mix-blend-mode:normal;fill:url(#linearGradient13425);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect36103"
+       width="280"
+       height="1225"
+       x="540"
+       y="-1680"
+       transform="rotate(90)"
+       inkscape:label="6:00 PM" /><g
+       inkscape:groupmode="layer"
+       id="layer9"
+       inkscape:label="5:00 PM"
+       style="clip-rule:evenodd;display:inline;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><rect
+         style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;display:inline;opacity:1;fill:url(#linearGradient3645);fill-opacity:1.0;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect66034"
+         width="245"
+         height="210"
+         x="1190"
+         y="330"
+         inkscape:label="Thursday" /><rect
+         style="clip-rule:evenodd;display:inline;opacity:1;fill:url(#linearGradient3635);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+         id="rect66036"
+         width="245"
+         height="210"
+         x="700"
+         y="330"
+         inkscape:label="Tuesday" /><g
+         id="g26"
+         inkscape:label="Monday"><rect
+           style="clip-rule:evenodd;display:inline;opacity:1;fill:url(#linearGradient14);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+           id="rect6"
+           width="245"
+           height="210"
+           x="455"
+           y="330"
+           inkscape:label="Background" /><rect
+           style="clip-rule:evenodd;display:none;opacity:0.634677;mix-blend-mode:normal;fill:#00cdff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter10);image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+           id="rect10"
+           width="245"
+           height="210"
+           x="834.454833984"
+           y="1189.80249023"
+           inkscape:label="Blur"
+           clip-path="url(#clipPath22)"
+           transform="translate(-379.954833984,-860.302490234)" /></g></g><g
+       inkscape:groupmode="layer"
+       id="layer8"
+       inkscape:label="10:00 AM"
+       style="clip-rule:evenodd;display:inline;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><rect
+         style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;display:inline;opacity:1;fill:url(#linearGradient28559);fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+         id="rect66984"
+         width="280"
+         height="245"
+         x="50"
+         y="-455"
+         transform="rotate(90)"
+         inkscape:label="Sunday" /></g></g></g><g
+   inkscape:groupmode="layer"
+   id="layer2"
+   inkscape:label="Guides"
+   style="display:none"
+   sodipodi:insensitive="true"><g
+     inkscape:groupmode="layer"
+     id="layer19"
+     inkscape:label="Time Blocks"
+     style="clip-rule:evenodd;display:none;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><rect
+       style="clip-rule:evenodd;opacity:1;fill:#ff01c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect43626"
+       width="210"
+       height="140"
+       x="5.9082345e-07"
+       y="820"
+       inkscape:label="7:00 PM" /><rect
+       style="clip-rule:evenodd;display:inline;opacity:1;fill:#ff01c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect43976"
+       width="210"
+       height="280"
+       x="5.9082345e-07"
+       y="540"
+       inkscape:label="6:00 PM" /><rect
+       style="clip-rule:evenodd;opacity:1;fill:#ff01c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect43624"
+       width="210"
+       height="210"
+       x="5.9082345e-07"
+       y="330"
+       inkscape:label="5:00 PM" /><rect
+       style="clip-rule:evenodd;opacity:1;fill:#ff01c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect43277"
+       width="210"
+       height="280"
+       x="5.9082345e-07"
+       y="50.000004"
+       inkscape:label="10:00 AM" /></g><g
+     inkscape:groupmode="layer"
+     id="g45187"
+     inkscape:label="Day Blocks"
+     style="clip-rule:evenodd;display:inline;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><rect
+       style="clip-rule:evenodd;display:inline;opacity:0.515334;fill:#ff01c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect45179"
+       width="245"
+       height="140"
+       x="210"
+       y="820"
+       inkscape:label="7:00 PM" /><rect
+       style="clip-rule:evenodd;display:inline;opacity:0.515334;fill:#ff01c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect45181"
+       width="245"
+       height="280"
+       x="210"
+       y="540"
+       inkscape:label="6:00 PM" /><rect
+       style="clip-rule:evenodd;display:inline;opacity:0.515334;fill:#ff01c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect45183"
+       width="245"
+       height="210"
+       x="210"
+       y="330"
+       inkscape:label="5:00 PM" /><rect
+       style="clip-rule:evenodd;display:inline;opacity:1;fill:#49dcb1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect45657"
+       width="280"
+       height="245"
+       x="50"
+       y="-455"
+       transform="rotate(90)"
+       inkscape:label="10:00 AM"
+       sodipodi:insensitive="true" /><rect
+       style="clip-rule:evenodd;display:inline;opacity:0.515334;fill:#ff01c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect51306"
+       width="245"
+       height="210"
+       x="1435"
+       y="330"
+       inkscape:label="Fri 5:00 PM" /><rect
+       style="clip-rule:evenodd;opacity:0.515334;fill:#ff01c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect48469"
+       width="245"
+       height="210"
+       x="1190"
+       y="330"
+       inkscape:label="Thurs 5:00 PM" /><rect
+       style="clip-rule:evenodd;display:inline;opacity:0.515334;fill:#ff01c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect50359"
+       width="245"
+       height="210"
+       x="945"
+       y="330"
+       inkscape:label="Wed 5:00 PM" /><rect
+       style="clip-rule:evenodd;opacity:0.515334;fill:#ff01c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect48943"
+       width="245"
+       height="210"
+       x="700"
+       y="330"
+       inkscape:label="Tues 5:00 PM" /><rect
+       style="clip-rule:evenodd;display:inline;opacity:0.515334;fill:#ff01c9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       id="rect48471"
+       width="245"
+       height="210"
+       x="455"
+       y="330"
+       inkscape:label="Mon 5:00 PM" /></g></g><g
+   inkscape:groupmode="layer"
+   id="layer12"
+   inkscape:label="Borders"
+   style="clip-rule:evenodd;display:inline;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+   sodipodi:insensitive="true"><g
+     inkscape:groupmode="layer"
+     id="layer13"
+     inkscape:label="Columns"
+     style="clip-rule:evenodd;display:inline;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><path
+       style="clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       d="M 1679.5,50 V 959.99998"
+       id="path55502"
+       inkscape:label="Saturday" /><path
+       style="clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       d="M 1434.5,50 V 960"
+       id="path55504"
+       inkscape:label="Friday" /><path
+       style="clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       d="M 1189.5,50 V 960"
+       id="path55506"
+       inkscape:label="Thursday" /><path
+       style="clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       d="M 944.5,50 V 960"
+       id="path54064"
+       inkscape:label="Wednesday" /><path
+       style="clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       d="M 699.5,50 V 960"
+       id="path54066"
+       inkscape:label="Tuesday" /><path
+       style="clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       d="M 454.5,50 V 960"
+       id="path53111"
+       inkscape:label="Monday" /><path
+       style="clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       d="M 210,50 V 960"
+       id="path51836"
+       inkscape:label="Sunday" /></g><g
+     inkscape:groupmode="layer"
+     id="layer14"
+     inkscape:label="Rows"
+     style="clip-rule:evenodd;display:inline;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><path
+       style="clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:0.950382;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       d="M 0,820.5 H 1680"
+       id="path59328"
+       inkscape:label="7:00 PM" /><path
+       style="clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:0.950382;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       d="M 0,539.5 H 1680"
+       id="path59330"
+       inkscape:label="6:00 PM" /><path
+       style="clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:0.950382;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       d="M 0,329.5 H 1680"
+       id="path59332"
+       inkscape:label="5:00 PM" /><path
+       style="clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       d="M 5.9082345e-7,50.500004 H 1860"
+       id="path57903"
+       inkscape:label="10:00 AM" /></g></g><g
+   inkscape:groupmode="layer"
+   id="layer15"
+   inkscape:label="Text"
+   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><g
+     inkscape:groupmode="layer"
+     id="layer17"
+     inkscape:label="Blocks"
+     style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.0015748;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       x="1711.952"
+       y="516.20001"
+       id="text25436"
+       inkscape:label="Saturday"><tspan
+         sodipodi:role="line"
+         x="1711.952"
+         y="516.20001"
+         id="tspan25434"
+         style="fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1;-inkscape-font-specification:'Montserrat, Medium';font-family:Montserrat;font-weight:500;font-style:normal;font-stretch:normal;font-variant:normal;font-size:32px;font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.0015748;stroke-dasharray:none">Closed</tspan></text><g
+       inkscape:groupmode="layer"
+       id="g65055"
+       inkscape:label="Friday"
+       style="clip-rule:evenodd;display:inline;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+         x="1556.7321"
+         y="901.20001"
+         id="text65037"
+         inkscape:label="7:00 PM"><tspan
+           sodipodi:role="line"
+           x="1556.7321"
+           y="901.20001"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1"
+           id="tspan65035">Open Mat</tspan></text><text
+         xml:space="preserve"
+         style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;display:inline;fill:#3c3c3c;fill-opacity:1;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:1;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+         x="1557.4039"
+         y="671.104"
+         id="text65051"
+         inkscape:label="6:00 PM"><tspan
+           sodipodi:role="line"
+           x="1557.4039"
+           y="671.104"
+           id="tspan65047"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1">Adult</tspan><tspan
+           sodipodi:role="line"
+           x="1557.4039"
+           y="711.104"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1"
+           id="tspan65049">No-Gi BJJ</tspan></text></g><g
+       inkscape:groupmode="layer"
+       id="g65081"
+       inkscape:label="Thursday"
+       style="clip-rule:evenodd;display:inline;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+         x="1311.7321"
+         y="901.20001"
+         id="text65063"
+         inkscape:label="7:00 PM"><tspan
+           sodipodi:role="line"
+           x="1311.7321"
+           y="901.20001"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1"
+           id="tspan65061">Open Mat</tspan></text><text
+         xml:space="preserve"
+         style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;display:inline;fill:#3c3c3c;fill-opacity:1;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:1;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+         x="1312.4039"
+         y="671.104"
+         id="text65077"
+         inkscape:label="6:00 PM"><tspan
+           sodipodi:role="line"
+           x="1312.4039"
+           y="671.104"
+           id="tspan65073"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1">Adult</tspan><tspan
+           sodipodi:role="line"
+           x="1312.4039"
+           y="711.104"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1"
+           id="tspan65075">No-Gi BJJ</tspan></text><text
+         xml:space="preserve"
+         style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;display:inline;fill:#3c3c3c;fill-opacity:1;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:1;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+         x="1312.4039"
+         y="426.104"
+         id="text70211"
+         inkscape:label="5:00 PM"><tspan
+           sodipodi:role="line"
+           x="1312.4039"
+           y="426.104"
+           id="tspan70207"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1">Youth</tspan><tspan
+           sodipodi:role="line"
+           x="1312.4039"
+           y="466.104"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1"
+           id="tspan70209">No-Gi BJJ</tspan></text></g><g
+       inkscape:groupmode="layer"
+       id="g65107"
+       inkscape:label="Wednesday"
+       style="clip-rule:evenodd;display:inline;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+         x="1066.7319"
+         y="901.20001"
+         id="text65089"
+         inkscape:label="7:00 PM"><tspan
+           sodipodi:role="line"
+           x="1066.7319"
+           y="901.20001"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1"
+           id="tspan65087">Open Mat</tspan></text><text
+         xml:space="preserve"
+         style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;display:inline;fill:#3c3c3c;fill-opacity:1;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:1;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+         x="1067.4039"
+         y="671.104"
+         id="text65103"
+         inkscape:label="6:00 PM"><tspan
+           sodipodi:role="line"
+           x="1067.4039"
+           y="671.104"
+           id="tspan65099"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1">Adult</tspan><tspan
+           sodipodi:role="line"
+           x="1067.4039"
+           y="711.104"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1"
+           id="tspan65101">No-Gi BJJ</tspan></text></g><g
+       inkscape:groupmode="layer"
+       id="g63364"
+       inkscape:label="Tuesday"
+       style="clip-rule:evenodd;display:inline;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+         x="821.73199"
+         y="901.20001"
+         id="text63346"
+         inkscape:label="7:00 PM"><tspan
+           sodipodi:role="line"
+           x="821.73199"
+           y="901.20001"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1"
+           id="tspan63344">Open Mat</tspan></text><text
+         xml:space="preserve"
+         style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;display:inline;fill:#3c3c3c;fill-opacity:1;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:1;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+         x="822.40399"
+         y="671.104"
+         id="text63360"
+         inkscape:label="6:00 PM"><tspan
+           sodipodi:role="line"
+           x="822.40399"
+           y="671.104"
+           id="tspan63356"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1">Adult</tspan><tspan
+           sodipodi:role="line"
+           x="822.40399"
+           y="711.104"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1"
+           id="tspan63358">No-Gi BJJ</tspan></text><text
+         xml:space="preserve"
+         style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;display:inline;fill:#3c3c3c;fill-opacity:1;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:1;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+         x="822.40399"
+         y="426.104"
+         id="text67876"
+         inkscape:label="5:00 PM"><tspan
+           sodipodi:role="line"
+           x="822.40399"
+           y="426.104"
+           id="tspan67872"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1">Youth</tspan><tspan
+           sodipodi:role="line"
+           x="822.40399"
+           y="466.104"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1"
+           id="tspan67874">No-Gi BJJ</tspan></text></g><g
+       inkscape:groupmode="layer"
+       id="layer20"
+       inkscape:label="Monday"
+       style="clip-rule:evenodd;display:inline;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;display:inline;opacity:1;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+         x="576.73199"
+         y="901.20001"
+         id="text62121"
+         inkscape:label="7:00 PM"><tspan
+           sodipodi:role="line"
+           x="576.73199"
+           y="901.20001"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1"
+           id="tspan62119">Open Mat</tspan></text><text
+         xml:space="preserve"
+         style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision;display:inline;fill:#3c3c3c;fill-opacity:1;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;opacity:1;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+         x="577.40399"
+         y="671.104"
+         id="text59262"
+         inkscape:label="6:00 PM"><tspan
+           sodipodi:role="line"
+           x="577.40399"
+           y="671.104"
+           id="tspan59258"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1">Adult</tspan><tspan
+           sodipodi:role="line"
+           x="577.40399"
+           y="711.104"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#3c3c3c;fill-opacity:1;stroke:none;stroke-opacity:1"
+           id="tspan59260">No-Gi BJJ</tspan></text><g
+         id="g29"
+         inkscape:label="5:00 PM"
+         transform="translate(0.591988036922,19.7500069578)"><text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;display:inline;opacity:1;fill:#323232;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+           x="576.481994629"
+           y="493.791992188"
+           id="text24"
+           inkscape:label="Invite Only"><tspan
+             sodipodi:role="line"
+             x="576.481994629"
+             y="493.791992188"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#323232;fill-opacity:1;stroke:none;stroke-opacity:1"
+             id="tspan26">(Invite Only)</tspan></text><text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;display:inline;opacity:1;fill:#323232;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+           x="578.033996582"
+           y="352.399993896"
+           id="text6"
+           inkscape:label="YCP"><tspan
+             sodipodi:role="line"
+             x="578.033996582"
+             y="352.399993896"
+             id="tspan5"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#323232;fill-opacity:1;stroke:none;stroke-opacity:1">Youth</tspan><tspan
+             sodipodi:role="line"
+             x="578.033996582"
+             y="392.399993896"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#323232;fill-opacity:1;stroke:none;stroke-opacity:1"
+             id="tspan6">Competition</tspan><tspan
+             sodipodi:role="line"
+             x="578.033996582"
+             y="432.399993896"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#323232;fill-opacity:1;stroke:none;stroke-opacity:1"
+             id="tspan7">Practice</tspan></text></g></g><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;clip-rule:evenodd;display:inline;fill:#3c3c3c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       x="331.028015137"
+       y="98.2239990234"
+       id="text60077-6"
+       inkscape:label="Sunday"><tspan
+         sodipodi:role="line"
+         id="tspan48"
+         x="331.028015137"
+         y="98.2239990234">Open Mat</tspan><tspan
+         sodipodi:role="line"
+         id="tspan49"
+         x="331.028015137"
+         y="138.223999023" /><tspan
+         sodipodi:role="line"
+         id="tspan50"
+         x="331.028015137"
+         y="178.223999023">(members only</tspan><tspan
+         sodipodi:role="line"
+         id="tspan51"
+         x="331.028015137"
+         y="218.223999023">not open </tspan><tspan
+         sodipodi:role="line"
+         id="tspan52"
+         x="331.028015137"
+         y="258.223999023">for drop-ins</tspan><tspan
+         sodipodi:role="line"
+         id="tspan53"
+         x="331.028015137"
+         y="298.223999023">or trials)</tspan></text><g
+       inkscape:groupmode="layer"
+       id="layer18"
+       inkscape:label="Times"
+       style="clip-rule:evenodd;display:inline;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Light';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;display:inline;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+         x="36.248013"
+         y="881.20001"
+         id="text45777"
+         inkscape:label="7:00 PM"><tspan
+           sodipodi:role="line"
+           x="36.248013"
+           y="881.20001"
+           id="tspan45773"
+           style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Light';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;fill-opacity:1;stroke:#141414;stroke-opacity:1;font-weight:300">7:00 pm -</tspan><tspan
+           sodipodi:role="line"
+           x="36.248013"
+           y="921.20001"
+           style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Light';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;fill-opacity:1;stroke:#141414;stroke-opacity:1;font-weight:300"
+           id="tspan45775">7:30 pm</tspan></text><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Light';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+         x="35.575985"
+         y="671.20001"
+         id="text45783"
+         inkscape:label="6:00 PM"><tspan
+           sodipodi:role="line"
+           x="35.575985"
+           y="671.20001"
+           id="tspan45779"
+           style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Light';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;fill-opacity:1;stroke:#141414;stroke-opacity:1;font-weight:300">6:00 pm -</tspan><tspan
+           sodipodi:role="line"
+           x="35.575985"
+           y="711.20001"
+           style="font-style:normal;font-variant:normal;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Light';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;fill-opacity:1;stroke:#141414;stroke-opacity:1;font-weight:300"
+           id="tspan45781">7:00 pm</tspan></text><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Light';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+         x="36.343998"
+         y="426.20001"
+         id="text45789"
+         inkscape:label="5:00 PM"><tspan
+           sodipodi:role="line"
+           x="36.343998"
+           y="426.20001"
+           id="tspan45785"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Light';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;fill-opacity:1;stroke:#141414;stroke-opacity:1">5:00 pm -</tspan><tspan
+           sodipodi:role="line"
+           x="36.343998"
+           y="466.20001"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Light';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;fill-opacity:1;stroke:#141414;stroke-opacity:1"
+           id="tspan45787">6:00 pm</tspan></text><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Light';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;display:inline;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+         x="25.815992"
+         y="181.2"
+         id="text45795"
+         inkscape:label="10:00 AM"><tspan
+           sodipodi:role="line"
+           x="25.815992"
+           y="181.2"
+           id="tspan45791"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Light';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;fill-opacity:1;stroke:#141414;stroke-opacity:1">10:00 am -</tspan><tspan
+           sodipodi:role="line"
+           x="25.815992"
+           y="221.2"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Light';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;fill-opacity:1;stroke:#141414;stroke-opacity:1"
+           id="tspan45793">11:00 am</tspan></text></g></g><g
+     inkscape:groupmode="layer"
+     id="layer16"
+     inkscape:label="Lables"
+     style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+     sodipodi:insensitive="true"><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Thin';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       x="1691.984"
+       y="36.200001"
+       id="text27656"
+       inkscape:label="Saturday"><tspan
+         sodipodi:role="line"
+         x="1691.984"
+         y="36.200001"
+         id="tspan27654"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#3c3c3c;fill-opacity:1">Saturday</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Thin';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       x="1501.756"
+       y="36.200001"
+       id="text27660"
+       inkscape:label="Friday"><tspan
+         sodipodi:role="line"
+         x="1501.756"
+         y="36.200001"
+         id="tspan27658"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#3c3c3c;fill-opacity:1">Friday</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Thin';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       x="1233.22"
+       y="36.072002"
+       id="text27664"
+       inkscape:label="Thursday"><tspan
+         sodipodi:role="line"
+         x="1233.22"
+         y="36.072002"
+         id="tspan27662"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#3c3c3c;fill-opacity:1">Thursday</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Thin';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       x="970.73206"
+       y="36.072002"
+       id="text27668"
+       inkscape:label="Wednesday"><tspan
+         sodipodi:role="line"
+         x="970.73206"
+         y="36.072002"
+         id="tspan27666"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#3c3c3c;fill-opacity:1">Wednesday</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Thin';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       x="755.396"
+       y="36.072002"
+       id="text29036"
+       inkscape:label="Tuesday"><tspan
+         sodipodi:role="line"
+         x="755.396"
+         y="36.072002"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#3c3c3c;fill-opacity:1"
+         id="tspan29034">Tuesday</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Thin';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       x="508.76404"
+       y="36.072002"
+       id="text28386"
+       inkscape:label="Monday"><tspan
+         sodipodi:role="line"
+         x="508.76404"
+         y="36.072002"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#3c3c3c;fill-opacity:1"
+         id="tspan28384">Monday</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Thin';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;display:inline;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       x="270.548"
+       y="36.200001"
+       id="text26368"
+       inkscape:label="Sunday"><tspan
+         sodipodi:role="line"
+         x="270.548"
+         y="36.200001"
+         id="tspan26366"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#3c3c3c;fill-opacity:1">Sunday</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Thin';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;clip-rule:evenodd;display:inline;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#3c3c3c;stroke-width:1;stroke-dasharray:none;stroke-opacity:1;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+       x="63.063995"
+       y="36.152"
+       id="text26984"
+       inkscape:label="Times"><tspan
+         sodipodi:role="line"
+         x="63.063995"
+         y="36.152"
+         id="tspan26982"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:32px;font-family:Montserrat;-inkscape-font-specification:'Montserrat, Medium';font-variant-ligatures:normal;font-variant-caps:small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#3c3c3c;fill-opacity:1">Times</tspan></text></g></g>
+</svg>
