@@ -153,12 +153,11 @@ button, form, input, label, textarea {
 
 h1, h2, h3, h4 {
 	font-weight: 300;
-	margin-bottom: 15px;
 }
 
 	h1 {
 		font-size: 40pt;
-		padding: 50px 0;
+		padding: 60px 0;
 		letter-spacing: 8px;
 		text-transform: uppercase;
 		text-align: center;
@@ -751,7 +750,6 @@ img {
 		max-width: 1400px;
 		grid-gap: 10%;
 		margin: auto;
-		padding-top: 50px;
 		font-size: 16pt;
 		font-family: "nimbus-sans-light";
 		letter-spacing: 1px;
@@ -759,13 +757,12 @@ img {
 	
 		.info-boxes.style1 img {
 			border-radius: 8px;
-			margin: 50px 0;
 		}
 
-		.info-boxes.style1 h4 {
-			font-size: 32pt;
+		.info-boxes.style1 h2 {
 			font-family: "nimbus-sans-regular";
 			letter-spacing: 1px;
+			margin: 50px 0 30px 0;
 		}
 
 
@@ -1025,7 +1022,7 @@ form {
 }
 
 	.socials h2 {
-		padding-bottom: 50px;
+		padding-bottom: 65px;
 	}
 
 
