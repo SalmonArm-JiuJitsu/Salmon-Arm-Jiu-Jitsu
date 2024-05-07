@@ -43,13 +43,29 @@ function contactForm() {
 
 // Home Icon Disappear On Scoll
 
-const home = document.querySelector(".home");
-const icon = document.querySelector(".icon");
-
-
-
-function onScroll() {
-	if (home.height < window.height ) {
-		home.classList.remove("icon");
-	}
+/*window.scroll(
+	
+	function disappear() {
+		if (this.scrollTop() > 0) {
+			document.getElementByClassName("icon").style.display = "none";
+		}
+		
+		else {
+			document.getElementByClassName("icon").style.display = "";
+		}
 }
+);*/
+
+window.addEventListener('scroll', function() {	
+
+	const icon = document.querySelector(".icon");
+
+	if (window.scrollY > 50) {
+		icon.classList.add("disappear");
+	}
+	else {
+		icon.classList.remove("disappear");
+	}
+   });
+	
+
