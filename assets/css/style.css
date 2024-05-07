@@ -590,6 +590,20 @@ i {
 				}
 			}
 
+			.home .disappear {
+				animation: vanish 1s forwards;
+			}
+
+				@keyframes vanish {
+					from {
+						opacity: 100%;
+					}
+
+					to {
+						opacity: 0;
+					}
+				}
+
 
 	/* Heading */
 
