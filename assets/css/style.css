@@ -153,12 +153,11 @@ button, form, input, label, textarea {
 
 h1, h2, h3, h4 {
 	font-weight: 300;
-	margin-bottom: 15px;
 }
 
 	h1 {
 		font-size: 40pt;
-		padding: 50px 0;
+		padding: 60px 0;
 		letter-spacing: 8px;
 		text-transform: uppercase;
 		text-align: center;
@@ -551,7 +550,6 @@ i {
 		from {  
 			opacity:0;  
 		}  
-	
 		to {  
 			opacity:1;  
 		}  
@@ -568,28 +566,6 @@ i {
 		width: 100%;
 		z-index: 1;
 	}
-
-		.home .icon i {
-			display: flex;
-			position: absolute;
-			bottom: 0;
-			left: 50%;
-			margin-bottom: 30px;
-			background: transparent;
-			color: #03e9f4;
-			font-size: 36pt;
-			animation: fadeIn 10s, bounce 1.75s linear infinite;
-		}
-
-			@keyframes bounce {
-				0%, 100% {
-					bottom: 0;
-				}
-
-				50% {
-					bottom: 15px;
-				}
-			}
 
 
 	/* Heading */
@@ -700,6 +676,43 @@ i {
 		}
 
 
+		/* Icon */
+
+		.home .icon i {
+			display: flex;
+			position: absolute;
+			bottom: 0;
+			left: calc(50% - 18pt);
+			margin-bottom: 30px;
+			background: transparent;
+			color: #03e9f4;
+			font-size: 36pt;
+			animation: fadeIn 10s, bounce 1.75s linear infinite;
+		}
+
+			@keyframes bounce {
+				0%, 100% {
+					bottom: 0;
+				}
+				50% {
+					bottom: 15px;
+				}
+			}
+
+			.home .disappear {
+				animation: vanish 1s forwards;
+			}
+
+				@keyframes vanish {
+					from {
+						opacity: 100%;
+					}
+					to {
+						opacity: 0;
+					}
+				}
+
+
 /* Image */
 
 img {
@@ -749,9 +762,8 @@ img {
 	.info-boxes.style1 {
 		grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
 		max-width: 1400px;
-		grid-gap: 10%;
+		grid-gap: 10vw;
 		margin: auto;
-		padding-top: 50px;
 		font-size: 16pt;
 		font-family: "nimbus-sans-light";
 		letter-spacing: 1px;
@@ -759,14 +771,20 @@ img {
 	
 		.info-boxes.style1 img {
 			border-radius: 8px;
-			margin: 50px 0;
 		}
 
-		.info-boxes.style1 h4 {
-			font-size: 32pt;
+		.info-boxes.style1 h2 {
 			font-family: "nimbus-sans-regular";
 			letter-spacing: 1px;
+			margin: 50px 0 30px 0;
 		}
+
+			@media screen and (max-width: 1200px) {
+				.info-boxes.style1 h2 {
+					font-size: 26pt;
+					font-family: 'nimbus-sans-bold';
+				}
+			}
 
 
 /* Schedule */
@@ -1025,7 +1043,7 @@ form {
 }
 
 	.socials h2 {
-		padding-bottom: 50px;
+		padding-bottom: 65px;
 	}
 
 

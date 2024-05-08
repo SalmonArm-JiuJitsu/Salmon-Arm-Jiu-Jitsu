@@ -1,4 +1,4 @@
-//Menu
+// Menu
 
 const burger = document.querySelector(".burger");
 const Menu = document.querySelector(".menu");
@@ -19,7 +19,7 @@ document.querySelector(".close").addEventListener("click", () => {
 })
 
 
-//Contact Form Validation
+// Contact Form Validation
 
 function contactForm() {
 	var name = document.getElementById('name');
@@ -41,15 +41,19 @@ function contactForm() {
     }
 }
 
+
 // Home Icon Disappear On Scoll
 
-const home = document.querySelector(".home");
-const icon = document.querySelector(".icon");
+window.addEventListener('scroll', function() {	
 
+	const icon = document.querySelector(".icon");
 
-
-function onScroll() {
-	if (home.height < window.height ) {
-		home.classList.remove("icon");
+	if (window.scrollY > 60) {
+		icon.classList.add("disappear");
 	}
-}
+	else {
+		icon.classList.remove("disappear");
+	}
+   });
+	
+
