@@ -19,6 +19,7 @@ document.querySelector(".close").addEventListener("click", () => {
 })
 
 
+
 // Contact Form Validation
 
 function contactForm() {
@@ -42,6 +43,7 @@ function contactForm() {
 }
 
 
+
 // Home Icon Disappear On Scoll
 
 window.addEventListener('scroll', function() {	
@@ -57,3 +59,45 @@ window.addEventListener('scroll', function() {
    });
 	
 
+
+// Gallery 
+
+	// On Click
+
+	function openViewer() { 
+		document.querySelector(".viewer").style.display = "flex";
+	}
+
+	function closeViewer() {
+		document.querySelector(".viewer").style.display = "none";
+	}
+
+	function scrollImages(n) {
+		viewImage(imageIndex = imageIndex + n);
+	}
+
+
+	// Viewer
+
+	var image = document.querySelectorAll(".view-image");
+
+	function currentImage(n) {
+		viewImage(imageIndex = n);
+	}
+
+	function viewImage(n) {
+		if (n > image.length) {
+			imageIndex = 1;
+		}
+
+		if (n < 1) {
+			imageIndex = image.length;
+		}
+
+		for (k = 0; k < image.length; k++) {
+			image[k].style.display = "none";
+		}
+		
+		image[imageIndex - 1].style.display = "block";
+		innerHTML = [imageIndex - 1];
+	}
