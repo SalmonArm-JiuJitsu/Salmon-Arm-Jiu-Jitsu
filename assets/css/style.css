@@ -214,6 +214,13 @@ p {
 		font-size: 10pt;
 	}
 
+	p.style3 {
+		font-family: "Source Sans Pro";
+		margin: 30px 0;
+		color: #eee;
+		font-size: 20pt;	
+	}
+
 
 /* Gradients */
 
@@ -356,6 +363,60 @@ header {
 	}
 
 
+/* About */
+
+.about {
+	display: block;
+	margin: 0 auto;
+	height: 100%;
+	max-width: 1400px;
+}
+
+
+/* Banner */
+
+.banner {
+	display: flex;
+	position: relative;
+	align-items: center;
+	background-image: url("../../images/about/aboutUs.png");
+	background-attachment: local;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	height: 30vh;
+	width: 100vw;
+	left: -50px;
+	justify-content: center;
+	animation: fadeIn 6s;
+}
+
+	@keyframes fadeIn {  
+		from {  
+			opacity:0;  
+		}  
+		to {  
+			opacity:1;  
+		}  
+	}
+
+	.banner:after {
+		display: block;
+		position: absolute;
+		content: 'About Us';
+		background-color: rgba(7, 7, 7, 0.8);
+		content: '';
+		height: 30vh;
+		width: 100vw;
+		z-index: 1;
+	}
+
+	.banner h1 {
+		z-index: 2;
+	}
+
+
 /* Button */
 
 button {
@@ -475,6 +536,19 @@ button {
 			button.style3:active {
 				color: #03e9f4;
 				background: #222;
+			}
+
+		button.style4 {
+			outline: solid 1px #eee;
+     		outline-offset: -2px;
+			background: transparent;
+		}
+
+			button.style4:hover,
+			button.style4:active {
+				outline: solid 2px #03e9f4;
+				color: #03e9f4;
+				background: #000;
 			}
 
 
