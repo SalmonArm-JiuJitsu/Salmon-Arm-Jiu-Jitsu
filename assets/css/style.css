@@ -585,6 +585,7 @@ header {
 	width: 100vw;
 	left: -50px;
 	justify-content: center;
+	animation: fadeIn 6s;
 }
 
 	.banner:after {
@@ -817,7 +818,7 @@ i {
 	display: flex;
 	position: relative;
 	align-items: center;
-
+	
 	background-attachment: fixed;
 	background-position: center 60px;
 	background-repeat: no-repeat;
