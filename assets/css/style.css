@@ -219,9 +219,7 @@ p {
 	}
 
 	p.style3 {
-		background: linear-gradient(130deg, #0044FF 0%, #774e95 25%, #ED582A 80%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+		color:#eee;
 		font-family: "nimbus-sans-light";
         font-size: 25pt;
 		letter-spacing: 1px;
@@ -1372,6 +1370,16 @@ form {
 		form .field-right input {
 			background: var(--platinum-90-right);
 		}
+
+	form .hp {
+		opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0;
+        width: 0;
+        z-index: -2;
+	}
 
 
 /* Location */
