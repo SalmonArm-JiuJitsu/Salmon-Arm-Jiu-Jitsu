@@ -583,7 +583,7 @@ header {
 	width: 100vw;
 	left: -50px;
 	justify-content: center;
-	animation: fadeIn 6s;
+	animation: fadeIn 2s;
 }
 
 	.banner:after {
@@ -959,11 +959,30 @@ img {
 
 .info-boxes {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr));
-	grid-gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 35px;
 	text-align: center;
 	justify-content: center;
 }
+
+	@media screen and (max-width: 1260px) {
+		.info-boxes {
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 50px;
+		}
+	}
+
+	@media screen and (max-width: 800px) {
+		.info-boxes {
+			grid-gap: 35px;
+		}
+	}
+
+	@media screen and (max-width: 620px) {
+		.info-boxes {
+			grid-template-columns: 1fr;
+		}
+	}
 
 	.info-boxes img {
 		border-radius: 8px 8px 0 0;
@@ -988,7 +1007,7 @@ img {
 			margin-bottom: 0;
 		}
 
-	@media screen and (max-width: 580px) {
+	@media screen and (max-width: 620px) {
 		.info-boxes .details {
 			height: fit-content;
 		}
