@@ -18,6 +18,11 @@ document.querySelector(".close").addEventListener("click", () => {
     Menu.classList.remove("active");
 })
 
+document.querySelector(".contact-button").addEventListener("click", () => {
+    burger.classList.remove("active");
+    Menu.classList.remove("active");
+})
+
 
 
 // Contact Form Validation
@@ -34,6 +39,11 @@ function contactForm() {
 
 	if(email.value === 'info@salmonarmjiujitsu.ca') {
 		alert("Please Enter Your Email Address.")
+		return false;
+	}
+
+	if(message.length < 5) {
+		alert("Please enter a message.")
 		return false;
 	}
 
