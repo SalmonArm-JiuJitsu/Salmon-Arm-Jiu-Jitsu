@@ -233,6 +233,10 @@ p {
 		margin-bottom: 50px;
 	}
 
+strong {
+	font-weight: bolder;
+}
+
 
 /* Animations */
 
@@ -418,7 +422,7 @@ header {
 	.menu {
 		position: fixed;
 		height: 100vh;
-		left: -100%;
+		left: -100vw;
 		top: 0;
 		flex-direction: column;
 		background-color: rgba(18, 18, 18, 0.965);
@@ -1152,6 +1156,31 @@ img {
 						right: 15%;
 					}
 				}
+
+
+/* Privacy Policy */
+
+.privacy {
+	display: block;
+	margin: 0 auto;
+	height: 100%;
+	padding-bottom: 10px;
+	max-width: 1400px;
+}
+
+	.privacy h2 {
+		padding: 0;
+		margin: 100px 0 40px 0;
+	}
+
+	.privacy h4 {
+		margin: 50px 0 25px 0;
+	}
+
+	.privacy li {
+		list-style: disc;
+		margin: 25px 18px;
+	}
 
 
 /* Schedule */
