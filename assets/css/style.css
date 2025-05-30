@@ -1219,12 +1219,6 @@ img {
 		font-weight: bold;
 	}
 
-		.trial .tile .column {
-			display: grid;
-			grid-template-areas: 
-			"kids adults";
-		}
-
 	.trial .tablet {
 		padding: 50px 25px;
 		text-align: center;
