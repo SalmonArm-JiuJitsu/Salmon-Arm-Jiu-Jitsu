@@ -54,6 +54,36 @@ function contactForm() {
 
 
 
+// Registration Form Validation
+
+function registrationForm() {
+	const parentFN = document.getElementById('parentFirstName');
+	const parentLN = document.getElementById('parentLastName');
+	const parentE = document.getElementById('parentEmail');
+	const parentP = document.getElementById('parentPhone');
+
+	if(parentFN.value === '' || parentLN.value == '' || parentE.value === '' || parentP.value === '') {
+		alert("Please Fill Out Each Field.")
+		return false;
+	}
+
+	if(parentE.value === 'info@salmonarmjiujitsu.ca') {
+		alert("Please Enter Your Email Address.")
+		return false;
+	}
+
+	if(parentP.length < 10) {
+		alert("Please enter your 10-digit phone number.")
+		return false;
+	}
+
+	else {
+		return true;
+    }
+}
+
+
+
 // Home Icon Disappear On Scoll
 
 window.addEventListener('scroll', function() {	
