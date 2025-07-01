@@ -47,38 +47,69 @@
 					<!-- Enrollment Form -->
 
 					<section class="registration">
-						<h2>Register</h2>
+						<div class = "form-section">
+
+							<!-- Parent Info -->
+							<h3>Parent</h3>
+
+						  	<form class="registration-form" method = "post" action = "https://formsubmit.co/5706783fd4c76300c52561682502228e">
+							
+								<div class="field-group">
+									<div class = "field-left">
+										<label for = "parentFirstName">First Name</label>
+										<input type = "text" id = "parentFirstName" name = "parentFN" required>
+									</div>
+									
+									<div class = "field-right">
+										<label for = "parentLastName">Last Name</label>
+										<input type = "text" id = "parentLastName" name = "parentLN" required>
+									</div>
+								</div>
+
+
+								<div class = "field">
+									<label for = "parentEmail">Email</label>
+									<input type = "email" id = "parentEmail" name = "parentE" required>
+								</div>
+
+								<div class = "field">
+									<label for = "parentPhone">Phone</label>
+									<input type = "tel" id = "parentPhone" name = "parentP" required>
+								</div>
+						
+								<!-- Hidden toggles for showing child sections 
+								<input type="checkbox" id="toggle-child-2" class="child-toggle">
+								<input type="checkbox" id="toggle-child-3" class="child-toggle">
+								<input type="checkbox" id="toggle-child-4" class="child-toggle">
+								<input type="checkbox" id="toggle-child-5" class="child-toggle">
 					  
-						<!-- Parent Info -->
-						<div class="form-section">
-						  <h3>Parent</h3>
-						  <form class="registration-form" method = "post" action = "https://formsubmit.co/5706783fd4c76300c52561682502228e">
-							<div class="field-group">
-							  <div class="field-left">
-								<label for="parent-first-name">First Name</label>
-								<input type="text" id="parent-first-name" name="parent-first-name" required>
-							  </div>
-							  <div class="field-right">
-								<label for="parent-last-name">Last Name</label>
-								<input type="text" id="parent-last-name" name="parent-last-name" required>
-							  </div>
-							</div>
-							<div class="field">
-							  <label for="parent-email">Email</label>
-							  <input type="email" id="parent-email" name="parent-email" required>
-							</div>
-							<div class="field">
-							  <label for="parent-phone">Phone</label>
-							  <input type="tel" id="parent-phone" name="parent-phone" required>
-							</div>
-					  
-							<!-- Hidden toggles for showing child sections -->
-							<input type="checkbox" id="toggle-child-2" class="child-toggle">
-							<input type="checkbox" id="toggle-child-3" class="child-toggle">
-							<input type="checkbox" id="toggle-child-4" class="child-toggle">
-							<input type="checkbox" id="toggle-child-5" class="child-toggle">
-					  
-							<!-- Child 1 -->
+
+							<form class = "form" method = "post" action = "https://formsubmit.co/5706783fd4c76300c52561682502228e">
+
+								<!-- Fields 
+									<div class = "field-left">
+										<label for = "nameInput">name</label>
+										<input type = "text" id = "nameInput" name = "name">
+									</div>
+									
+									<div class = "field-right">
+										<label for = "emailInput">email</label>
+										<input type = "email" id = "emailInput" name = "email">
+									</div>
+									
+									<div class = "field">
+										<label for = "messageTextArea">Message</label>
+										<textarea id = "messageTextArea" name = "message" rows = "6"></textarea>
+									</div>
+					
+								
+								<button onclick = "return contactForm()">Send</button>
+								<button type = "reset" value = "clear" class = "style1">Clear</button>
+								
+							</form>
+
+
+							<!-- Child 1 
 							<div class="child-section">
 							  <h3>Child 1</h3>
 							  <div class="field-group">
@@ -97,7 +128,9 @@
 							  </div>
 							</div>
 					  
-							<!-- Child 2 -->
+
+
+							<!-- Child 2 
 							<div class="child-section toggle-child-2">
 							  <h3>Child 2</h3>
 							  <div class="field-group">
@@ -116,7 +149,9 @@
 							  </div>
 							</div>
 					  
-							<!-- Child 3 -->
+
+
+							<!-- Child 3 
 							<div class="child-section toggle-child-3">
 							  <h3>Child 3</h3>
 							  <div class="field-group">
@@ -135,7 +170,9 @@
 							  </div>
 							</div>
 					  
-							<!-- Child 4 -->
+
+
+							<!-- Child 4 
 							<div class="child-section toggle-child-4">
 							  <h3>Child 4</h3>
 							  <div class="field-group">
@@ -154,7 +191,9 @@
 							  </div>
 							</div>
 					  
-							<!-- Child 5 -->
+
+
+							<!-- Child 5 
 							<div class="child-section toggle-child-5">
 							  <h3>Child 5</h3>
 							  <div class="field-group">
@@ -173,13 +212,14 @@
 							  </div>
 							</div>
 					  
-							<!-- Show Child Buttons -->
+							<!-- Show Child Buttons 
 							<label for="toggle-child-2" class="add-child-button">+ Add Child</label>
 							<label for="toggle-child-3" class="add-child-button toggle-child-2">+ Add Child</label>
 							<label for="toggle-child-4" class="add-child-button toggle-child-3">+ Add Child</label>
 							<label for="toggle-child-5" class="add-child-button toggle-child-4">+ Add Child</label>
 					  
-							<button type="submit">Submit</button>
+							<button type="submit">Submit</button> -->
+							<button onclick = "return registrationForm()">Send</button>
 						  </form>
 						</div>
 					  </section>
