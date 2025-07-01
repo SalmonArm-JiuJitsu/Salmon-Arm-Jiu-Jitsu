@@ -1158,6 +1158,146 @@ img {
 				}
 
 
+
+.registration {
+	max-width: 800px;
+	margin: 100px auto;
+	padding: 50px;
+	background: var(--platinum-45);
+	border-radius: 10px;
+	color: #131313;
+}
+	
+	.registration h2 {
+		text-align: center;
+		margin-bottom: 50px;
+		font-size: 28pt;
+		letter-spacing: 3px;
+		font-family: "nimbus-sans-bold";
+	}
+	
+	.registration-form .field-group {
+	display: flex;
+	gap: 8%;
+	flex-wrap: wrap;
+	}
+	
+	.registration-form .field-left,
+	.registration-form .field-right {
+	width: 46%;
+	}
+	
+	.registration-form label {
+	display: block;
+	margin-bottom: 10px;
+	}
+	
+	.registration-form input {
+	background: var(--platinum-90);
+	border-radius: 4px;
+	}
+	
+	.registration-form .field {
+	margin-top: 30px;
+	}
+	
+	.registration-form button {
+	margin-top: 40px;
+	width: 100%;
+	}
+				  
+
+	.registration .form-section {
+		margin-top: 50px;
+	  }
+	  
+	  .registration h3 {
+		margin: 40px 0 20px 0;
+		font-size: 20pt;
+		font-family: "nimbus-sans-bold";
+		letter-spacing: 2px;
+		color: #efefef;
+	  }
+	  
+	  .child-section {
+		margin-top: 30px;
+		padding: 30px;
+		border: 1px solid #444;
+		border-radius: 8px;
+		background: rgba(255, 255, 255, 0.03);
+	  }
+	  
+	  .add-child-button {
+		margin: 30px 0;
+		background: #03e9f4;
+		color: #131313;
+	  }
+
+	  .child-toggle {
+		display: none;
+	  }
+	  
+	  .toggle-child-2,
+	  .toggle-child-3,
+	  .toggle-child-4,
+	  .toggle-child-5,
+	  .add-child-button.toggle-child-2,
+	  .add-child-button.toggle-child-3,
+	  .add-child-button.toggle-child-4 {
+		display: none;
+	  }
+	  
+	  #toggle-child-2:checked ~ .toggle-child-2 {
+		display: block;
+	  }
+	  
+	  #toggle-child-2:checked ~ .add-child-button.toggle-child-2 {
+		display: inline-block;
+	  }
+	  
+	  #toggle-child-3:checked ~ .toggle-child-3 {
+		display: block;
+	  }
+	  
+	  #toggle-child-3:checked ~ .add-child-button.toggle-child-3 {
+		display: inline-block;
+	  }
+	  
+	  #toggle-child-4:checked ~ .toggle-child-4 {
+		display: block;
+	  }
+	  
+	  #toggle-child-4:checked ~ .add-child-button.toggle-child-4 {
+		display: inline-block;
+	  }
+	  
+	  #toggle-child-5:checked ~ .toggle-child-5 {
+		display: block;
+	  }
+	  
+	  .child-section {
+		margin: 30px 0;
+		padding: 30px;
+		border: 1px solid #444;
+		border-radius: 8px;
+		background: rgba(255, 255, 255, 0.03);
+	  }
+	  
+	  .add-child-button {
+		display: inline-block;
+		margin: 20px 0;
+		padding: 12px 25px;
+		background: #03e9f4;
+		color: #131313;
+		font-weight: bold;
+		letter-spacing: 1px;
+		border-radius: 6px;
+		cursor: pointer;
+	  }
+	  
+	  
+				
+
 /* Privacy Policy */
 
 .privacy {
@@ -1412,16 +1552,6 @@ form {
 		form .field-right input {
 			background: var(--platinum-90-right);
 		}
-
-	form .hp {
-		opacity: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 0;
-        width: 0;
-        z-index: -2;
-	}
 
 
 /* Location */
