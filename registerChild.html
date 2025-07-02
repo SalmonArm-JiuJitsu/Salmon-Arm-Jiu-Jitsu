@@ -46,6 +46,33 @@
 									  
 				<!-- Registration Form -->
 					<section class = "registration-container">
+
+						<form class = "form" method = "post" action = "https://formsubmit.co/5706783fd4c76300c52561682502228e">
+
+							<!-- Fields -->
+								<div class = "field-left">
+									<label for = "parentName">name</label>
+									<input type = "text" id = "parentName" name = "parent">
+								</div>
+								
+								<div class = "field-right">
+									<label for = "parentEmail">email</label>
+									<input type = "parentEmail" id = "parentEmail" name = "parentemail">
+								</div>
+								
+								<div class = "field">
+									<label for = "parentMsg">Message</label>
+									<textarea id = "parentMsg" name = "msg" rows = "6"></textarea>
+								</div>
+				
+							
+							<button onclick = "return regForm()">Send</button>
+							
+						</form>
+					</section>
+						  
+
+						<!--
 						<form class = "form" id = "registrationForm" method = "POST" action = "https://formsubmit.co/5706783fd4c76300c52561682502228e">
 							
 							<h2>Parent</h2>
@@ -92,7 +119,7 @@
 								</div>
 							</div>
 					
-							<!-- Child control buttons -->
+							<!-- Child control buttons 
 							<div id = "childControls" class="field">
 								<button type = "button" id = "addChildBtn">Add Child</button>
 								<button type = "button" id = "removeChildBtn" style = "display: none; margin-left: 15px;">Remove Last Child</button>
@@ -102,12 +129,12 @@
 							<input type = "hidden" name = "_captcha" value = "false">
 							<input type = "text" name = "_honey" style = "display:none"> -->
 					
-							<!-- Submit Button -->
+							<!-- Submit Button 
 							<div class = "field submit-wrapper">
 								<button type = "submit" class = "submit-button" onclick = "return validateRegistrationForm()">Submit</button>
 							</div>
 							
-						</form>
+						</form>-->
 					</section>				
 
             </main>
