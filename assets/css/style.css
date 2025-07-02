@@ -1157,146 +1157,86 @@ img {
 					}
 				}
 
+				
+/* Register Child */
 
-
-.registration {
+.registration-container {
 	max-width: 800px;
-	margin: 100px auto;
-	padding: 50px;
+	margin: auto;
+	padding: 40px;
 	background: var(--platinum-45);
 	border-radius: 10px;
+}
+
+#registrationForm h2 {
+	font-size: 25pt;
+	font-family: "nimbus-sans-bold";
+	letter-spacing: 1.5px;
+	color: #131313;
+	margin-bottom: 25px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#registrationForm .field-left,
+#registrationForm .field-right {
+	width: 48%;
+}
+
+#registrationForm .field {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+#registrationForm input,
+#registrationForm textarea {
+	background: var(--platinum-90);
+}
+
+#registrationForm .submit-button {
+	width: 100%;
+	background: var(--platinum-90);
+	border: none;
+	font-size: 16pt;
+	color: #efefef;
+}
+
+#registrationForm .submit-button:hover {
+	outline: solid 1px #03e9f4;
+	color: #03e9f4;
+	background: transparent;
+}
+
+#childControls button {
+	margin-bottom: 15px;
+}
+
+.submit-wrapper {
+	margin-top: 40px;
+}
+
+.child-section {
+	margin-bottom: 30px;
+}
+
+@media screen and (max-width: 720px) {
+	#registrationForm .field-left,
+	#registrationForm .field-right {
+		width: 100%;
+		float: none;
+	}
+}
+
+#registrationForm label {
 	color: #131313;
 }
-	
-	.registration h2 {
-		text-align: center;
-		margin-bottom: 50px;
-		font-size: 28pt;
-		letter-spacing: 3px;
-		font-family: "nimbus-sans-bold";
-	}
-	
-	.registration-form .field-group {
-	display: flex;
-	gap: 8%;
-	flex-wrap: wrap;
-	}
-	
-	.registration-form .field-left,
-	.registration-form .field-right {
-	width: 46%;
-	}
-	
-	.registration-form label {
-	display: block;
-	margin-bottom: 10px;
-	}
-	
-	.registration-form input {
-	background: var(--platinum-90);
-	border-radius: 4px;
-	}
-	
-	.registration-form .field {
-	margin-top: 30px;
-	}
-	
-	.registration-form button {
-	margin-top: 40px;
-	width: 100%;
-	}
-				  
 
-	.registration .form-section {
-		margin-top: 50px;
-	  }
-	  
-	  .registration h3 {
-		margin: 40px 0 20px 0;
-		font-size: 20pt;
-		font-family: "nimbus-sans-bold";
-		letter-spacing: 2px;
-		color: #efefef;
-	  }
-	  
-	  .child-section {
-		margin-top: 30px;
-		padding: 30px;
-		border: 1px solid #444;
-		border-radius: 8px;
-		background: rgba(255, 255, 255, 0.03);
-	  }
-	  
-	  .add-child-button {
-		margin: 30px 0;
-		background: #03e9f4;
-		color: #131313;
-	  }
+#registrationForm input,
+#registrationForm textarea {
+	color: #131313;
+}
+		
 
-	  .child-toggle {
-		display: none;
-	  }
-	  
-	  .toggle-child-2,
-	  .toggle-child-3,
-	  .toggle-child-4,
-	  .toggle-child-5,
-	  .add-child-button.toggle-child-2,
-	  .add-child-button.toggle-child-3,
-	  .add-child-button.toggle-child-4 {
-		display: none;
-	  }
-	  
-	  #toggle-child-2:checked ~ .toggle-child-2 {
-		display: block;
-	  }
-	  
-	  #toggle-child-2:checked ~ .add-child-button.toggle-child-2 {
-		display: inline-block;
-	  }
-	  
-	  #toggle-child-3:checked ~ .toggle-child-3 {
-		display: block;
-	  }
-	  
-	  #toggle-child-3:checked ~ .add-child-button.toggle-child-3 {
-		display: inline-block;
-	  }
-	  
-	  #toggle-child-4:checked ~ .toggle-child-4 {
-		display: block;
-	  }
-	  
-	  #toggle-child-4:checked ~ .add-child-button.toggle-child-4 {
-		display: inline-block;
-	  }
-	  
-	  #toggle-child-5:checked ~ .toggle-child-5 {
-		display: block;
-	  }
-	  
-	  .child-section {
-		margin: 30px 0;
-		padding: 30px;
-		border: 1px solid #444;
-		border-radius: 8px;
-		background: rgba(255, 255, 255, 0.03);
-	  }
-	  
-	  .add-child-button {
-		display: inline-block;
-		margin: 20px 0;
-		padding: 12px 25px;
-		background: #03e9f4;
-		color: #131313;
-		font-weight: bold;
-		letter-spacing: 1px;
-		border-radius: 6px;
-		cursor: pointer;
-	  }
-	  
-	  
-				
 
 /* Privacy Policy */
 
