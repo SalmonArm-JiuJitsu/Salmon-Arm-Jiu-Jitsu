@@ -110,36 +110,36 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-/*function validateRegistrationForm() {
-    const parentFirst = document.getElementById('parentFirstName');
-    const parentLast = document.getElementById('parentLastName');
-    const parentEmail = document.getElementById('parentEmail');
-    const parentPhone = document.getElementById('parentPhone');
-
-    if (!parentFirst.value || !parentLast.value || !parentEmail.value || !parentPhone.value) {
-        alert("Please fill out all parent fields.");
-        return false;
-    }
-
-    // Validate children
-    const children = document.querySelectorAll('.child-section');
-    for (let i = 0; i < children.length; i++) {
-        const child = children[i];
-        const first = child.querySelector(`input[name="child${i+1}FirstName"]`);
-        const last = child.querySelector(`input[name="child${i+1}LastName"]`);
-        const dob = child.querySelector(`input[name="child${i+1}DOB"]`);
-
-        if (!first.value || !last.value || !dob.value) {
-            alert(`Please complete all fields for Child ${i + 1}.`);
-            return false;
-        }
-    }
-
-    return true; // ✅ allow submission
-}*/
 
 
+	// Validate Child Registration Form
 
+	function validateRegistrationForm() {
+		const parentPhone = document.getElementById('parentPhone');
+
+		if (parentPhone.value.length !== 10) {
+			alert("Please enter a 10-digit phone number.")
+			return false;
+		}
+
+		if (!/^\d+$/.test(parentPhone.value)) {
+			alert("Please include only numbers.")
+			return false;
+		}
+
+		const fakeNumbers = ['1234567890, 0123456789, 1231231231', '1231231232', '1231231233, 1231231234, 1231231235, 1231231236, 1231231237, 1231231238, 1231231239, 1231231230'];
+
+		if (fakeNumbers.includes(parentPhone.value)) {
+			alert("Please enter a real phone number.");
+			return false;
+		}
+
+
+		else {
+			return true;
+		}
+	}
+	
 
 
 
