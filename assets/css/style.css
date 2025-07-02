@@ -1190,7 +1190,9 @@ img {
 
 #registrationForm input,
 #registrationForm textarea {
-	background: var(--platinum-90);
+	background: #353535;
+	border: solid 1px cyan;
+	border-radius: 7px;
 }
 
 #registrationForm .submit-button {
@@ -1233,7 +1235,7 @@ img {
 
 #registrationForm input,
 #registrationForm textarea {
-	color: #131313;
+	color: #efefef;
 }
 		
 
