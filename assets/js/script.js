@@ -53,28 +53,92 @@ function contactForm() {
 }
 
 
-// Reg Form Validation
+// Register Child Form
 
-function registrationForm() {
-	const parentFirstName = document.getElementById('parentFirstName');
-    const parentLastName = document.getElementById('parentLastName');
-	const parentEmail = document.getElementById('parentEmail');
-	const parentPhone = document.getElementById('parentPhone');
+document.addEventListener("DOMContentLoaded", function () {
+    const addChildBtn = document.getElementById("addChildBtn");
+    const removeChildBtn = document.getElementById("removeChildBtn");
+    const childrenContainer = document.getElementById("childrenContainer");
 
-	if(parentFirstName.value === '' || parentLastName.value === '' || parentEmail.value === '' || parentPhone.value === '') {
-		alert("Please Fill Out Each Field.")
-		return false;
-	}
+    let childCount = 1;
 
-    if(parentPhone.value.length < 10) {
-		alert("Please Enter Your 10 Digit Phone Number.")
-		return false;
-	}
+    addChildBtn.addEventListener("click", () => {
+        childCount++;
 
-	else {
-		return true;
+        const childSection = document.createElement("div");
+        childSection.classList.add("child-section");
+
+        childSection.innerHTML = `
+            <h2>Child ${childCount}</h2>
+            <div class = "field-left">
+                <label for = "child${childCount}FirstName">First Name</label>
+                <input type = "text" id = "child${childCount}FirstName" name = "child${childCount}FirstName" required>
+            </div>
+
+            <div class = "field-right">
+                <label for = "child${childCount}LastName">Last Name</label>
+                <input type = "text" id="child${childCount}LastName" name = "child${childCount}LastName" required>
+            </div>
+
+            <div class = "field">
+                <label for = "child${childCount}DOB">Birth Date</label>
+                <input type = "date" id = "child${childCount}DOB" name = "child${childCount}DOB" required>
+            </div>
+        `;
+
+        childrenContainer.appendChild(childSection);
+
+        // Show "Remove" button if more than one child
+        if (childCount > 1) {
+            removeChildBtn.style.display = "inline-block";
+        }
+    });
+
+    removeChildBtn.addEventListener("click", () => {
+        if (childCount > 1) {
+            const lastChild = childrenContainer.querySelector(".child-section:last-of-type");
+            if (lastChild) {
+                childrenContainer.removeChild(lastChild);
+                childCount--;
+            }
+        }
+
+        // Hide button if only one child remains
+        if (childCount === 1) {
+            removeChildBtn.style.display = "none";
+        }
+    });
+});
+
+/*function validateRegistrationForm() {
+    const parentFirst = document.getElementById('parentFirstName');
+    const parentLast = document.getElementById('parentLastName');
+    const parentEmail = document.getElementById('parentEmail');
+    const parentPhone = document.getElementById('parentPhone');
+
+    if (!parentFirst.value || !parentLast.value || !parentEmail.value || !parentPhone.value) {
+        alert("Please fill out all parent fields.");
+        return false;
     }
-}
+
+    // Validate children
+    const children = document.querySelectorAll('.child-section');
+    for (let i = 0; i < children.length; i++) {
+        const child = children[i];
+        const first = child.querySelector(`input[name="child${i+1}FirstName"]`);
+        const last = child.querySelector(`input[name="child${i+1}LastName"]`);
+        const dob = child.querySelector(`input[name="child${i+1}DOB"]`);
+
+        if (!first.value || !last.value || !dob.value) {
+            alert(`Please complete all fields for Child ${i + 1}.`);
+            return false;
+        }
+    }
+
+    return true; // ✅ allow submission
+}*/
+
+
 
 
 
