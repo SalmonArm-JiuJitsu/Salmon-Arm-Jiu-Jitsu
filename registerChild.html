@@ -42,189 +42,73 @@
 
         <!-- Main -->
             <main>
-                <h1>Enroll Now</h1>
-
-					<!-- Enrollment Form -->
-
-					<section class="registration">
-						<div class = "form-section">
-
-							<!-- Parent Info -->
-							<h3>Parent</h3>
-
-						  	<form class="registration-form" method = "post" action = "https://formsubmit.co/5706783fd4c76300c52561682502228e">
+                <h1>Enroll Now</h1>					  
+									  
+				<!-- Registration Form -->
+					<section class = "registration-container">
+						<form class = "form" id = "registrationForm" method = "POST" action = "https://formsubmit.co/5706783fd4c76300c52561682502228e">
 							
-								<div class="field-group">
+							<h2>Parent</h2>
+					
+							<div class = "field-left">
+								<label for = "parentFirstName">First Name</label>
+								<input type = "text" id = "parentFirstName" name = "parentFirstName" required>
+							</div>
+					
+							<div class = "field-right">
+								<label for = "parentLastName">Last Name</label>
+								<input type = "text" id = "parentLastName" name = "parentLastName" required>
+							</div>
+					
+							<div class = "field">
+								<label for = "parentEmail">Email</label>
+								<input type = "email" id = "parentEmail" name = "parentEmail" required>
+							</div>
+					
+							<div class = "field">
+								<label for = "parentPhone">Phone</label>
+								<input type = "tel" id = "parentPhone" name = "parentPhone" required>
+							</div>
+					
+
+							<div id = "childrenContainer">
+								<h2>Child 1</h2>
+
+								<div class = "child-section">
 									<div class = "field-left">
-										<label for = "parentFirstName">First Name</label>
-										<input type = "text" id = "parentFirstName" name = "parentFN" required>
-									</div>
-									
-									<div class = "field-right">
-										<label for = "parentLastName">Last Name</label>
-										<input type = "text" id = "parentLastName" name = "parentLN" required>
-									</div>
-								</div>
-
-
-								<div class = "field">
-									<label for = "parentEmail">Email</label>
-									<input type = "email" id = "parentEmail" name = "parentE" required>
-								</div>
-
-								<div class = "field">
-									<label for = "parentPhone">Phone</label>
-									<input type = "tel" id = "parentPhone" name = "parentP" required>
-								</div>
-						
-								<!-- Hidden toggles for showing child sections 
-								<input type="checkbox" id="toggle-child-2" class="child-toggle">
-								<input type="checkbox" id="toggle-child-3" class="child-toggle">
-								<input type="checkbox" id="toggle-child-4" class="child-toggle">
-								<input type="checkbox" id="toggle-child-5" class="child-toggle">
-					  
-
-							<form class = "form" method = "post" action = "https://formsubmit.co/5706783fd4c76300c52561682502228e">
-
-								<!-- Fields 
-									<div class = "field-left">
-										<label for = "nameInput">name</label>
-										<input type = "text" id = "nameInput" name = "name">
-									</div>
-									
-									<div class = "field-right">
-										<label for = "emailInput">email</label>
-										<input type = "email" id = "emailInput" name = "email">
-									</div>
-									
-									<div class = "field">
-										<label for = "messageTextArea">Message</label>
-										<textarea id = "messageTextArea" name = "message" rows = "6"></textarea>
+										<label for = "child1FirstName">First Name</label>
+										<input type = "text" id = "child1FirstName" name = "child1FirstName" required>
 									</div>
 					
-								
-								<button onclick = "return contactForm()">Send</button>
-								<button type = "reset" value = "clear" class = "style1">Clear</button>
-								
-							</form>
-
-
-							<!-- Child 1 
-							<div class="child-section">
-							  <h3>Child 1</h3>
-							  <div class="field-group">
-								<div class="field-left">
-								  <label for="child1-first-name">First Name</label>
-								  <input type="text" id="child1-first-name" name="child1-first-name" required>
+									<div class = "field-right">
+										<label for = "child1LastName">Last Name</label>
+										<input type = "text" id = "child1LastName" name = "child1LastName" required>
+									</div>
+					
+									<div class = "field">
+										<label for = "child1DOB">Birth Date</label>
+										<input type = "date" id = "child1DOB" name = "child1DOB" required>
+									</div>
 								</div>
-								<div class="field-right">
-								  <label for="child1-last-name">Last Name</label>
-								  <input type="text" id="child1-last-name" name="child1-last-name" required>
-								</div>
-							  </div>
-							  <div class="field">
-								<label for="child1-birthdate">Birth Date</label>
-								<input type="date" id="child1-birthdate" name="child1-birthdate" required>
-							  </div>
 							</div>
-					  
-
-
-							<!-- Child 2 
-							<div class="child-section toggle-child-2">
-							  <h3>Child 2</h3>
-							  <div class="field-group">
-								<div class="field-left">
-								  <label for="child2-first-name">First Name</label>
-								  <input type="text" id="child2-first-name" name="child2-first-name">
-								</div>
-								<div class="field-right">
-								  <label for="child2-last-name">Last Name</label>
-								  <input type="text" id="child2-last-name" name="child2-last-name">
-								</div>
-							  </div>
-							  <div class="field">
-								<label for="child2-birthdate">Birth Date</label>
-								<input type="date" id="child2-birthdate" name="child2-birthdate">
-							  </div>
+					
+							<!-- Child control buttons -->
+							<div id = "childControls" class="field">
+								<button type = "button" id = "addChildBtn">Add Child</button>
+								<button type = "button" id = "removeChildBtn" style = "display: none; margin-left: 15px;">Remove Last Child</button>
 							</div>
-					  
-
-
-							<!-- Child 3 
-							<div class="child-section toggle-child-3">
-							  <h3>Child 3</h3>
-							  <div class="field-group">
-								<div class="field-left">
-								  <label for="child3-first-name">First Name</label>
-								  <input type="text" id="child3-first-name" name="child3-first-name">
-								</div>
-								<div class="field-right">
-								  <label for="child3-last-name">Last Name</label>
-								  <input type="text" id="child3-last-name" name="child3-last-name">
-								</div>
-							  </div>
-							  <div class="field">
-								<label for="child3-birthdate">Birth Date</label>
-								<input type="date" id="child3-birthdate" name="child3-birthdate">
-							  </div>
+					
+							<!-- Anti-spam 
+							<input type = "hidden" name = "_captcha" value = "false">
+							<input type = "text" name = "_honey" style = "display:none"> -->
+					
+							<!-- Submit Button -->
+							<div class = "field submit-wrapper">
+								<button type = "submit" class = "submit-button">Submit</button>
 							</div>
-					  
+						</form>
+					</section>				
 
-
-							<!-- Child 4 
-							<div class="child-section toggle-child-4">
-							  <h3>Child 4</h3>
-							  <div class="field-group">
-								<div class="field-left">
-								  <label for="child4-first-name">First Name</label>
-								  <input type="text" id="child4-first-name" name="child4-first-name">
-								</div>
-								<div class="field-right">
-								  <label for="child4-last-name">Last Name</label>
-								  <input type="text" id="child4-last-name" name="child4-last-name">
-								</div>
-							  </div>
-							  <div class="field">
-								<label for="child4-birthdate">Birth Date</label>
-								<input type="date" id="child4-birthdate" name="child4-birthdate">
-							  </div>
-							</div>
-					  
-
-
-							<!-- Child 5 
-							<div class="child-section toggle-child-5">
-							  <h3>Child 5</h3>
-							  <div class="field-group">
-								<div class="field-left">
-								  <label for="child5-first-name">First Name</label>
-								  <input type="text" id="child5-first-name" name="child5-first-name">
-								</div>
-								<div class="field-right">
-								  <label for="child5-last-name">Last Name</label>
-								  <input type="text" id="child5-last-name" name="child5-last-name">
-								</div>
-							  </div>
-							  <div class="field">
-								<label for="child5-birthdate">Birth Date</label>
-								<input type="date" id="child5-birthdate" name="child5-birthdate">
-							  </div>
-							</div>
-					  
-							<!-- Show Child Buttons 
-							<label for="toggle-child-2" class="add-child-button">+ Add Child</label>
-							<label for="toggle-child-3" class="add-child-button toggle-child-2">+ Add Child</label>
-							<label for="toggle-child-4" class="add-child-button toggle-child-3">+ Add Child</label>
-							<label for="toggle-child-5" class="add-child-button toggle-child-4">+ Add Child</label>
-					  
-							<button type="submit">Submit</button> -->
-							<button onclick = "return registrationForm()">Send</button>
-						  </form>
-						</div>
-					  </section>
-					  
-									  
             </main>
 
 
