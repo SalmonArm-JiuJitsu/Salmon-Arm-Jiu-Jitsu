@@ -69,15 +69,13 @@ document.addEventListener("DOMContentLoaded", function () {
         childSection.classList.add("child-section");
 
         childSection.innerHTML = `
-            <h2>Child ${childCount}</h2>
+            <h2 style = "margin-top: 90px;">Child ${childCount}</h2>
             <div class = "field-left">
-                <label for = "child${childCount}FirstName">First Name</label>
-                <input type = "text" id = "child${childCount}FirstName" name = "child${childCount}FirstName" required>
+                <input type = "text" id = "child${childCount}FirstName" name = "child${childCount}FirstName" placeholder = "First Name" required>
             </div>
 
             <div class = "field-right">
-                <label for = "child${childCount}LastName">Last Name</label>
-                <input type = "text" id="child${childCount}LastName" name = "child${childCount}LastName" required>
+                <input type = "text" id="child${childCount}LastName" name = "child${childCount}LastName" placeholder = "Last Name" required>
             </div>
 
             <div class = "field">
@@ -109,7 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
 
 
 	// Validate Child Registration Form
