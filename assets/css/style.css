@@ -315,6 +315,9 @@ strong {
 	--platinum-135: linear-gradient(135deg, #505050, #909090, #ddd, #909090, #555555);
 }
 :root {
+	--platinum-180: linear-gradient(180deg, #909090, #ccc, #909090);
+}
+:root {
 	--haze: linear-gradient(#070707, #222);
 }
 	:root {
@@ -752,6 +755,24 @@ button {
 				}
 			}
 
+			button.style5 {
+				color: #131313;
+				width: auto;
+				font-size: 13pt;
+				letter-spacing: 1px;
+				border-radius: 30px;
+				border: solid 1px #131313;
+				padding: 10px 15px;
+				text-transform: none;
+				background: var(--platinum-180);
+			}
+	
+				button.style5:hover,
+				button.style5:active {
+					color: #03e9f4;
+					background: #404040;
+				}
+
 
 /* Icon */
 
@@ -1161,7 +1182,7 @@ img {
 /* Register Child */
 
 .registration-container {
-	max-width: 800px;
+	max-width: 700px;
 	margin: auto;
 	padding: 40px;
 	background: var(--platinum-45);
@@ -1169,9 +1190,9 @@ img {
 }
 
 #registrationForm h2 {
-	font-size: 25pt;
+	font-size: 24pt;
 	font-family: "nimbus-sans-bold";
-	letter-spacing: 1.5px;
+	letter-spacing: 1px;
 	color: #131313;
 	margin-bottom: 25px;
 	margin-top: 20px;
@@ -1188,25 +1209,24 @@ img {
 	margin-bottom: 40px;
 }
 
-#registrationForm input,
-#registrationForm textarea {
+#registrationForm input {
 	background: #353535;
-	border: solid 1px cyan;
 	border-radius: 7px;
 }
 
 #registrationForm .submit-button {
 	width: 100%;
-	background: var(--platinum-90);
-	border: none;
+	background: var(--platinum-180);
+	border: solid 1px #131313;
+	border-radius: 8px;
 	font-size: 16pt;
-	color: #efefef;
+	color: #131313;
 }
 
 #registrationForm .submit-button:hover {
 	outline: solid 1px #03e9f4;
 	color: #03e9f4;
-	background: transparent;
+	background: #404040;
 }
 
 #childControls button {
@@ -1221,6 +1241,10 @@ img {
 	margin-bottom: 30px;
 }
 
+#childrenContainer {
+    padding-top: 30px;
+}
+
 @media screen and (max-width: 720px) {
 	#registrationForm .field-left,
 	#registrationForm .field-right {
@@ -1231,10 +1255,13 @@ img {
 
 #registrationForm label {
 	color: #131313;
+	letter-spacing: 1.5px;
+	font-size: 16pt;
+	text-transform: none;
+	margin: -15px 0 10px 0;
 }
 
-#registrationForm input,
-#registrationForm textarea {
+#registrationForm input {
 	color: #efefef;
 }
 		
