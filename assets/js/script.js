@@ -55,10 +55,11 @@ function contactForm() {
 
 // Reg Form Validation
 
-function regForm() {
-	const parent = document.getElementById('parentName');
-	const parentemail = document.getElementById('parentEmail');
-	const msg = document.getElementById('parentMsg');
+function registrationForm() {
+	const parentFirstName = document.getElementById('parentFirstName');
+    const parentLastName = document.getElementById('parentLastName');
+	const parentEmail = document.getElementById('parentEmail');
+	const parentPhone = document.getElementById('parentPhone');
 
 	if(parent.value === '' || parentemail.value === '' || msg.value === '') {
 		alert("Please Fill Out Each Field.")
