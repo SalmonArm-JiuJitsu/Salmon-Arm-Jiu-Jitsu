@@ -61,7 +61,7 @@ function registrationForm() {
 	const parentEmail = document.getElementById('parentEmail');
 	const parentPhone = document.getElementById('parentPhone');
 
-	if(parent.value === '' || parentemail.value === '' || msg.value === '') {
+	if(parentFirstName.value === '' || parentLastName.value === '' || parentEmail.value === '' || parentPhone.value === '') {
 		alert("Please Fill Out Each Field.")
 		return false;
 	}
