@@ -53,34 +53,62 @@ function contactForm() {
 }
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const addChildBtn = document.getElementById("addChildBtn");
+    const removeChildBtn = document.getElementById("removeChildBtn");
+    const childrenContainer = document.getElementById("childrenContainer");
 
-// Registration Form Validation
+    let childCount = 1;
 
-function registrationForm() {
-	const parentFN = document.getElementById('parentFirstName');
-	const parentLN = document.getElementById('parentLastName');
-	const parentE = document.getElementById('parentEmail');
-	const parentP = document.getElementById('parentPhone');
+    addChildBtn.addEventListener("click", () => {
+        childCount++;
 
-	if(parentFN.value === '' || parentLN.value == '' || parentE.value === '' || parentP.value === '') {
-		alert("Please Fill Out Each Field.")
-		return false;
-	}
+        const childSection = document.createElement("div");
+        childSection.classList.add("child-section");
 
-	if(parentE.value === 'info@salmonarmjiujitsu.ca') {
-		alert("Please Enter Your Email Address.")
-		return false;
-	}
+        childSection.innerHTML = `
+            <h2>Child ${childCount}</h2>
+            <div class="field-left">
+                <label for="child${childCount}FirstName">First Name</label>
+                <input type="text" id="child${childCount}FirstName" name="child${childCount}FirstName" required>
+            </div>
 
-	if(parentP.length < 10) {
-		alert("Please enter your 10-digit phone number.")
-		return false;
-	}
+            <div class="field-right">
+                <label for="child${childCount}LastName">Last Name</label>
+                <input type="text" id="child${childCount}LastName" name="child${childCount}LastName" required>
+            </div>
 
-	else {
-		return true;
-    }
-}
+            <div class="field">
+                <label for="child${childCount}DOB">Birth Date</label>
+                <input type="date" id="child${childCount}DOB" name="child${childCount}DOB" required>
+            </div>
+        `;
+
+        childrenContainer.appendChild(childSection);
+
+        // Show "Remove" button if more than one child
+        if (childCount > 1) {
+            removeChildBtn.style.display = "inline-block";
+        }
+    });
+
+    removeChildBtn.addEventListener("click", () => {
+        if (childCount > 1) {
+            const lastChild = childrenContainer.querySelector(".child-section:last-of-type");
+            if (lastChild) {
+                childrenContainer.removeChild(lastChild);
+                childCount--;
+            }
+        }
+
+        // Hide button if only one child remains
+        if (childCount === 1) {
+            removeChildBtn.style.display = "none";
+        }
+    });
+});
+
+
 
 
 
