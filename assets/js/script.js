@@ -66,6 +66,11 @@ function registrationForm() {
 		return false;
 	}
 
+    if(parentPhone.value.length < 10) {
+		alert("Please Enter Your 10 Digit Phone Number.")
+		return false;
+	}
+
 	else {
 		return true;
     }
