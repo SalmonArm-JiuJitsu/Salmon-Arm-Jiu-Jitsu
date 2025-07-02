@@ -50,23 +50,30 @@
 						<form class = "form" method = "post" action = "https://formsubmit.co/5706783fd4c76300c52561682502228e">
 
 							<!-- Fields -->
-								<div class = "field-left">
-									<label for = "parentName">name</label>
-									<input type = "text" id = "parentName" name = "parent">
-								</div>
-								
-								<div class = "field-right">
-									<label for = "parentEmail">email</label>
-									<input type = "parentEmail" id = "parentEmail" name = "parentemail">
-								</div>
-								
-								<div class = "field">
-									<label for = "parentMsg">Message</label>
-									<textarea id = "parentMsg" name = "msg" rows = "6"></textarea>
-								</div>
+							<h2>Parent</h2>
+					
+							<div class = "field-left">
+								<label for = "parentFirstName">First Name</label>
+								<input type = "text" id = "parentFirstName" name = "parentFirstName" required>
+							</div>
+					
+							<div class = "field-right">
+								<label for = "parentLastName">Last Name</label>
+								<input type = "text" id = "parentLastName" name = "parentLastName" required>
+							</div>
+					
+							<div class = "field">
+								<label for = "parentEmail">Email</label>
+								<input type = "email" id = "parentEmail" name = "parentEmail" required>
+							</div>
+					
+							<div class = "field">
+								<label for = "parentPhone">Phone</label>
+								<input type = "tel" id = "parentPhone" name = "parentPhone" required>
+							</div>
 				
 							
-							<button onclick = "return regForm()">Send</button>
+							<button onclick = "return registrationForm()">Send</button>
 							
 						</form>
 					</section>
