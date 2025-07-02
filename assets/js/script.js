@@ -53,6 +53,8 @@ function contactForm() {
 }
 
 
+// Register Child Form
+
 document.addEventListener("DOMContentLoaded", function () {
     const addChildBtn = document.getElementById("addChildBtn");
     const removeChildBtn = document.getElementById("removeChildBtn");
@@ -68,19 +70,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
         childSection.innerHTML = `
             <h2>Child ${childCount}</h2>
-            <div class="field-left">
-                <label for="child${childCount}FirstName">First Name</label>
-                <input type="text" id="child${childCount}FirstName" name="child${childCount}FirstName" required>
+            <div class = "field-left">
+                <label for = "child${childCount}FirstName">First Name</label>
+                <input type = "text" id = "child${childCount}FirstName" name = "child${childCount}FirstName" required>
             </div>
 
-            <div class="field-right">
-                <label for="child${childCount}LastName">Last Name</label>
-                <input type="text" id="child${childCount}LastName" name="child${childCount}LastName" required>
+            <div class = "field-right">
+                <label for = "child${childCount}LastName">Last Name</label>
+                <input type = "text" id="child${childCount}LastName" name = "child${childCount}LastName" required>
             </div>
 
-            <div class="field">
-                <label for="child${childCount}DOB">Birth Date</label>
-                <input type="date" id="child${childCount}DOB" name="child${childCount}DOB" required>
+            <div class = "field">
+                <label for = "child${childCount}DOB">Birth Date</label>
+                <input type = "date" id = "child${childCount}DOB" name = "child${childCount}DOB" required>
             </div>
         `;
 
@@ -107,6 +109,35 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+function validateRegistrationForm() {
+    const parentFirst = document.getElementById('parentFirstName');
+    const parentLast = document.getElementById('parentLastName');
+    const parentEmail = document.getElementById('parentEmail');
+    const parentPhone = document.getElementById('parentPhone');
+
+    if (!parentFirst.value || !parentLast.value || !parentEmail.value || !parentPhone.value) {
+        alert("Please fill out all parent fields.");
+        return false;
+    }
+
+    // Validate children
+    const children = document.querySelectorAll('.child-section');
+    for (let i = 0; i < children.length; i++) {
+        const child = children[i];
+        const first = child.querySelector(`input[name="child${i+1}FirstName"]`);
+        const last = child.querySelector(`input[name="child${i+1}LastName"]`);
+        const dob = child.querySelector(`input[name="child${i+1}DOB"]`);
+
+        if (!first.value || !last.value || !dob.value) {
+            alert(`Please complete all fields for Child ${i + 1}.`);
+            return false;
+        }
+    }
+
+    return true; // ✅ allow submission
+}
+
 
 
 
