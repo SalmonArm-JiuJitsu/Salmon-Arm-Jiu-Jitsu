@@ -1,4 +1,4 @@
-/* // Menu
+// Menu
 
 const burger = document.querySelector(".burger");
 const Menu = document.querySelector(".menu");
@@ -138,28 +138,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 
-// Submit to Netlify	
-
-document.getElementById('registrationForm').addEventListener('submit', async function (e) {
-	e.preventDefault();
-	
-	const form = e.target;
-	const formData = new FormData(form);
-	const data = Object.fromEntries(formData.entries());
-	
-	const response = await fetch('/.netlify/functions/submit', {
-		method: 'POST',
-		headers: { 'Content-Type': 'application/json' },
-		body: JSON.stringify(data)
-	});
-	
-	const result = await response.json();
-	alert(result.message);
-	form.reset();
-	});
-
-
-
 // Home Icon Disappear On Scoll
 
 window.addEventListener('scroll', function() {	
@@ -216,113 +194,4 @@ window.addEventListener('scroll', function() {
 		
 		image[imageIndex - 1].style.display = "block";
 		innerHTML = [imageIndex - 1];
-	}*/
-
-// Menu Toggle
-const burger = document.querySelector(".burger");
-const Menu = document.querySelector(".menu");
-
-burger.addEventListener("click", () => {
-  burger.classList.toggle("active");
-  Menu.classList.toggle("active");
-});
-
-document.querySelectorAll(".menu-link").forEach(n =>
-  n.addEventListener("click", () => {
-    burger.classList.remove("active");
-    Menu.classList.remove("active");
-  })
-);
-
-document.querySelector(".close").addEventListener("click", () => {
-  burger.classList.remove("active");
-  Menu.classList.remove("active");
-});
-
-document.querySelector(".contact-button").addEventListener("click", () => {
-  burger.classList.remove("active");
-  Menu.classList.remove("active");
-});
-
-// Child Add/Remove Logic
-document.addEventListener("DOMContentLoaded", function () {
-  const addChildBtn = document.getElementById("addChildBtn");
-  const removeChildBtn = document.getElementById("removeChildBtn");
-  const childrenContainer = document.getElementById("childrenContainer");
-
-  let childCount = 1;
-
-  addChildBtn.addEventListener("click", () => {
-    childCount++;
-
-    const childSection = document.createElement("div");
-    childSection.classList.add("child-section");
-
-    childSection.innerHTML = `
-      <h2 style="margin-top: 90px;">Child ${childCount}</h2>
-      <div class="field-left">
-        <input type="text" id="child${childCount}FirstName" name="child${childCount}FirstName" placeholder="First Name" required>
-      </div>
-
-      <div class="field-right">
-        <input type="text" id="child${childCount}LastName" name="child${childCount}LastName" placeholder="Last Name" required>
-      </div>
-
-      <div class="field">
-        <label for="child${childCount}DOB">Birth Date</label>
-        <input type="date" id="child${childCount}DOB" name="child${childCount}DOB" required>
-      </div>
-    `;
-
-    childrenContainer.appendChild(childSection);
-
-    if (childCount > 1) {
-      removeChildBtn.style.display = "inline-block";
-    }
-  });
-
-  removeChildBtn.addEventListener("click", () => {
-    if (childCount > 1) {
-      const lastChild = childrenContainer.querySelector(".child-section:last-of-type");
-      if (lastChild) {
-        childrenContainer.removeChild(lastChild);
-        childCount--;
-      }
-    }
-
-    if (childCount === 1) {
-      removeChildBtn.style.display = "none";
-    }
-  });
-
-  // Form validation
-  document.getElementById("registrationForm").addEventListener("submit", function (e) {
-    const phone = document.getElementById("parentPhone").value;
-    const fakeNumbers = [
-      "1234567890",
-      "0123456789",
-      "1231231231",
-      "1231231232",
-      "1231231233",
-      "1231231234",
-      "1231231235",
-      "1231231236",
-      "1231231237",
-      "1231231238",
-      "1231231239",
-      "1231231230",
-    ];
-
-    if (phone.length !== 10 || !/^\d+$/.test(phone)) {
-      alert("Please enter a valid 10-digit phone number.");
-      e.preventDefault();
-      return;
-    }
-
-    if (fakeNumbers.includes(phone)) {
-      alert("Please enter a real phone number.");
-      e.preventDefault();
-      return;
-    }
-  });
-});
+	}
