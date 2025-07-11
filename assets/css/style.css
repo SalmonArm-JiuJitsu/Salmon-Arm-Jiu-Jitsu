@@ -758,6 +758,7 @@ button {
 			button.style5 {
 				color: #131313;
 				width: auto;
+				margin-right:15px;
 				font-size: 13pt;
 				letter-spacing: 1px;
 				border-radius: 30px;
