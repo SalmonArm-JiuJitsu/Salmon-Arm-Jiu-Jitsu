@@ -136,7 +136,27 @@ document.addEventListener("DOMContentLoaded", function () {
 			return true;
 		}
 	}
+
+
+// Submit to Netlify	
+
+document.getElementById('registrationForm').addEventListener('submit', async function (e) {
+	e.preventDefault();
 	
+	const form = e.target;
+	const formData = new FormData(form);
+	const data = Object.fromEntries(formData.entries());
+	
+	const response = await fetch('/.netlify/functions/submit', {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify(data)
+	});
+	
+	const result = await response.json();
+	alert(result.message);
+	form.reset();
+	});
 
 
 
