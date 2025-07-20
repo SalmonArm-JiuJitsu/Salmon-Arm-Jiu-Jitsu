@@ -240,7 +240,7 @@ const weeklySchedule = [
 	// Sunday
 	{ day: 'Sunday', time: '10:30 AM - 11:30 AM', title: 'Open Mat', capacity: 'available', color: '#04bd16' },
 	{ day: 'Sunday', time: '12:00 PM - 12:45 PM', title: 'Juniors (Ages 7-9)', capacity: 'available', color: '#f7f757', textColor: '#505050'},
-	{ day: 'Sunday', time: '1:00 PM - 2:00 PM', title: 'Teens (Ages 10-14) (Group A & B)', capacity: 'available', color: 'linear-gradient(135deg, #00d5ff 10%, #de6c02 80%)' }
+	{ day: 'Sunday', time: '1:00 PM - 2:00 PM', title: 'Teens (Ages 10-14) Groups A & B', capacity: 'available', color: 'linear-gradient(135deg, #00d5ff 10%, #de6c02 80%)' }
   
 ];
 
@@ -278,7 +278,7 @@ const weeklySchedule = [
 	
 		// Previous Week button
 		const prevBtn = document.createElement('button');
-		prevBtn.innerHTML = `<img src="assets/fonts/fontawesome-pro/svgs/thin/arrow-left.svg" alt="Previous Week" class="nav-arrow" />`;
+		prevBtn.innerHTML = `<img src="assets/fonts/fontawesome-pro/svgs/regular/arrow-left.svg" class="nav-arrow" />`;
 		prevBtn.onclick = () => changeWeek(-1);
 	
 		// Date range label (centered)
@@ -291,7 +291,7 @@ const weeklySchedule = [
 	
 		// Next Week button
 		const nextBtn = document.createElement('button');
-		nextBtn.innerHTML = `<img src="assets/fonts/fontawesome-pro/svgs/thin/arrow-right.svg" alt="Next Week" class="nav-arrow" />`;
+		nextBtn.innerHTML = `<img src="assets/fonts/fontawesome-pro/svgs/regular/arrow-right.svg" class="nav-arrow" />`;
 		nextBtn.onclick = () => changeWeek(1);
 	
 		// Append controls
@@ -386,41 +386,6 @@ const weeklySchedule = [
 			
 				col.appendChild(block);
 			});
-			
-			/*dayClasses.forEach(c => {
-				const block = document.createElement('div');
-				block.className = 'class-block';
-				block.style.background = c.color || 'green'; // fallback color
-				block.style.color = c.textColor || '#fff';
-
-
-				const timeEl = document.createElement('div');
-				timeEl.className = 'class-time';
-				timeEl.textContent = c.time;
-				block.appendChild(timeEl);
-
-				const titleEl = document.createElement('div');
-				titleEl.className = 'class-title';
-				titleEl.textContent = c.title;
-				block.appendChild(titleEl);
-  
-				if (c.capacity === 'available') {
-					const btn = document.createElement('a');
-					btn.href = '/trial.html'; // change to your trial booking URL
-					btn.className = 'button-book';
-					btn.textContent = 'Book Free Trial';
-					block.appendChild(btn);
-				} 
-				
-				else {
-					const fullLabel = document.createElement('div');
-					fullLabel.className = 'full-label';
-					fullLabel.textContent = 'FULL';
-					block.appendChild(fullLabel);
-				}
-  
-			col.appendChild(block);
-		});*/ //saturday will behave like other days with this code
 		}
   
 		row.appendChild(col);
