@@ -1322,24 +1322,18 @@ img {
 			font-weight: 600;
 		}
 		
-		#scheduleApp button:hover {
-			background-color: #222;
-		}
-
-		.week-nav {
-			background: none;
-			border: none;
-			padding: 5px;
-			cursor: pointer;
-		  }
+			#scheduleApp button:hover {
+				background-color: #222;
+			}
 		  
-		  .nav-arrow {
-			width: 24px;
-			height: 24px;
-			display: inline-block;
-		  }
-	  
-	  .week-row {
+	.nav-arrow {
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+		margin-bottom: -4px;
+	}
+	
+	.week-row {
 		display: grid;
 		grid-template-columns: repeat(7, 1fr);
 		gap: 10px;
@@ -1356,52 +1350,30 @@ img {
 		box-sizing: border-box;
 	}
 
-	@media screen and (max-width: 900px) {
-		.week-row {
-			grid-template-columns: 1fr;
-		}
-	
-		.day-column {
-			width: 100%;
-			margin-bottom: 30px;
-		}
-
-		.day-column .class-block:last-of-type {
-			margin-bottom: 0;
-		  }
-	}
-	
-	  
 		.day-column h3 {
 			margin: 0 0 8px;
 			font-size: 1rem;
 			color: #000;
 		}
-	
+
 	.class-block {
 		background: transparent;
 		border-radius: 6px;
 		padding: 6px;
 		margin-bottom: 8px;
-		font-size: 0.9rem;
+		font-size: 10.8pt;
 	}
-
-		@media screen and (max-width: 900px) {
-			.class-block {
-				margin-bottom: 20px;
-			}
-		}
 
 	.class-time {
 		font-weight: bold;
 		margin-bottom: 2px;
 	}
-	
+
 	.button-book {
 		display: inline-block;
 		margin-top: 5px;
 		padding: 4px 8px;
-		font-size: 0.8rem;
+		font-size: 9.6pt;
 		color: #fff;
 		background-color: #03824b;
 		border-radius: 4px;
@@ -1410,7 +1382,7 @@ img {
 	
 	.full-label {
 		margin-top: 4px;
-		font-size: 0.8rem;
+		font-size: 9.6pt;
 		color: #e53935;
 		font-weight: bold;
 	}
@@ -1423,12 +1395,29 @@ img {
 		background: #ccc;
 		color: #333;
 		font-weight: bold;
-		font-size: 1.2rem;
+		font-size: 15pt;
 		border-radius: 8px;
 		height: 100%;
 	}
-	  
-	  
+
+	@media screen and (max-width: 900px) {
+		.week-row {
+			grid-template-columns: 1fr;
+		}
+	
+		.day-column {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+
+		.day-column .class-block:last-of-type {
+			margin-bottom: 0;
+		}
+
+		.class-block {
+			margin-bottom: 20px;
+		}
+	} 
 
 
 /* Trial */
