@@ -224,7 +224,7 @@ const weeklySchedule = [
 	{ day: 'Wednesday', time: '6:00 PM - 7:15 PM', title: 'Adult No-Gi', capacity: 'available', color: '#303030' },
 
 	// Thursday
-	{ day: 'Thursday', time: '4:00 PM - 4:30 PM', title: 'Tikes (Ages 3-6)', capacity: 'full', color: '#02de91' },
+	{ day: 'Thursday', time: '4:00 PM - 4:30 PM', title: 'Tikes (Ages 3-6)', capacity: 'available', color: '#02de91' },
 	{ day: 'Thursday', time: '5:00 PM - 6:00 PM', title: 'Teens (Ages 10-14) Group A', capacity: 'full', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Thursday', time: '6:00 PM - 7:15 PM', title: 'Adult No-Gi', capacity: 'available', color: '#303030' },
 	{ day: 'Thursday', time: '7:15 PM - 8:15 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#fc65dc' },
@@ -287,7 +287,7 @@ const weeklySchedule = [
 		weekLabel.style.flexGrow = '1';
 		weekLabel.style.textAlign = 'center';
 		weekLabel.style.fontWeight = 'bold';
-		weekLabel.style.fontSize = '1.1rem';
+		weekLabel.style.fontSize = '13.2pt';
 	
 		// Next Week button
 		const nextBtn = document.createElement('button');
@@ -376,13 +376,14 @@ const weeklySchedule = [
 						msg.textContent = 'Booking not available yet';
 						block.appendChild(msg);
 					}
-				} else {
+				} 
+				
+				else {
 					const fullLabel = document.createElement('div');
 					fullLabel.className = 'full-label';
 					fullLabel.textContent = 'FULL';
 					block.appendChild(fullLabel);
 				}
-
 			
 				col.appendChild(block);
 			});
