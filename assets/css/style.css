@@ -688,7 +688,7 @@ button {
 
 			button.style2:hover:after,
 			button.style2:active:after {
-				content: 'Try Our Classes';
+				content: 'Free Trial';
 				font-size: 14pt;
 				padding-top: calc(12.5px + 7pt);
 				position: absolute;
@@ -842,7 +842,7 @@ i {
 	display: flex;
 	position: relative;
 	align-items: center;
-
+	/*background-image: url("../../images/about/aboutUs.jpg");*/
 	background-attachment: fixed;
 	background-position: center 60px;
 	background-repeat: no-repeat;
