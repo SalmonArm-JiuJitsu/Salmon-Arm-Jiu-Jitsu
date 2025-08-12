@@ -856,8 +856,6 @@ i {
 	@media screen and (max-width: 1100px) {
 		.home {
 			background-image: url("../../images/index/indexMobile.jpg");
-			background-attachment: fixed;
-			background-size: cover;
 			background-position: center -200px;
 		}
 	}
@@ -865,17 +863,13 @@ i {
 	@media screen and (max-width: 900px) {
 		.home {
 			background-image: url("../../images/index/indexMobile.jpg");
-			background-attachment: fixed;
-			background-size: cover;
-			background-position: center -80px;
+			background-position: center -50px;
 		}
 	}
 
 	@media screen and (max-width: 600px) {
 		.home {
 			background-image: url("../../images/index/indexMobile.jpg");
-			background-attachment: fixed;
-			background-size: cover;
 			background-position: center;
 		}
 	}
