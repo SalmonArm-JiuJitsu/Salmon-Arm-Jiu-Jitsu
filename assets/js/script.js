@@ -224,7 +224,7 @@ const weeklySchedule = [
 	{ day: 'Wednesday', time: '6:00 PM - 7:15 PM', title: 'Adult No-Gi', capacity: 'available', color: '#303030' },
 
 	// Thursday
-	{ day: 'Thursday', time: '4:00 PM - 4:30 PM', title: 'Tikes (Ages 3-6)', capacity: 'available', color: '#02de91' },
+	{ day: 'Thursday', time: '4:00 PM - 4:30 PM', title: 'Tikes (Ages 4-6)', capacity: 'available', color: '#02de91' },
 	{ day: 'Thursday', time: '5:00 PM - 6:00 PM', title: 'Teens (Ages 10-14) Group A', capacity: 'full', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Thursday', time: '6:00 PM - 7:15 PM', title: 'Adult No-Gi', capacity: 'available', color: '#303030' },
 	{ day: 'Thursday', time: '7:15 PM - 8:15 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#fc65dc' },
