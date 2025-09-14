@@ -208,7 +208,7 @@ const weeklySchedule = [
 	{ day: 'Monday', time: '6:00 PM - 7:15 PM', title: 'Adult No-Gi', capacity: 'available', color: '#303030' },
 
 	// Tuesday	
-	{ day: 'Tuesday', time: '3:15 PM - 3:45 PM', title: 'Kids (Ages 4-6)', capacity: 'full', color: '#02de91', textColor: '#505050' },
+	{ day: 'Tuesday', time: '3:15 PM - 3:45 PM', title: 'Kids (Ages 5-6)', capacity: 'full', color: '#02de91', textColor: '#505050' },
 	{ day: 'Tuesday', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#f7f757', textColor: '#505050'},
 	{ day: 'Tuesday', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'available', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Tuesday', time: '6:00 PM - 7:15 PM', title: 'Adult No-Gi', capacity: 'available', color: '#303030' },
@@ -219,7 +219,7 @@ const weeklySchedule = [
 	{ day: 'Wednesday', time: '6:00 PM - 7:15 PM', title: 'Adult No-Gi', capacity: 'available', color: '#303030' },
 
 	// Thursday
-	{ day: 'Thursday', time: '3:15 PM - 3:45 PM', title: 'Kids (Ages 4-6)', capacity: 'full', color: '#02de91', textColor: '#505050' },
+	{ day: 'Thursday', time: '3:15 PM - 3:45 PM', title: 'Kids (Ages 5-6)', capacity: 'full', color: '#02de91', textColor: '#505050' },
 	{ day: 'Thursday', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#f7f757', textColor: '#505050'},
 	{ day: 'Thursday', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'available', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Thursday', time: '6:00 PM - 7:15 PM', title: 'Adult No-Gi', capacity: 'available', color: '#303030' },
