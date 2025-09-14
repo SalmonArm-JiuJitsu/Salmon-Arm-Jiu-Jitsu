@@ -379,7 +379,7 @@ const weeklySchedule = [
 				else {
 					const fullLabel = document.createElement('div');
 					fullLabel.className = 'full-label';
-					fullLabel.textContent = 'Waitlist';
+					fullLabel.textContent = 'Wait List';
 					block.appendChild(fullLabel);
 				}
 			
