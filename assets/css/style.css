@@ -222,8 +222,9 @@ p {
 		color:#eee;
 		font-family: "nimbus-sans-light";
         font-size: 25pt;
+		text-align: center;
 		letter-spacing: 1px;
-		margin-top: 50px;
+		margin-bottom: 50px;
 	}
 
 	p.style4 {
