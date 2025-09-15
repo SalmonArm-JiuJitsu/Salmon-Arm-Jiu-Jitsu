@@ -222,10 +222,8 @@ p {
 		color:#eee;
 		font-family: "nimbus-sans-light";
         font-size: 25pt;
-		color: darkorange;
-		text-align: center;
 		letter-spacing: 1px;
-		margin-bottom: 80px;
+		margin-top: 50px;
 	}
 
 	p.style4 {
@@ -233,6 +231,15 @@ p {
         font-size: 16pt;
 		letter-spacing: 1px;
 		margin-bottom: 50px;
+	}
+
+	p.style5 {
+		color: darkorange;
+		font-family: "nimbus-sans-light";
+        font-size: 25pt;
+		text-align: center;
+		letter-spacing: 1px;
+		margin-bottom: 80px;
 	}
 
 strong {
@@ -1448,7 +1455,7 @@ img {
 	margin: 0 auto;
 	max-width: 1400px;
 	grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
-	grid-gap: 20px;
+	grid-gap: 30px;
 }
 	
 	.trial .tile {
@@ -1473,13 +1480,13 @@ img {
 		font-weight: bold;
 	}
 
-		@media screen and (min-width: 1189px) {
+		@media screen and (min-width: 1210px) {
 			.trial .tablet {
 				display: none;
 			}
 	}
 
-		@media screen and (max-width: 819px) {
+		@media screen and (max-width: 829px) {
 			.trial .tablet {
 				display: none;
 			}
