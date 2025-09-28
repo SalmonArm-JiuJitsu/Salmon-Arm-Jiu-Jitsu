@@ -223,7 +223,7 @@ const weeklySchedule = [
 	{ day: 'Thursday', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#f7f757', textColor: '#505050'},
 	{ day: 'Thursday', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'available', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Thursday', time: '6:00 PM - 7:15 PM', title: 'Adult No-Gi', capacity: 'available', color: '#303030' },
-	{ day: 'Thursday', time: '7:15 PM - 8:15 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#fc65dc' },
+	{ day: 'Thursday', time: '7:20 PM - 8:20 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#fc65dc' },
 
 	// Friday
 	{ day: 'Friday', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'available', color: 'lime', textColor: '#505050'},
@@ -268,10 +268,7 @@ const weeklySchedule = [
 	
 		// Pagination controls container
 		const controls = document.createElement('div');
-		controls.style.display = 'flex';
-		controls.style.alignItems = 'center';
-		controls.style.justifyContent = 'space-between';
-		controls.style.marginBottom = '15px';
+		controls.classList.add('controls'); 
 	
 		// Previous Week button
 		const prevBtn = document.createElement('button');
@@ -281,10 +278,7 @@ const weeklySchedule = [
 		// Date range label (centered)
 		const weekLabel = document.createElement('div');
 		weekLabel.textContent = `${formatDateRange(startOfWeek)}`;
-		weekLabel.style.flexGrow = '1';
-		weekLabel.style.textAlign = 'center';
-		weekLabel.style.fontWeight = 'bold';
-		weekLabel.style.fontSize = '13.2pt';
+		weekLabel.classList.add('week-label'); 
 	
 		// Next Week button
 		const nextBtn = document.createElement('button');
@@ -367,7 +361,9 @@ const weeklySchedule = [
 						btn.className = 'button-book';
 						btn.textContent = 'Book Free Trial';
 						block.appendChild(btn);
-					} else if (isInFuture && !isWithin14Days) {
+					}
+					
+					else if (isInFuture && !isWithin14Days) {
 						const msg = document.createElement('div');
 						msg.className = 'full-label';
 						msg.textContent = 'Booking not available yet';
