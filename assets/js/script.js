@@ -205,30 +205,33 @@ window.addEventListener('scroll', function() {
 const weeklySchedule = [
 	// Monday
 	{ day: 'Monday', time: '5:00 PM - 6:00 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#fc65dc' },
-	{ day: 'Monday', time: '6:00 PM - 7:15 PM', title: 'Adult No-Gi', capacity: 'available', color: '#303030' },
+	{ day: 'Monday', time: '6:00 PM - 7:15 PM', title: 'Advanced No-Gi', capacity: 'available', color: '#303030' },
+	{ day: 'Monday', time: '7:20 PM - 8:20 PM', title: 'Beginner No-Gi', capacity: 'available', color: 'blue' },
 
 	// Tuesday	
 	{ day: 'Tuesday', time: '3:15 PM - 3:45 PM', title: 'Kids (Ages 5-6)', capacity: 'available', color: '#02de91', textColor: '#505050' },
 	{ day: 'Tuesday', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#f7f757', textColor: '#505050'},
 	{ day: 'Tuesday', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'available', color: '#00d5ff', textColor: '#505050' },
-	{ day: 'Tuesday', time: '6:00 PM - 7:15 PM', title: 'Adult No-Gi', capacity: 'available', color: '#303030' },
+	{ day: 'Tuesday', time: '6:00 PM - 7:15 PM', title: 'Advanced No-Gi', capacity: 'available', color: '#303030' },
 
 	// Wednesday
 	{ day: 'Wednesday', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'available', color: 'lime', textColor: '#505050'},
 	{ day: 'Wednesday', time: '5:00 PM - 6:00 PM', title: 'Teens (Ages 13-16)', capacity: 'available', color: '#de6c02' },
-	{ day: 'Wednesday', time: '6:00 PM - 7:15 PM', title: 'Adult No-Gi', capacity: 'available', color: '#303030' },
+	{ day: 'Wednesday', time: '6:00 PM - 7:15 PM', title: 'Advanced No-Gi', capacity: 'available', color: '#303030' },
+	{ day: 'Wednesday', time: '7:20 PM - 8:20 PM', title: 'Beginner No-Gi', capacity: 'available', color: 'blue' },
 
 	// Thursday
 	{ day: 'Thursday', time: '3:15 PM - 3:45 PM', title: 'Kids (Ages 5-6)', capacity: 'available', color: '#02de91', textColor: '#505050' },
 	{ day: 'Thursday', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#f7f757', textColor: '#505050'},
 	{ day: 'Thursday', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'available', color: '#00d5ff', textColor: '#505050' },
-	{ day: 'Thursday', time: '6:00 PM - 7:15 PM', title: 'Adult No-Gi', capacity: 'available', color: '#303030' },
+	{ day: 'Thursday', time: '6:00 PM - 7:15 PM', title: 'Advanced No-Gi', capacity: 'available', color: '#303030' },
 	{ day: 'Thursday', time: '7:20 PM - 8:20 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#fc65dc' },
 
 	// Friday
 	{ day: 'Friday', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'available', color: 'lime', textColor: '#505050'},
 	{ day: 'Friday', time: '5:00 PM - 6:00 PM', title: 'Teens (Ages 13-16)', capacity: 'available', color: '#de6c02' },
-	{ day: 'Friday', time: '6:00 PM - 7:15 PM', title: 'Adult No-Gi', capacity: 'available', color: '#303030' },
+	{ day: 'Friday', time: '6:00 PM - 7:15 PM', title: 'Advanced No-Gi', capacity: 'available', color: '#303030' },
+	{ day: 'Friday', time: '7:20 PM - 8:20 PM', title: 'Beginner No-Gi', capacity: 'available', color: 'blue' },
 
 	// Saturday - Closed
 	{ day: 'Saturday', time: '', title: 'Closed', capacity: 'closed' },
