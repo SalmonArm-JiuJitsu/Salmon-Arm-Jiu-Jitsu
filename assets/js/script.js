@@ -1,3 +1,10 @@
+// Hide Until CSS Loads
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.style.visibility = 'visible';
+});
+
+
 // Menu
 
 const burger = document.querySelector(".burger");
