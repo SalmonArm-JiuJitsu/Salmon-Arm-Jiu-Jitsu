@@ -247,7 +247,8 @@ const weeklySchedule = [
 	{ day: 'Sunday', time: '10:30 AM - 11:30 AM', title: 'Open Mat', capacity: 'available', color: '#8805fa' },
 	{ day: 'Sunday', time: '12:00 PM - 12:45 PM', title: 'Kids (Ages 7-9) Both Groups', capacity: 'available', color: "linear-gradient(135deg, #f7f757 30%, lime)", textColor: '#505050'},
 	{ day: 'Sunday', time: '1:00 PM - 2:00 PM', title: 'Kids (Ages 10-12)', capacity: 'available', color: '#00d5ff', textColor: '#505050' },
-	{ day: 'Sunday', time: '2:00 PM - 3:00 PM', title: 'Teens (Ages 13-16)', capacity: 'available', color: '#de6c02' }
+	{ day: 'Sunday', time: '2:00 PM - 3:00 PM', title: 'Teens (Ages 13-16)', capacity: 'available', color: '#de6c02' },
+	{ day: 'Sunday', time: '3:00 PM - 4:00 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#fc65dc' }
   
 ];
 
