@@ -1244,6 +1244,15 @@ img {
 	border-radius: 7px;
 }
 
+#registrationForm textarea {
+    line-height: 1.4;
+    padding: 12px;
+    font-size: 16pt;
+    border-radius: 7px;
+    background: #353535;
+    color: #efefef;
+}
+
 #registrationForm .submit-button {
 	width: 100%;
 	background: var(--platinum-180);
