@@ -851,7 +851,7 @@ i {
 	display: flex;
 	position: relative;
 	align-items: center;
-	background-image: url("../../images/index/indexDesktop.jpg");
+	/*background-image: url("../../images/index/indexDesktop.jpg"); */
 	background-attachment: fixed;
 	background-position: center 60px;
 	background-repeat: no-repeat;
@@ -862,7 +862,7 @@ i {
 	animation: fadeIn 6s;
 }
 
-	@media screen and (max-width: 1100px) {
+	/*@media screen and (max-width: 1100px) {
 		.home {
 			background-image: url("../../images/index/indexMobile.jpg");
 			background-position: center -250px;
@@ -881,7 +881,7 @@ i {
 			background-image: url("../../images/index/indexMobile.jpg");
 			background-position: center;
 		}
-	}
+	}*/
 
 	.home:after {
 		display: block;
