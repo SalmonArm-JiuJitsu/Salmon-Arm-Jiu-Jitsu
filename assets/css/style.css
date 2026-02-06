@@ -1209,7 +1209,7 @@ img {
 				}
 
 				
-/* Register Child */
+/* Youth Waitlist */
 
 .registration-container {
 	max-width: 700px;
@@ -1281,7 +1281,7 @@ img {
 }
 
 #childrenContainer {
-    padding-top: 30px;
+    padding-top: 30px
 }
 
 @media screen and (max-width: 720px) {
@@ -1304,6 +1304,33 @@ img {
 	color: #efefef;
 }
 		
+
+.interest-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.interest-option {
+	display: grid;
+	grid-template-columns: 22px 1fr;
+	column-gap: 12px;
+	align-items: start;
+	cursor: pointer;
+}
+
+.interest-option input {
+	margin-top: 4px;
+	transform: scale(1.2);
+}
+
+.interest-option em {
+	font-size: 12pt;
+	color: #555;
+}
+
+
+
 
 
 /* Privacy Policy */
@@ -1420,18 +1447,37 @@ img {
 		margin-bottom: 2px;
 	}
 
-	.button-book {
+	.schedule-button {
 		display: inline-block;
-		margin-top: 5px;
+		margin-top: 4px;
 		padding: 4px 8px;
 		font-size: 9.6pt;
+		font-weight: bold;
 		color: #fff;
-		background-color: #03824b;
 		border-radius: 4px;
 		text-decoration: none;
 	}
 	
-	.full-label {
+		.schedule-button:hover {
+			background-color: #3cff00;
+			color: #202020;
+		}
+
+		.button-book {
+			background-color: #03824b;
+		}
+		
+		.waitlist-button {
+			background-color: #f57003;
+		}
+		
+		.forming-button {
+			background-color: #1303f5;
+		}
+		
+	
+	
+	.no-booking-yet {
 		margin-top: 4px;
 		font-size: 9.6pt;
 		color: #e53935;
