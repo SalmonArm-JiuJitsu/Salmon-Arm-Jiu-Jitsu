@@ -61,7 +61,7 @@ function contactForm() {
 
 
 
-// Register Child Form
+// Youth Waitlist Form
 
 document.addEventListener("DOMContentLoaded", function () {
     const addChildBtn = document.getElementById("addChildBtn");
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-	// Validate Child Registration Form
+	// Validate Youth Waitlist Form
 
 	function validateRegistrationForm() {
 		const parentPhone = document.getElementById('parentPhone');
@@ -139,6 +139,12 @@ document.addEventListener("DOMContentLoaded", function () {
 			return false;
 		}
 
+		const interests = document.querySelectorAll('input[name="classInterest[]"]:checked');
+
+		if (interests.length === 0) {
+			alert("Please select at least one class option.");
+			return false;
+		}
 
 		else {
 			return true;
@@ -211,31 +217,30 @@ window.addEventListener('scroll', function() {
 
 const weeklySchedule = [
 	// Monday
+	{ day: 'Monday', time: '3:10 PM - 3:50 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'forming', color: '#dfff00', textColor: '#505050' },
 	{ day: 'Monday', time: '5:00 PM - 6:00 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#fc65dc' },
 	{ day: 'Monday', time: '6:00 PM - 7:15 PM', title: 'Advanced No-Gi', capacity: 'available', color: '#303030' },
 	{ day: 'Monday', time: '7:20 PM - 8:20 PM', title: 'Beginner No-Gi', capacity: 'available', color: 'blue' },
 
 	// Tuesday	
-	//{ day: 'Tuesday', time: '3:15 PM - 3:45 PM', title: 'Kids (Ages 5-6)', capacity: 'available', color: '#02de91', textColor: '#505050' },
-	{ day: 'Tuesday', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9)', capacity: 'available', color: '#f7f757', textColor: '#505050'},
-	{ day: 'Tuesday', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'available', color: '#00d5ff', textColor: '#505050' },
+	{ day: 'Tuesday', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'full', color: '#1ae195', textColor: '#505050'},
+	{ day: 'Tuesday', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'full', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Tuesday', time: '6:00 PM - 7:15 PM', title: 'Advanced No-Gi', capacity: 'available', color: '#303030' },
 
 	// Wednesday
-	//{ day: 'Wednesday', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'available', color: 'lime', textColor: '#505050' },
+	{ day: 'Wednesday', time: '3:10 PM - 3:50 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'forming', color: '#dfff00', textColor: '#505050' },
 	{ day: 'Wednesday', time: '5:00 PM - 6:00 PM', title: 'Teens (Ages 13-16)', capacity: 'available', color: 'lime', textColor: '#505059' },
 	{ day: 'Wednesday', time: '6:00 PM - 7:15 PM', title: 'Advanced No-Gi', capacity: 'available', color: '#303030' },
 	{ day: 'Wednesday', time: '7:20 PM - 8:20 PM', title: 'Beginner No-Gi', capacity: 'available', color: 'blue' },
 
 	// Thursday
-	//{ day: 'Thursday', time: '3:15 PM - 3:45 PM', title: 'Kids (Ages 5-6)', capacity: 'available', color: '#02de91', textColor: '#505050' },
-	{ day: 'Thursday', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9)', capacity: 'available', color: '#f7f757', textColor: '#505050' },
-	{ day: 'Thursday', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'available', color: '#00d5ff', textColor: '#505050' },
+	{ day: 'Thursday', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'full', color: '#1ae195', textColor: '#505050' },
+	{ day: 'Thursday', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'full', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Thursday', time: '6:00 PM - 7:15 PM', title: 'Advanced No-Gi', capacity: 'available', color: '#303030' },
 	{ day: 'Thursday', time: '7:20 PM - 8:20 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#fc65dc' },
 
 	// Friday
-	//{ day: 'Friday', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'available', color: 'lime', textColor: '#505050' },
+	{ day: 'Friday', time: '3:10 PM - 3:50 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'forming', color: '#dfff00', textColor: '#505050' },
 	{ day: 'Friday', time: '5:00 PM - 6:00 PM', title: 'Teens (Ages 13-16)', capacity: 'available', color: 'lime', textColor: '#505059' },
 	{ day: 'Friday', time: '6:00 PM - 7:15 PM', title: 'Advanced No-Gi', capacity: 'available', color: '#303030' },
 	{ day: 'Friday', time: '7:20 PM - 8:20 PM', title: 'Beginner No-Gi', capacity: 'available', color: 'blue' },
@@ -245,8 +250,8 @@ const weeklySchedule = [
 
 	// Sunday
 	{ day: 'Sunday', time: '10:30 AM - 11:30 AM', title: 'Open Mat', capacity: 'available', color: '#8805fa' },
-	{ day: 'Sunday', time: '12:00 PM - 12:45 PM', title: 'Kids (Ages 7-9)', capacity: 'available', color: '#f7f757', textColor: '#505050' },
-	{ day: 'Sunday', time: '1:00 PM - 2:00 PM', title: 'Kids (Ages 10-12)', capacity: 'available', color: '#00d5ff', textColor: '#505050' },
+	{ day: 'Sunday', time: '12:00 PM - 12:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'full', color: '#1ae195', textColor: '#505050' },
+	{ day: 'Sunday', time: '1:00 PM - 2:00 PM', title: 'Kids (Ages 10-12)', capacity: 'full', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Sunday', time: '2:00 PM - 3:00 PM', title: 'Teens (Ages 13-16)', capacity: 'available', color: 'lime', textColor: '#505059' },
 	{ day: 'Sunday', time: '3:00 PM - 4:00 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#fc65dc' }
   
@@ -273,7 +278,8 @@ const weeklySchedule = [
   
 	function renderWeek() {
 		const today = new Date();
-		const startOfWeek = addDays(today, -today.getDay() + currentOffset * 7);
+		//const startOfWeek = addDays(today, -today.getDay() + currentOffset * 7);
+		const startOfWeek = addDays(today, currentOffset * 7);
 		const container = document.getElementById('scheduleApp');
 		container.innerHTML = '';
 	
@@ -366,27 +372,41 @@ const weeklySchedule = [
 				const isWithin14Days = classDateTime <= twoWeeksFromNow;
 
 				if (c.capacity === 'available') {
+					// Book class
 					if (isInFuture && isWithin14Days) {
 						const btn = document.createElement('a');
 						btn.href = '#footer';
-						btn.className = 'button-book';
+						btn.className = 'schedule-button button-book';
 						btn.textContent = 'Book Free Trial';
 						block.appendChild(btn);
 					}
-					
+
+					// Booking not available yet
 					else if (isInFuture && !isWithin14Days) {
 						const msg = document.createElement('div');
-						msg.className = 'full-label';
+						msg.className = 'no-booking-yet';
 						msg.textContent = 'Booking not available yet';
 						block.appendChild(msg);
 					}
+					
 				} 
-				
+
+				// Form new class
+				else if (c.capacity === 'forming') {
+					const formingBtn = document.createElement('a');
+					formingBtn.href = 'youthWaitlist.html';
+					formingBtn.className = 'schedule-button forming-button';
+					formingBtn.textContent = 'Opening Soon – Join';
+					block.appendChild(formingBtn);
+				}
+
+				// Waitlist
 				else {
-					const fullLabel = document.createElement('div');
-					fullLabel.className = 'full-label';
-					fullLabel.textContent = 'Wait List';
-					block.appendChild(fullLabel);
+					const waitlistBtn = document.createElement('a');
+					waitlistBtn.href = 'youthWaitlist.html';
+					waitlistBtn.className = 'schedule-button waitlist-button';
+					waitlistBtn.textContent = 'Join Waitlist';
+					block.appendChild(waitlistBtn);
 				}
 			
 				col.appendChild(block);
