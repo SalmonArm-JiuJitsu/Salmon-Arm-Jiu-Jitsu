@@ -91,25 +91,29 @@ a {
 			transform: scale(1.08) translateX(10px);
 		}
 
-		a.style3 {
-			display: inline-block;
-			position: relative;
-			align-items: center;
-			padding: 20px;
-			margin: -20px;
-			transform: scale(1);
-			transition: 0.2s ease-in-out;
-		}
+	a.style3 {
+		display: inline-block;
+		position: relative;
+		align-items: center;
+		padding: 20px;
+		margin: -20px;
+		transform: scale(1);
+		transition: 0.2s ease-in-out;
+	}
 
-			a.style3:hover,
-			a.style3:active {
-				background: transparent;
-				color: #03e9f4;
-				transform: scale(1.08) translateX(6px);
-			}
+		a.style3:hover,
+		a.style3:active {
+			background: transparent;
+			color: #03e9f4;
+			transform: scale(1.08) translateX(6px);
+		}
 
 	a.style4 {
 		font-size: 20pt;		
+	}
+
+	a.style5 {
+		font-family: "nimbus-sans-bold";
 	}
 
 address {
