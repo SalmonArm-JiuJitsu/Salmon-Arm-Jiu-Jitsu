@@ -1280,21 +1280,13 @@ img {
 	margin-top: 40px;
 }
 
-.child-section {
-	margin-bottom: 30px;
-}
-
 #childrenContainer {
-    padding-top: 30px
+	padding-top: 30px
 }
 
-@media screen and (max-width: 720px) {
-	#registrationForm .field-left,
-	#registrationForm .field-right {
-		width: 100%;
-		float: none;
+	.child-section {
+		margin-bottom: 30px;
 	}
-}
 
 #registrationForm label {
 	color: #131313;
@@ -1306,32 +1298,39 @@ img {
 
 #registrationForm input {
 	color: #efefef;
-}
-		
+}	
 
-.interest-grid {
-	display: flex;
-	flex-direction: column;
-	gap: 50px;
-}
+	@media screen and (max-width: 720px) {
+		#registrationForm .field-left,
+		#registrationForm .field-right {
+			width: 100%;
+			float: none;
+		}
+	}
 
-.interest-option {
-	display: grid;
-	grid-template-columns: 22px 1fr;
-	column-gap: 12px;
-	align-items: start;
-	cursor: pointer;
-}
+	.interest-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
 
-.interest-option input {
-	margin-top: 4px;
-	transform: scale(1.2);
-}
+	.interest-option {
+		display: grid;
+		grid-template-columns: 22px 1fr;
+		column-gap: 12px;
+		align-items: start;
+		cursor: pointer;
+	}
 
-.interest-option em {
-	font-size: 12pt;
-	color: #555;
-}
+	.interest-option input {
+		margin-top: 4px;
+		transform: scale(1.2);
+	}
+
+	.interest-option em {
+		font-size: 12pt;
+		color: #555;
+	}
 
 
 
@@ -1427,7 +1426,7 @@ img {
 		flex-direction: column;
 		padding: 10px;
 		min-height: 150px;
-		background: var(--platinum-180);
+		background: #505050;
 		border-radius: 8px;
 		box-sizing: border-box;
 	}
@@ -1435,13 +1434,13 @@ img {
 		.day-column h3 {
 			margin: 0 0 8px;
 			font-size: 1rem;
-			color: #000;
+			color: #eee;
 		}
 
 	.class-block {
-		background: transparent;
+		background: #1e1e1e;
+		padding: 10px;
 		border-radius: 6px;
-		padding: 6px;
 		margin-bottom: 8px;
 		font-size: 10.8pt;
 	}
@@ -1457,29 +1456,16 @@ img {
 		padding: 4px 8px;
 		font-size: 9.6pt;
 		font-weight: bold;
-		color: #fff;
+		color: #000;
 		border-radius: 4px;
 		text-decoration: none;
+		background-color: rgba(255, 255, 255, 0.7);
 	}
 	
 		.schedule-button:hover {
-			background-color: #3cff00;
+			background-color: #fff;
 			color: #202020;
 		}
-
-		.button-book {
-			background-color: #03824b;
-		}
-		
-		.waitlist-button {
-			background-color: #f57003;
-		}
-		
-		.forming-button {
-			background-color: #1303f5;
-		}
-		
-	
 	
 	.no-booking-yet {
 		margin-top: 4px;
@@ -1493,8 +1479,8 @@ img {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background: #ccc;
-		color: #333;
+		background: #303030;
+		color: #eee;
 		font-weight: bold;
 		font-size: 15pt;
 		border-radius: 8px;
