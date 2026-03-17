@@ -224,7 +224,7 @@ const weeklySchedule = [
 	{ day: 'Mon', time: '7:20 PM - 8:20 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc' },
 
 	// Tuesday	
-	{ day: 'Tue', time: '12:00 PM - 1:00 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc'  },
+	//{ day: 'Tue', time: '12:00 PM - 1:00 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc'  },
 	{ day: 'Tue', time: '4:00 PM - 4:40 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#1ae195', textColor: '#505050'},
 	{ day: 'Tue', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'full', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Tue', time: '6:00 PM - 7:15 PM', title: 'All-Levels No-Gi', capacity: 'available', color: '#303030' },
@@ -237,7 +237,7 @@ const weeklySchedule = [
 	{ day: 'Wed', time: '7:20 PM - 8:20 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc'  },
 
 	// Thursday
-	{ day: 'Thu', time: '12:00 PM - 1:00 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc'  },
+	//{ day: 'Thu', time: '12:00 PM - 1:00 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc'  },
 	{ day: 'Thu', time: '4:00 PM - 4:40 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#1ae195', textColor: '#505050' },
 	{ day: 'Thu', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'full', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Thu', time: '6:00 PM - 7:15 PM', title: 'All-Levels No-Gi', capacity: 'available', color: '#303030' },
