@@ -55,7 +55,6 @@ main {
 	}
 	
 
-
 /* Text */
 
 a {
@@ -246,6 +245,13 @@ p {
 		margin-bottom: 80px;
 	}
 
+	p.style6 {
+		font-family: "nimbus-sans-light";
+        font-size: 18pt;
+		letter-spacing: 1px;
+		margin-top: 50px;
+	}
+
 strong {
 	font-weight: bolder;
 }
@@ -310,38 +316,24 @@ strong {
 /* Gradients */
 
 :root {
+	/* Platinum */
 	--platinum-90: linear-gradient(90deg, #505050, #909090, #ddd, #909090, #555555);
-}
-	:root {
-		--platinum-90-left: linear-gradient(90deg, #505050, #909090, #ccc);
-	}
-	:root {
-		--platinum-90-right: linear-gradient(90deg, #ddd, #909090, #555);
-	}
-	:root {
-		--platinum-90-text: linear-gradient(90deg, #a0a0a0, #fff, #a0a0a0);
-	}
-:root {
+	--platinum-90-left: linear-gradient(90deg, #505050, #909090, #ccc);
+	--platinum-90-right: linear-gradient(90deg, #ddd, #909090, #555);
+	--platinum-90-text: linear-gradient(90deg, #a0a0a0, #fff, #a0a0a0);
 	--platinum-45: linear-gradient(45deg, #505050, #909090, #ddd, #909090, #555555);
-}
-:root {
 	--platinum-135: linear-gradient(135deg, #505050, #909090, #ddd, #909090, #555555);
-}
-:root {
 	--platinum-180: linear-gradient(180deg, #909090, #ccc, #909090);
-}
-:root {
+
+	/* Haze */
 	--haze: linear-gradient(#070707, #222);
+	--haze-footer: linear-gradient(#070707, #292929);
+	--haze-invert: linear-gradient(#222, #070707);
+	--haze-light: radial-gradient(ellipse at left top, #181818, #333);
+
+	/* Color */
+	--pop: linear-gradient(#009fff, #7500fa);
 }
-	:root {
-		--haze-footer: linear-gradient(#070707, #292929);
-	}
-	:root {
-		--haze-invert: linear-gradient(#222, #070707);
-	}
-	:root {
-		--haze-light: radial-gradient(ellipse at left top, #181818, #333);
-	}
 	
 
 /* Header */
@@ -523,68 +515,6 @@ header {
 			font-family: "nimbus-sans-bold";
 			font-size: 26pt;
 		}
-
-	.about .academies {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-		grid-gap: 50px;
-		margin: auto;
-		margin-top: 50px;
-	}
-
-		.about .academies .style1 {
-			background-image: linear-gradient(135deg, #0000ff 0%, #00b3ff 50%, #00ffff 100%);
-			border-radius: 14px;
-		}
-
-		.about .academies .style2 {
-			background-image: var(--platinum-135);
-			border-radius: 14px;
-		}
-
-		.about .academies .info {
-			color: #202020;
-			padding: 50px;
-			letter-spacing: 1px;
-		}
-
-			.about .academies .info h3 {
-				font-size: 30pt;
-				margin: 0 0 35px 0;
-				text-align: center;
-			}
-
-				@media screen and (max-width: 1040px) {
-					.about .academies .info h3 {
-						font-size: 25pt;
-					}
-				}
-
-			.about .academies .info .details {
-				display: grid;
-				grid-template-columns: 16pt 1fr;
-				margin-top: 30px;
-			}
-
-				@media screen and (min-width: 950px) {
-					.about .academies .info .details {
-						font-size: 20pt;
-					}
-				}
-
-				@media screen and (max-width: 949px) {
-					.about .academies .info .details {
-						font-size: 16pt;
-					}
-				}
-
-				.about .academies .info .details i {
-					background: none;
-				}
-
-				.about .academies .info .details li {
-					margin-left: 20px;
-				}
 
 
 /* Banner */
