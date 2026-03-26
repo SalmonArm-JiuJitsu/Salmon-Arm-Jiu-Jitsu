@@ -139,11 +139,15 @@ document.addEventListener("DOMContentLoaded", function () {
 			return false;
 		}
 
-		const interests = document.querySelectorAll('input[name="classInterest[]"]:checked');
+		const interests = document.querySelectorAll('input[name="classInterest[]"]');
 
-		if (interests.length === 0) {
-			alert("Please select at least one class option.");
-			return false;
+		if (interests.length > 0) {
+			const checked = document.querySelectorAll('input[name="classInterest[]"]:checked');
+
+			if (checked.length === 0) {
+				alert("Please select at least one class option.");
+				return false;
+			}
 		}
 
 		else {
