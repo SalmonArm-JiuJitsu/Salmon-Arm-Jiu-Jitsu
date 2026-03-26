@@ -529,7 +529,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
-	height: 30vh;
+	height: 50vh;
 	width: 100vw;
 	left: -50px;
 	justify-content: center;
@@ -540,9 +540,9 @@ header {
 		display: block;
 		position: absolute;
 		content: 'About Us';
-		background-color: rgba(7, 7, 7, 0.8);
+		background-color: rgba(7, 7, 7, 0.75);
 		content: '';
-		height: 30vh;
+		height: 50vh;
 		width: 100vw;
 		z-index: 1;
 	}
@@ -550,6 +550,7 @@ header {
 	@media screen and (max-width: 481px) {
 		.banner {
 			left: -30px;
+			background-position: left -625px center;
 		}
 	}
 
