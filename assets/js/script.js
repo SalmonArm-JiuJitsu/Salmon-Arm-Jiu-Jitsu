@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
 // Menu
 
 const burger = document.querySelector(".burger");
@@ -58,102 +59,6 @@ function contactForm() {
 		return true;
     }
 }
-
-
-
-// Youth Waitlist Form
-
-document.addEventListener("DOMContentLoaded", function () {
-    const addChildBtn = document.getElementById("addChildBtn");
-    const removeChildBtn = document.getElementById("removeChildBtn");
-    const childrenContainer = document.getElementById("childrenContainer");
-
-    let childCount = 1;
-
-    addChildBtn.addEventListener("click", () => {
-        childCount++;
-
-        const childSection = document.createElement("div");
-        childSection.classList.add("child-section");
-
-        childSection.innerHTML = `
-            <h2 style = "margin-top: 90px;">Child ${childCount}</h2>
-            <div class = "field-left">
-                <input type = "text" id = "child${childCount}FirstName" name = "child${childCount}FirstName" placeholder = "First Name" required>
-            </div>
-
-            <div class = "field-right">
-                <input type = "text" id="child${childCount}LastName" name = "child${childCount}LastName" placeholder = "Last Name" required>
-            </div>
-
-            <div class = "field">
-                <label for = "child${childCount}DOB">Birth Date</label>
-                <input type = "date" id = "child${childCount}DOB" name = "child${childCount}DOB" required>
-            </div>
-        `;
-
-        childrenContainer.appendChild(childSection);
-
-        // Show "Remove" button if more than one child
-        if (childCount > 1) {
-            removeChildBtn.style.display = "inline-block";
-        }
-    });
-
-    removeChildBtn.addEventListener("click", () => {
-        if (childCount > 1) {
-            const lastChild = childrenContainer.querySelector(".child-section:last-of-type");
-            if (lastChild) {
-                childrenContainer.removeChild(lastChild);
-                childCount--;
-            }
-        }
-
-        // Hide button if only one child remains
-        if (childCount === 1) {
-            removeChildBtn.style.display = "none";
-        }
-    });
-});
-
-
-	// Validate Youth Waitlist Form
-
-	function validateRegistrationForm() {
-		const parentPhone = document.getElementById('parentPhone');
-
-		if (parentPhone.value.length !== 10) {
-			alert("Please enter a 10-digit phone number.")
-			return false;
-		}
-
-		if (!/^\d+$/.test(parentPhone.value)) {
-			alert("Please include only numbers.")
-			return false;
-		}
-
-		const fakeNumbers = ['1234567890, 0123456789, 1231231231', '1231231232', '1231231233, 1231231234, 1231231235, 1231231236, 1231231237, 1231231238, 1231231239, 1231231230'];
-
-		if (fakeNumbers.includes(parentPhone.value)) {
-			alert("Please enter a real phone number.");
-			return false;
-		}
-
-		const interests = document.querySelectorAll('input[name="classInterest[]"]');
-
-		if (interests.length > 0) {
-			const checked = document.querySelectorAll('input[name="classInterest[]"]:checked');
-
-			if (checked.length === 0) {
-				alert("Please select at least one class option.");
-				return false;
-			}
-		}
-
-		else {
-			return true;
-		}
-	}
 
 
 
@@ -221,36 +126,37 @@ window.addEventListener('scroll', function() {
 
 const weeklySchedule = [
 	// Monday
-	{ day: 'Mon', time: '3:10 PM - 3:50 PM', title: 'Kids (Ages 7-9) Group C', capacity: 'forming', color: '#00758f', textColor: '#eee' },
-	{ day: 'Mon', time: '4:00 PM - 4:40 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'full', color: '#4a0391', textColor: '#ccc' },
-	{ day: 'Mon', time: '5:00 PM - 6:00 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#910364' },
+	{ day: 'Mon', time: '3:10 PM - 3:55 PM', title: 'Kids (Ages 7-9) Group C', capacity: 'forming', color: '#00758f', textColor: '#eee' },
+	{ day: 'Mon', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'forming', color: '#4a0391', textColor: '#ccc' },
+	{ day: 'Mon', time: '5:00 PM - 6:00 PM', title: 'Teens (Ages 12-16)', capacity: 'forming', color: '#039e44' },
 	{ day: 'Mon', time: '6:00 PM - 7:15 PM', title: 'All-Levels No-Gi', capacity: 'available', color: '#303030' },
 	{ day: 'Mon', time: '7:20 PM - 8:20 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc' },
 
 	// Tuesday	
 	//{ day: 'Tue', time: '12:00 PM - 1:00 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc'  },
-	{ day: 'Tue', time: '4:00 PM - 4:40 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#1ae195', textColor: '#505050'},
-	{ day: 'Tue', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'full', color: '#00d5ff', textColor: '#505050' },
+	{ day: 'Tue', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'full', color: '#1ae195', textColor: '#505050'},
+	{ day: 'Tue', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'forming', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Tue', time: '6:00 PM - 7:15 PM', title: 'All-Levels No-Gi', capacity: 'available', color: '#303030' },
+	{ day: 'Tue', time: '7:20 PM - 8:20 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#910364' },
 
 	// Wednesday
-	{ day: 'Wed', time: '3:10 PM - 3:50 PM', title: 'Kids (Ages 7-9) Group C', capacity: 'forming', color: '#00758f', textColor: '#eee' },
-	{ day: 'Wed', time: '4:00 PM - 4:40 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
-	{ day: 'Wed', time: '5:00 PM - 6:00 PM', title: 'Teens (Ages 12-16)', capacity: 'available', color: '#039e44' },
+	{ day: 'Wed', time: '3:10 PM - 3:55 PM', title: 'Kids (Ages 7-9) Group C', capacity: 'forming', color: '#00758f', textColor: '#eee' },
+	{ day: 'Wed', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'forming', color: '#4a0391', textColor: '#ccc' },
+	{ day: 'Wed', time: '5:00 PM - 6:00 PM', title: 'Teens (Ages 12-16)', capacity: 'forming', color: '#039e44' },
 	{ day: 'Wed', time: '6:00 PM - 7:15 PM', title: 'All-Levels No-Gi', capacity: 'available', color: '#303030' },
 	{ day: 'Wed', time: '7:20 PM - 8:20 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc'  },
 
 	// Thursday
 	//{ day: 'Thu', time: '12:00 PM - 1:00 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc'  },
-	{ day: 'Thu', time: '4:00 PM - 4:40 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#1ae195', textColor: '#505050' },
-	{ day: 'Thu', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'full', color: '#00d5ff', textColor: '#505050' },
+	{ day: 'Thu', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'full', color: '#1ae195', textColor: '#505050' },
+	{ day: 'Thu', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'forming', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Thu', time: '6:00 PM - 7:15 PM', title: 'All-Levels No-Gi', capacity: 'available', color: '#303030' },
 	{ day: 'Thu', time: '7:20 PM - 8:20 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#910364' },
 
 	// Friday
-	{ day: 'Fri', time: '3:10 PM - 3:50 PM', title: 'Kids (Ages 7-9) Group C', capacity: 'forming', color: '#00758f', textColor: '#eee' },
-	{ day: 'Fri', time: '4:00 PM - 4:40 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
-	{ day: 'Fri', time: '5:00 PM - 6:00 PM', title: 'Teens (Ages 12-16)', capacity: 'available', color: '#039e44' },
+	{ day: 'Fri', time: '3:10 PM - 3:55 PM', title: 'Kids (Ages 7-9) Group C', capacity: 'forming', color: '#00758f', textColor: '#eee' },
+	{ day: 'Fri', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'forming', color: '#4a0391', textColor: '#ccc' },
+	{ day: 'Fri', time: '5:00 PM - 6:00 PM', title: 'Teens (Ages 12-16)', capacity: 'forming', color: '#039e44' },
 	{ day: 'Fri', time: '6:00 PM - 7:15 PM', title: 'All-Levels No-Gi', capacity: 'available', color: '#303030' },
 	{ day: 'Fri', time: '7:20 PM - 8:20 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc'  },
 
@@ -259,10 +165,9 @@ const weeklySchedule = [
 
 	// Sunday
 	{ day: 'Sun', time: '10:30 AM - 11:30 AM', title: 'Open Mat', capacity: 'available', color: '#8805fa' },
-	{ day: 'Sun', time: '12:00 PM - 12:40 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#1ae195', textColor: '#505050' },
-	{ day: 'Sun', time: '1:00 PM - 2:00 PM', title: 'Kids (Ages 10-12)', capacity: 'full', color: '#00d5ff', textColor: '#505050' },
-	{ day: 'Sun', time: '2:00 PM - 3:00 PM', title: 'Teens (Ages 12-16)', capacity: 'available', color: '#039e44' },
-	{ day: 'Sun', time: '3:00 PM - 4:00 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#910364' }
+	{ day: 'Sun', time: '12:00 PM - 12:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'full', color: '#1ae195', textColor: '#505050' },
+	{ day: 'Sun', time: '1:00 PM - 2:00 PM', title: 'Kids (Ages 10-12)', capacity: 'forming', color: '#00d5ff', textColor: '#505050' },
+	{ day: 'Sun', time: '2:00 PM - 3:00 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#910364' }
   
 ];
 
@@ -402,9 +307,9 @@ const weeklySchedule = [
 				// Form new class
 				else if (c.capacity === 'forming') {
 					const formingBtn = document.createElement('a');
-					formingBtn.href = 'youthWaitlist.html';
+					formingBtn.href = 'youthClassTryout.html';
 					formingBtn.className = 'schedule-button forming-button';
-					formingBtn.textContent = 'Opening Soon – Join';
+					formingBtn.textContent = 'Join Spring Session';
 					block.appendChild(formingBtn);
 				}
 
@@ -433,4 +338,146 @@ function changeWeek(offsetChange) {
 }
   
 document.addEventListener('DOMContentLoaded', renderWeek);
+
+
+
+// Youth Waitlist Form
+
+document.addEventListener("DOMContentLoaded", function () {
+    const addChildBtn = document.getElementById("addChildBtn");
+    const removeChildBtn = document.getElementById("removeChildBtn");
+    const childrenContainer = document.getElementById("childrenContainer");
+
+    let childCount = 1;
+
+    addChildBtn.addEventListener("click", () => {
+        childCount++;
+
+        const childSection = document.createElement("div");
+        childSection.classList.add("child-section");
+
+        childSection.innerHTML = `
+            <h2 style = "margin-top: 90px;">Child ${childCount}</h2>
+            <div class = "field-left">
+                <input type = "text" id = "child${childCount}FirstName" name = "child${childCount}FirstName" placeholder = "First Name" required>
+            </div>
+
+            <div class = "field-right">
+                <input type = "text" id="child${childCount}LastName" name = "child${childCount}LastName" placeholder = "Last Name" required>
+            </div>
+
+            <div class = "field">
+                <label for = "child${childCount}DOB">Birth Date</label>
+                <input type = "date" id = "child${childCount}DOB" name = "child${childCount}DOB" required>
+            </div>
+        `;
+
+        childrenContainer.appendChild(childSection);
+
+        // Show "Remove" button if more than one child
+        if (childCount > 1) {
+            removeChildBtn.style.display = "inline-block";
+        }
+    });
+
+    removeChildBtn.addEventListener("click", () => {
+        if (childCount > 1) {
+            const lastChild = childrenContainer.querySelector(".child-section:last-of-type");
+            if (lastChild) {
+                childrenContainer.removeChild(lastChild);
+                childCount--;
+            }
+        }
+
+        // Hide button if only one child remains
+        if (childCount === 1) {
+            removeChildBtn.style.display = "none";
+        }
+    });
+});
+
+
+	// Validate Youth Waitlist Form
+
+	function validateRegistrationForm() {
+		const parentPhone = document.getElementById('parentPhone');
+
+		if (parentPhone.value.length !== 10) {
+			alert("Please enter a 10-digit phone number.")
+			return false;
+		}
+
+		if (!/^\d+$/.test(parentPhone.value)) {
+			alert("Please include only numbers.")
+			return false;
+		}
+
+		const fakeNumbers = ['1234567890, 0123456789, 1231231231', '1231231232', '1231231233, 1231231234, 1231231235, 1231231236, 1231231237, 1231231238, 1231231239, 1231231230'];
+
+		if (fakeNumbers.includes(parentPhone.value)) {
+			alert("Please enter a real phone number.");
+			return false;
+		}
+
+		const interests = document.querySelectorAll('input[name="classInterest[]"]');
+
+		if (interests.length > 0) {
+			const checked = document.querySelectorAll('input[name="classInterest[]"]:checked');
+
+			if (checked.length === 0) {
+				alert("Please select at least one class option.");
+				return false;
+			}
+		}
+
+		else {
+			return true;
+		}
+	}
+
+
+// Waitlist Auto Generate Checkboxes
+
+function formatTimeRange(timeStr) {
+    // Expecting format "3:10 PM - 3:50 PM"
+    const [start, end] = timeStr.split(' - ');
+
+    // Remove AM/PM from start, keep it on end
+    const startWithoutAmPm = start.replace(/\s?[AP]M/i, '');
+    return `${startWithoutAmPm} - ${end}`;
+}
+
+function generateWaitlistOptions() {
+	const container = document.getElementById('waitlistOptions');
+	container.innerHTML = '';
+  
+	const waitlistClasses = weeklySchedule.filter(c => c.capacity === 'full');
+	const grouped = {};
+
+	waitlistClasses.forEach(c => {
+		if (!grouped[c.title]) grouped[c.title] = [];
+		grouped[c.title].push(c);
+	});
+
+	Object.keys(grouped).forEach(title => {
+		const classes = grouped[title];
+
+		const daysTimes = classes.map(c => `<div>${c.day}: ${formatTimeRange(c.time)}</div>`).join('');
+
+		const label = document.createElement('label');
+		label.className = 'interest-option';
+
+		label.innerHTML = `
+			<input type="checkbox" name="classInterest[]" value="${title} | ${daysTimes}">
+			<div>
+				<a class="style5">${title}</a>
+				<div>${daysTimes}</div>
+			</div>
+		`;
+
+		container.appendChild(label);
+	});
+}
+  
+  document.addEventListener('DOMContentLoaded', generateWaitlistOptions);
   
