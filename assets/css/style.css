@@ -1181,6 +1181,19 @@ img {
 	border-radius: 7px;
 }
 
+#registrationForm select {
+    width: 100%;
+    height: 42px;
+    padding: 0 12px 4px 12px;
+    font-size: 16pt;
+    font-family: inherit;
+    border-radius: 7px;
+    background: #353535;
+    color: #efefef;
+    border: 1px solid #353535;
+
+}
+
 #registrationForm textarea {
     line-height: 1.4;
     padding: 12px;
