@@ -70,9 +70,18 @@
 							<div id = "childrenContainer">
 								<h2>Training Info & Questions</h2>
 
-								<div class = "field">
+								<div class = "field-left">
 									<input type = "text" id = "Age" name = "Age" placeholder = "Age" required>
 								</div>
+
+								<div class="field-right">
+									<label for="Gender" class="sr-only">Gender</label>
+									<select id="Gender" name="Gender" required>
+									  <option value="" disabled selected>Select Gender</option>
+									  <option value="male">Male</option>
+									  <option value="female">Female</option>
+									</select>
+								  </div>
 
 								<div class = "field">
 									<textarea id = "Experience" name = "Experience" placeholder = "Have you done jiu-jitsu before?" rows = "3" required></textarea>
