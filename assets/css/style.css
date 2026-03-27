@@ -332,7 +332,9 @@ strong {
 	--haze-light: radial-gradient(ellipse at left top, #181818, #333);
 
 	/* Color */
-	--pop: linear-gradient(#009fff, #7500fa);
+	--pop1: linear-gradient(#009fff, #7500fa);
+	--pop2: linear-gradient(90deg, blue, cyan);
+	--pop2: linear-gradient(70deg, #75ffa1 60%, #07afed);
 }
 	
 
@@ -706,10 +708,10 @@ button {
 				font-size: 13pt;
 				letter-spacing: 1px;
 				border-radius: 30px;
-				border: solid 1px #131313;
 				padding: 10px 15px;
 				text-transform: none;
 				background: var(--platinum-180);
+				border: solid 1px #777;
 			}
 	
 				button.style5:hover,
@@ -1191,7 +1193,7 @@ img {
 #registrationForm .submit-button {
 	width: 100%;
 	background: var(--platinum-180);
-	border: solid 1px #131313;
+	border: solid 1px #777;
 	border-radius: 8px;
 	font-size: 16pt;
 	color: #131313;
@@ -1247,11 +1249,20 @@ img {
 
 	.interest-option {
 		display: grid;
-		grid-template-columns: 22px 1fr;
+		grid-template-columns: 22px auto;
+		justify-content: center;
 		column-gap: 12px;
 		align-items: start;
 		cursor: pointer;
+		background-color: #42c76e;
+		padding: 20px;
+		border-radius: 8px;
 	}
+
+	.interest-option .style5 {
+		display: block;
+		margin-bottom: 12px;
+	  }
 
 	.interest-option input {
 		margin-top: 4px;
@@ -1262,9 +1273,6 @@ img {
 		font-size: 12pt;
 		color: #555;
 	}
-
-
-
 
 
 /* Privacy Policy */
