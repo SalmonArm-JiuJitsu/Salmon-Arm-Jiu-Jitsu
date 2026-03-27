@@ -288,7 +288,7 @@ const weeklySchedule = [
 					// Book class
 					if (isInFuture && isWithin14Days) {
 						const btn = document.createElement('a');
-						btn.href = '#footer';
+						btn.href = 'freeTrialRequests.html';
 						btn.className = 'schedule-button button-book';
 						btn.textContent = 'Book Free Trial';
 						block.appendChild(btn);
