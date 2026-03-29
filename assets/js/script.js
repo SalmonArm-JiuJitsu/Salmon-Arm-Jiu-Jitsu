@@ -2,6 +2,11 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     document.body.style.visibility = 'visible';
+
+    const todayDateField = document.getElementById("todayDate");
+    if (todayDateField) {
+        todayDateField.value = new Date().toLocaleDateString();
+    }
 });
 
 
@@ -75,50 +80,6 @@ window.addEventListener('scroll', function() {
 		icon.classList.remove("disappear");
 	}
    });
-	
-
-
-// Gallery 
-
-	// On Click
-
-	function openViewer() { 
-		document.querySelector(".viewer").style.display = "flex";
-	}
-
-	function closeViewer() {
-		document.querySelector(".viewer").style.display = "none";
-	}
-
-	function scrollImages(n) {
-		viewImage(imageIndex = imageIndex + n);
-	}
-
-
-	// Viewer
-
-	var image = document.querySelectorAll(".view-image");
-
-	function currentImage(n) {
-		viewImage(imageIndex = n);
-	}
-
-	function viewImage(n) {
-		if (n > image.length) {
-			imageIndex = 1;
-		}
-
-		if (n < 1) {
-			imageIndex = image.length;
-		}
-
-		for (k = 0; k < image.length; k++) {
-			image[k].style.display = "none";
-		}
-		
-		image[imageIndex - 1].style.display = "block";
-		innerHTML = [imageIndex - 1];
-	}
 
 
 
@@ -341,7 +302,7 @@ document.addEventListener('DOMContentLoaded', renderWeek);
 
 
 
-// Youth Waitlist Form
+// Trials, Enrollment & Waitlist Forms
 
 document.addEventListener("DOMContentLoaded", function () {
     const addChildBtn = document.getElementById("addChildBtn");
@@ -397,7 +358,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-	// Validate Youth Waitlist Form
+	// Validate Trials, Enrollment & Waitlist Forms
 
 	function validateRegistrationForm() {
 		const parentPhone = document.getElementById('parentPhone');
@@ -436,152 +397,63 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 
-// Waitlist Auto Generate Checkboxes
+		// Waitlist Auto Generate Checkboxes
 
-function formatTimeRange(timeStr) {
-    // Expecting format "3:10 PM - 3:50 PM"
-    const [start, end] = timeStr.split(' - ');
+		function formatTimeRange(timeStr) {
+			// Expecting format "3:10 PM - 3:50 PM"
+			const [start, end] = timeStr.split(' - ');
 
-    // Remove AM/PM from start, keep it on end
-    const startWithoutAmPm = start.replace(/\s?[AP]M/i, '');
-    return `${startWithoutAmPm} - ${end}`;
-}
+			// Remove AM/PM from start, keep it on end
+			const startWithoutAmPm = start.replace(/\s?[AP]M/i, '');
+			return `${startWithoutAmPm} - ${end}`;
+		}
 
-function generateWaitlistOptions() {
-	const container = document.getElementById('waitlistOptions');
-	container.innerHTML = '';
+		function generateWaitlistOptions() {
+			const container = document.getElementById('waitlistOptions');
+			container.innerHTML = '';
+		
+			const waitlistClasses = weeklySchedule.filter(c => c.capacity === 'full');
+			const grouped = {};
+
+			waitlistClasses.forEach(c => {
+				if (!grouped[c.title]) grouped[c.title] = [];
+				grouped[c.title].push(c);
+			});
+
+			Object.keys(grouped).forEach(title => {
+				const classes = grouped[title];
+
+				const daysTimes = classes.map(c => `<div>${c.day}: ${formatTimeRange(c.time)}</div>`).join('');
+
+				const label = document.createElement('label');
+				label.className = 'interest-option';
+
+				label.innerHTML = `
+					<input type="checkbox" name="classInterest[]" value="${title} | ${daysTimes}">
+					<div>
+						<a class="style5">${title}</a>
+						<div>${daysTimes}</div>
+					</div>
+				`;
+
+				container.appendChild(label);
+			});
+		}
+		
+		document.addEventListener('DOMContentLoaded', generateWaitlistOptions);
+
   
-	const waitlistClasses = weeklySchedule.filter(c => c.capacity === 'full');
-	const grouped = {};
+		// Optional: Print form button for Youth Enrollment
 
-	waitlistClasses.forEach(c => {
-		if (!grouped[c.title]) grouped[c.title] = [];
-		grouped[c.title].push(c);
-	});
+		const printBtn = document.createElement("button");
+		printBtn.textContent = "Print Form";
+		printBtn.type = "button";
+		printBtn.style.marginTop = "20px";
+		printBtn.classList.add("submit-button");
 
-	Object.keys(grouped).forEach(title => {
-		const classes = grouped[title];
+		const form = document.getElementById("registrationForm");
+		form.appendChild(printBtn);
 
-		const daysTimes = classes.map(c => `<div>${c.day}: ${formatTimeRange(c.time)}</div>`).join('');
-
-		const label = document.createElement('label');
-		label.className = 'interest-option';
-
-		label.innerHTML = `
-			<input type="checkbox" name="classInterest[]" value="${title} | ${daysTimes}">
-			<div>
-				<a class="style5">${title}</a>
-				<div>${daysTimes}</div>
-			</div>
-		`;
-
-		container.appendChild(label);
-	});
-}
-  
-  document.addEventListener('DOMContentLoaded', generateWaitlistOptions);
-
-  
-// Optional: Print form button for Youth Enrollment
-
-const printBtn = document.createElement("button");
-printBtn.textContent = "Print Form";
-printBtn.type = "button";
-printBtn.style.marginTop = "20px";
-printBtn.classList.add("submit-button");
-
-const form = document.getElementById("registrationForm");
-form.appendChild(printBtn);
-
-printBtn.addEventListener("click", () => {
-    window.print();
-});
-
-
-
-// Signature Canvas
-
-const canvas = document.getElementById("signatureCanvas");
-const ctx = canvas.getContext("2d");
-
-let drawing = false;
-
-// Fix canvas resolution
-function resizeCanvas() {
-    const ratio = window.devicePixelRatio || 1;
-    canvas.width = canvas.offsetWidth * ratio;
-    canvas.height = canvas.offsetHeight * ratio;
-    ctx.scale(ratio, ratio);
-    ctx.lineWidth = 2;
-    ctx.lineCap = "round";
-    ctx.strokeStyle = "#000";
-}
-
-resizeCanvas();
-window.addEventListener("resize", resizeCanvas);
-
-// Get position
-function getPosition(e) {
-    const rect = canvas.getBoundingClientRect();
-    const touch = e.touches ? e.touches[0] : e;
-    return {
-        x: touch.clientX - rect.left,
-        y: touch.clientY - rect.top
-    };
-}
-
-// Start drawing
-function startDrawing(e) {
-    drawing = true;
-    const pos = getPosition(e);
-    ctx.beginPath();
-    ctx.moveTo(pos.x, pos.y);
-}
-
-// Draw
-function draw(e) {
-    if (!drawing) return;
-    e.preventDefault();
-    const pos = getPosition(e);
-    ctx.lineTo(pos.x, pos.y);
-    ctx.stroke();
-}
-
-// Stop drawing
-function stopDrawing() {
-    drawing = false;
-}
-
-// Events (mouse + touch)
-canvas.addEventListener("mousedown", startDrawing);
-canvas.addEventListener("mousemove", draw);
-canvas.addEventListener("mouseup", stopDrawing);
-canvas.addEventListener("mouseleave", stopDrawing);
-
-canvas.addEventListener("touchstart", startDrawing);
-canvas.addEventListener("touchmove", draw);
-canvas.addEventListener("touchend", stopDrawing);
-
-// Clear button
-document.getElementById("clearSignature").addEventListener("click", () => {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-});
-
-// Save signature on submit
-document.getElementById("registrationForm").addEventListener("submit", function () {
-    const dataURL = canvas.toDataURL("image/jpeg", 0.5);
-    document.getElementById("signatureData").value = dataURL;
-});
-
-document.getElementById("registrationForm").addEventListener("submit", function (e) {
-    const dataURL = canvas.toDataURL("image/jpeg", 0.5);
-
-    // Check if canvas is blank
-    if (dataURL.length < 5000) {
-        alert("Please provide a signature.");
-        e.preventDefault();
-        return;
-    }
-
-    document.getElementById("signatureData").value = dataURL;
-});
+		printBtn.addEventListener("click", () => {
+			window.print();
+		});
