@@ -1259,6 +1259,8 @@ img {
 
 #childrenContainer {
 	padding-top: 30px
+	page-break-inside: avoid;  
+	break-inside: avoid; 
 }
 
 	.child-section {
@@ -1333,6 +1335,30 @@ img {
 			margin-left: 15px;
 			list-style: disc;
 			padding: 12px;
+		}
+
+		/* Printable Form */
+
+		@media print {
+			body * {
+				visibility: hidden;
+			}
+
+			button {
+				display: none;
+			}
+
+			#printableDocument, 
+			#printableDocument * {
+				visibility: visible;
+			}
+		
+			#printableDocument {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+			}
 		}
 
 
