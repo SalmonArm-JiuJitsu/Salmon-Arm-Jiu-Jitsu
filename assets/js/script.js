@@ -448,7 +448,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		const printBtn = document.createElement("button");
 		printBtn.textContent = "Print Form";
 		printBtn.type = "button";
-		printBtn.style.marginTop = "20px";
 		printBtn.classList.add("submit-button");
 
 		const form = document.getElementById("registrationForm");
