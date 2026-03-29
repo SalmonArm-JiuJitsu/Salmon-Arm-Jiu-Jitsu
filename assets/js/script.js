@@ -480,4 +480,95 @@ function generateWaitlistOptions() {
 }
   
   document.addEventListener('DOMContentLoaded', generateWaitlistOptions);
+
   
+// Optional: Print form button for Youth Enrollment
+
+const printBtn = document.createElement("button");
+printBtn.textContent = "Print Form";
+printBtn.type = "button";
+printBtn.style.marginTop = "20px";
+printBtn.classList.add("submit-button");
+
+const form = document.getElementById("registrationForm");
+form.appendChild(printBtn);
+
+printBtn.addEventListener("click", () => {
+    window.print();
+});
+
+
+
+// Signature Canvas
+
+const canvas = document.getElementById("signatureCanvas");
+const ctx = canvas.getContext("2d");
+
+let drawing = false;
+
+// Fix canvas resolution
+function resizeCanvas() {
+    const ratio = window.devicePixelRatio || 1;
+    canvas.width = canvas.offsetWidth * ratio;
+    canvas.height = canvas.offsetHeight * ratio;
+    ctx.scale(ratio, ratio);
+    ctx.lineWidth = 2;
+    ctx.lineCap = "round";
+    ctx.strokeStyle = "#000";
+}
+
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
+
+// Get position
+function getPosition(e) {
+    const rect = canvas.getBoundingClientRect();
+    const touch = e.touches ? e.touches[0] : e;
+    return {
+        x: touch.clientX - rect.left,
+        y: touch.clientY - rect.top
+    };
+}
+
+// Start drawing
+function startDrawing(e) {
+    drawing = true;
+    const pos = getPosition(e);
+    ctx.beginPath();
+    ctx.moveTo(pos.x, pos.y);
+}
+
+// Draw
+function draw(e) {
+    if (!drawing) return;
+    e.preventDefault();
+    const pos = getPosition(e);
+    ctx.lineTo(pos.x, pos.y);
+    ctx.stroke();
+}
+
+// Stop drawing
+function stopDrawing() {
+    drawing = false;
+}
+
+// Events (mouse + touch)
+canvas.addEventListener("mousedown", startDrawing);
+canvas.addEventListener("mousemove", draw);
+canvas.addEventListener("mouseup", stopDrawing);
+canvas.addEventListener("mouseleave", stopDrawing);
+
+canvas.addEventListener("touchstart", startDrawing);
+canvas.addEventListener("touchmove", draw);
+canvas.addEventListener("touchend", stopDrawing);
+
+// Clear button
+document.getElementById("clearSignature").addEventListener("click", () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+});
+
+// Save signature on submit
+document.getElementById("registrationForm").addEventListener("submit", function () {
+    const dataURL = canvas.toDataURL();
+    document.getElementById("signatureData").value = dataURL;
+});
