@@ -252,6 +252,12 @@ p {
 		margin-top: 50px;
 	}
 
+	p.style7 {
+        font-family: "nimbus-sans-regular";
+        color: #eee;
+        font-size: 16pt;
+    }
+
 strong {
 	font-weight: bolder;
 }
@@ -1145,14 +1151,39 @@ img {
 					}
 				}
 
+
+/* Privacy Policy */
+
+.privacy {
+	display: block;
+	margin: 0 auto;
+	height: 100%;
+	padding-bottom: 10px;
+	max-width: 1400px;
+}
+
+	.privacy h2 {
+		padding: 0;
+		margin: 100px 0 40px 0;
+	}
+
+	.privacy h4 {
+		margin: 50px 0 25px 0;
+	}
+
+	.privacy li {
+		list-style: disc;
+		margin: 25px 18px;
+	}
+
 				
-/* Youth Waitlist */
+/* Registration Forms */
 
 .registration-container {
 	max-width: 700px;
 	margin: auto;
 	padding: 40px;
-	background: var(--platinum-45);
+	background: #a0a0a0;
 	border-radius: 10px;
 }
 
@@ -1287,30 +1318,22 @@ img {
 		color: #555;
 	}
 
-
-/* Privacy Policy */
-
-.privacy {
-	display: block;
-	margin: 0 auto;
-	height: 100%;
-	padding-bottom: 10px;
-	max-width: 1400px;
-}
-
-	.privacy h2 {
-		padding: 0;
-		margin: 100px 0 40px 0;
+	#registrationForm .registration-container .style1 h2, h3, p {
+		color: #02023b; 
+		font-weight: 600;
 	}
 
-	.privacy h4 {
-		margin: 50px 0 25px 0;
+	#registrationForm ul {
+		padding: 25px 15px;
 	}
 
-	.privacy li {
-		list-style: disc;
-		margin: 25px 18px;
-	}
+		#registrationForm li {
+			color: #02023b;
+			font-weight: 600;
+			margin-left: 15px;
+			list-style: disc;
+			padding: 12px;
+		}
 
 
 /* Schedule */
@@ -1457,6 +1480,19 @@ img {
 			margin-bottom: 20px;
 		}
 	} 
+
+
+/* Signature canvas */
+
+#signatureCanvas {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+	margin-top: 8px;
+    background: #eee;
+    border-radius: 8px;
+    touch-action: none; /* prevents scrolling while signing */
+}
 
 
 /* Trial */
