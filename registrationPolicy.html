@@ -42,7 +42,7 @@
         <!-- Main -->
 			<main>
 
-				<br><br><h2>Youth Enrollment Form</h2>
+				<br><br><h2>Enrollment Form</h2>
 
 				<section class = "registration-container" style = "background: transparent; padding: 50px 10px;">
 
@@ -64,7 +64,7 @@
 								<p>Enrollment is for a 4-month season. This structure allows us to build 
 									consistency, skill development, and strong team dynamics within the group. 
 									By signing up, you are committing to the full season, regardless of attendance 
-									or schedule changes.</p>
+									or changes in your availability.</p>
 			
 								<h3>2. Payment Terms</h3>
 								<p>The total program fee is $595 + GST for the 4-month season.</p>
@@ -79,7 +79,7 @@
 			
 
 
-								<h3>3. Refunds & Withdrawals</h3>
+								<!-- <h3>3. Refunds & Withdrawals</h3>
 								<p>We understand that sometimes unexpected things happen, like injuries or skin 
 									infections, and we always prioritize the health and safety of our students. That 
 									said, as your child's spot is reserved for the full season, all registrations are 
@@ -99,7 +99,33 @@
 								</ul>
 
 								<p>We appreciate your understanding and cooperation, and we promise to support your 
-									child's safe return to class when they're ready and healthy.</p>
+									child's safe return to class when they're ready and healthy.</p> -->
+								
+
+									<h3>3. Refunds & Withdrawals</h3>
+									<p>All registrations are final. As your child's spot is reserved for the full season, we do not offer 
+										refunds, credits, or transfers for missed classes, withdrawals, schedule conflicts, changes in 
+										participation, or circumstances that may be outside of your control, including injury or illness.</p>
+									
+									<p>This policy helps us:</p>
+									<ul>
+										<li>Keep class sizes consistent so every student gets the best coaching experience</li>
+										<li>Plan the season effectively, including staffing, instructors, and facility resources</li>
+									</ul>
+									
+									<p>We understand that unexpected situations can arise, including injuries or skin infections, and we 
+										always prioritize the health and safety of our students. While refunds are not provided in these 
+										situations, we are committed to supporting your child's safe return to training when they are ready.</p>
+									
+									<p>To help prevent skin infections or related issues:</p>
+									<ul>
+										<li>Parents are responsible for performing regular skin checks on their child</li>
+										<li>Ensure proper hygiene, including showering immediately after class and wearing clean practice clothes</li>
+										<li>Keep cuts, scrapes, or rashes properly covered before class</li>
+									</ul>
+									
+									<p>We appreciate your understanding and cooperation, and we look forward to supporting your child 
+										throughout the season.</p>
 			
 
 
@@ -134,7 +160,7 @@
 								<p>If a scheduled payment cannot be processed, we ask that you provide an updated payment method 
 									promptly. Participation may be paused until the account is brought up to date.</p>
 			
-								<p>By completing registration, you acknowledge that you have read, understood, and agree to these 
+								<p style = "margin-top: 50px;">* By completing registration, you acknowledge that you have read, understood, and agree to these 
 									terms. We look forward to a great season together!</p>
 
 							</div><br><br>
@@ -183,27 +209,23 @@
 									<button type = "button" class = "style5" id = "addChildBtn">Add Child</button>
 									<button type = "button" class = "style5" id = "removeChildBtn" style = "display: none;">Remove Last Child</button>
 								</div>
-					
-							<!-- Signature Section -->
-								<h2>Agreement & Signature</h2>
 
+
+							<!-- Agreement Checkbox -->
 								<div class = "field">
-									<p class = "style7">Parent / Legal Guardian Signature</p>
-									<canvas id = "signatureCanvas"></canvas>
+									<label class = "interest-option" style = "margin: 20px 0 40px 0;">
+										<input type = "checkbox" id = "agreement" required>
+										<span>
+											I confirm that I am the parent/legal guardian and I have read and agree to the terms outlined above.
+										</span>
+									</label>
 								</div>
-
-								<div class = "field">
-									<button type = "button" class = "style5" id = "clearSignature">Clear Signature</button>
-								</div>
-
-								<!-- Hidden input to store signature 
-								<input type = "hidden" id = "signatureData" name = "signatureData"> -->
 
 							<!-- Today's Date -->
-							<div class = "field">
-								<label for = "child1DOB">Today's Date</label>
-								<input type = "date" id = "child1DOB" name = "child1DOB" required>
-							</div>
+								<div class = "field">
+									<label for = "todayDate">Date</label>
+									<input type = "text" id = "todayDate" name = "todayDate" readonly>
+								</div>
 					
 							
 							<!-- Submit Button -->
