@@ -569,6 +569,19 @@ document.getElementById("clearSignature").addEventListener("click", () => {
 
 // Save signature on submit
 document.getElementById("registrationForm").addEventListener("submit", function () {
-    const dataURL = canvas.toDataURL();
+    const dataURL = canvas.toDataURL("image/jpeg", 0.5);
+    document.getElementById("signatureData").value = dataURL;
+});
+
+document.getElementById("registrationForm").addEventListener("submit", function (e) {
+    const dataURL = canvas.toDataURL("image/jpeg", 0.5);
+
+    // Check if canvas is blank
+    if (dataURL.length < 5000) {
+        alert("Please provide a signature.");
+        e.preventDefault();
+        return;
+    }
+
     document.getElementById("signatureData").value = dataURL;
 });
