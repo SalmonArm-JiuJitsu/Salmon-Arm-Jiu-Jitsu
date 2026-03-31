@@ -1225,6 +1225,19 @@ img {
 			padding: 12px;
 		}
 
+		/* Trial chooser buttons */
+		
+		.trial-choice-buttons {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+
+		.trial-choice-buttons button {
+			min-width: 200px;
+		}
+
 		/* Printable Form */
 
 		@media print {
