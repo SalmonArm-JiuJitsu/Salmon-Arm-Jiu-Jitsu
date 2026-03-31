@@ -456,3 +456,27 @@ document.addEventListener("DOMContentLoaded", function () {
 		printBtn.addEventListener("click", () => {
 			window.print();
 		});
+
+		function showTrialForm(type) {
+
+			// hide chooser
+			const choice = document.getElementById("trialChoice");
+			if (choice) choice.style.display = "none";
+		
+			// hide both forms first
+			const child = document.getElementById("childForm");
+			const adult = document.getElementById("adultForm");
+		
+			if (child) child.style.display = "none";
+			if (adult) adult.style.display = "none";
+		
+			// show selected
+			if (type === "adult") {
+				if (adult) adult.style.display = "block";
+			} else {
+				if (child) child.style.display = "block";
+			}
+		
+			// scroll to top cleanly
+			window.scrollTo({ top: 0, behavior: "smooth" });
+		}
