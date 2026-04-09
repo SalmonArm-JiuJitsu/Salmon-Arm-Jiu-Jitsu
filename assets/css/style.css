@@ -555,8 +555,9 @@ header {
 		z-index: 1;
 	}
 
-	@media screen and (max-width: 481px) {
+	@media screen and (max-width: 480px) {
 		.banner {
+			left: -30px;
 			background-position: left -625px center;
 		}
 	}
