@@ -557,7 +557,6 @@ header {
 
 	@media screen and (max-width: 481px) {
 		.banner {
-			left: -30px;
 			background-position: left -625px center;
 		}
 	}
