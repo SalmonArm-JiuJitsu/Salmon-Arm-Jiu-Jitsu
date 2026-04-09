@@ -95,7 +95,7 @@ const weeklySchedule = [
 
 	// Tuesday	
 	//{ day: 'Tue', time: '12:00 PM - 1:00 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc'  },
-	{ day: 'Tue', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'full', color: '#1ae195', textColor: '#505050'},
+	{ day: 'Tue', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#1ae195', textColor: '#505050'},
 	{ day: 'Tue', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'forming', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Tue', time: '6:00 PM - 7:15 PM', title: 'All-Levels No-Gi', capacity: 'available', color: '#303030' },
 	{ day: 'Tue', time: '7:20 PM - 8:20 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#910364' },
@@ -109,7 +109,7 @@ const weeklySchedule = [
 
 	// Thursday
 	//{ day: 'Thu', time: '12:00 PM - 1:00 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc'  },
-	{ day: 'Thu', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'full', color: '#1ae195', textColor: '#505050' },
+	{ day: 'Thu', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#1ae195', textColor: '#505050' },
 	{ day: 'Thu', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-12)', capacity: 'forming', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Thu', time: '6:00 PM - 7:15 PM', title: 'All-Levels No-Gi', capacity: 'available', color: '#303030' },
 	{ day: 'Thu', time: '7:20 PM - 8:20 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#910364' },
@@ -126,7 +126,7 @@ const weeklySchedule = [
 
 	// Sunday
 	{ day: 'Sun', time: '10:30 AM - 11:30 AM', title: 'Open Mat', capacity: 'available', color: '#8805fa' },
-	{ day: 'Sun', time: '12:00 PM - 12:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'full', color: '#1ae195', textColor: '#505050' },
+	{ day: 'Sun', time: '12:00 PM - 12:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#1ae195', textColor: '#505050' },
 	{ day: 'Sun', time: '1:00 PM - 2:00 PM', title: 'Kids (Ages 10-12)', capacity: 'forming', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Sun', time: '2:00 PM - 3:00 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#910364' }
   
