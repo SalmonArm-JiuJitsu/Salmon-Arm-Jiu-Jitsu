@@ -85,7 +85,7 @@ window.addEventListener('scroll', function() {
 
 // Schedule
 
-const weeklySchedule = [
+const weeklySchedule = [ 
 	// Monday
 	{ day: 'Mon', time: '3:10 PM - 3:55 PM', title: 'Kids (Ages 7-9) Group C', capacity: 'forming', color: '#00758f', textColor: '#eee' },
 	{ day: 'Mon', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'forming', color: '#4a0391', textColor: '#ccc' },
@@ -130,63 +130,71 @@ const weeklySchedule = [
 	{ day: 'Sun', time: '1:00 PM - 2:00 PM', title: 'Kids (Ages 10-12)', capacity: 'forming', color: '#00d5ff', textColor: '#505050' },
 	{ day: 'Sun', time: '2:00 PM - 3:00 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#910364' }
   
-];
+ ];
 
-  
-	let currentOffset = 0; // 0 = this week
+let currentOffset = 0;
+let activeFilter = "all";
 
-	function addDays(date, days) {
-		const d = new Date(date);
-		d.setDate(d.getDate() + days);
-		return d;
-	}
-  
-	function formatDayName(date) {
-		return date.toLocaleDateString('en-US', { weekday: 'short' });
-	}
-  
-	function formatDateRange(startDate) {
-		const endDate = addDays(startDate, 6);
-		const options = { month: 'short', day: 'numeric' };
-		return `${startDate.toLocaleDateString('en-US', options)} - ${endDate.toLocaleDateString('en-US', options)}`;
-	}
-  
-	function renderWeek() {
-		const today = new Date();
-		const startOfWeek = addDays(today, currentOffset * 7);
-		const container = document.getElementById('scheduleApp');
-		container.innerHTML = '';
-	
-		// Pagination controls container
-		const controls = document.createElement('div');
-		controls.classList.add('controls'); 
-	
-		// Previous Week button
-		const prevBtn = document.createElement('button');
-		prevBtn.innerHTML = `<img src="assets/fonts/fontawesome-pro/svgs/regular/arrow-left.svg" class="nav-arrow" />`;
-		prevBtn.onclick = () => changeWeek(-1);
-	
-		// Date range label (centered)
-		const weekLabel = document.createElement('div');
-		weekLabel.textContent = `${formatDateRange(startOfWeek)}`;
-		weekLabel.classList.add('week-label'); 
-	
-		// Next Week button
-		const nextBtn = document.createElement('button');
-		nextBtn.innerHTML = `<img src="assets/fonts/fontawesome-pro/svgs/regular/arrow-right.svg" class="nav-arrow" />`;
-		nextBtn.onclick = () => changeWeek(1);
-	
-		// Append controls
-		controls.appendChild(prevBtn);
-		controls.appendChild(weekLabel);
-		controls.appendChild(nextBtn);
-		container.appendChild(controls);
-	
-		// Schedule grid
-		const row = document.createElement('div');
-		row.className = 'week-row';
+function addDays(date, days) {
+	const d = new Date(date);
+	d.setDate(d.getDate() + days);
+	return d;
+}
 
-  
+function formatDayName(date) {
+	return date.toLocaleDateString('en-US', { weekday: 'short' });
+}
+
+function formatDateRange(startDate) {
+	const endDate = addDays(startDate, 6);
+	const options = { month: 'short', day: 'numeric' };
+	return `${startDate.toLocaleDateString('en-US', options)} - ${endDate.toLocaleDateString('en-US', options)}`;
+}
+
+// determine program
+function getProgram(title) {
+	if (title.includes('7-9')) return 'kids-7-9';
+	if (title.includes('10-12')) return 'kids-10-12';
+	if (title.includes('Teens')) return 'teens';
+
+	if (title.includes('Ladies')) return 'ladies';
+	if (title.includes('Beginner')) return 'adult-beginner';
+	if (title.includes('All-Levels')) return 'adult-all';
+	if (title.includes('Open Mat')) return 'both'; 
+
+	return 'adult-all';
+}
+
+function renderWeek() {
+	const today = new Date();
+	const startOfWeek = addDays(today, currentOffset * 7);
+	const container = document.getElementById('scheduleApp');
+	container.innerHTML = '';
+
+	// controls
+	const controls = document.createElement('div');
+	controls.classList.add('controls');
+
+	const prevBtn = document.createElement('button');
+	prevBtn.innerHTML = `<img src="assets/fonts/fontawesome-pro/svgs/regular/arrow-left.svg" class="nav-arrow" />`;
+	prevBtn.onclick = () => changeWeek(-1);
+
+	const weekLabel = document.createElement('div');
+	weekLabel.textContent = `${formatDateRange(startOfWeek)}`;
+	weekLabel.classList.add('week-label');
+
+	const nextBtn = document.createElement('button');
+	nextBtn.innerHTML = `<img src="assets/fonts/fontawesome-pro/svgs/regular/arrow-right.svg" class="nav-arrow" />`;
+	nextBtn.onclick = () => changeWeek(1);
+
+	controls.appendChild(prevBtn);
+	controls.appendChild(weekLabel);
+	controls.appendChild(nextBtn);
+	container.appendChild(controls);
+
+	const row = document.createElement('div');
+	row.className = 'week-row';
+
 	for (let i = 0; i < 7; i++) {
 		const date = addDays(startOfWeek, i);
 		const dayName = formatDayName(date);
@@ -195,44 +203,60 @@ const weeklySchedule = [
 		col.className = 'day-column';
 		col.innerHTML = `<h3>${dayName}</h3>`;
 
-		const dayClasses = weeklySchedule.filter(c => c.day === dayName);
+		let dayClasses = weeklySchedule.filter(c => c.day === dayName);
 
+		// apply filter
+		if (activeFilter !== "all") {
+			dayClasses = dayClasses.filter(c => {
+		
+				// ALWAYS keep closed blocks
+				if (c.capacity === 'closed') return true;
+		
+				const program = getProgram(c.title);
+		
+				if (program === "both") {
+					return activeFilter === "adult-beginner" || activeFilter === "adult-all";
+				}
+		
+				return program === activeFilter;
+			});
+		}
 		if (dayClasses.length === 0) {
 			col.innerHTML += '<p>No classes</p>';
-		} 
-	  
-	  	else {
+		} else {
 			dayClasses.forEach(c => {
+
 				const block = document.createElement('div');
 				block.className = 'class-block';
-			
-				// Special styling for "Closed" Saturday
+
+				// closed
 				if (c.capacity === 'closed') {
 					block.classList.add('closed-block');
 					block.textContent = 'Closed';
 					col.appendChild(block);
-					return; // skip rest of loop
+					return;
 				}
-			
-				block.style.background = c.color || 'green';
+
+				block.style.background = c.color || '#1e1e1e';
 				block.style.color = c.textColor || '#fff';
-			
+
 				const timeEl = document.createElement('div');
 				timeEl.className = 'class-time';
 				timeEl.textContent = c.time;
 				block.appendChild(timeEl);
-			
+
 				const titleEl = document.createElement('div');
 				titleEl.className = 'class-title';
 				titleEl.textContent = c.title;
 				block.appendChild(titleEl);
-			
-				const classDateTime = new Date(date); // use current loop's date
-				const [startTime] = c.time.split(' - '); // e.g., "6:00 PM"
 
-				// Parse time from string
+				// booking logic
+				const classDateTime = new Date(date);
+				const [startTime] = c.time.split(' - ');
+
 				const [time, period] = startTime.trim().split(' ');
 				let [hours, minutes] = time.split(':').map(Number);
+
 				if (period === 'PM' && hours !== 12) hours += 12;
 				if (period === 'AM' && hours === 12) hours = 0;
 
@@ -246,7 +270,7 @@ const weeklySchedule = [
 				const isWithin14Days = classDateTime <= twoWeeksFromNow;
 
 				if (c.capacity === 'available') {
-					// Book class
+
 					if (isInFuture && isWithin14Days) {
 						const btn = document.createElement('a');
 						btn.href = 'adult-request.html';
@@ -255,17 +279,14 @@ const weeklySchedule = [
 						block.appendChild(btn);
 					}
 
-					// Booking not available yet
 					else if (isInFuture && !isWithin14Days) {
 						const msg = document.createElement('div');
 						msg.className = 'no-booking-yet';
 						msg.textContent = 'Booking not available yet';
 						block.appendChild(msg);
 					}
-					
-				} 
+				}
 
-				// Form new class
 				else if (c.capacity === 'forming') {
 					const formingBtn = document.createElement('a');
 					formingBtn.href = 'youth-request.html';
@@ -274,7 +295,6 @@ const weeklySchedule = [
 					block.appendChild(formingBtn);
 				}
 
-				// Waitlist
 				else {
 					const waitlistBtn = document.createElement('a');
 					waitlistBtn.href = 'youth-waitlist.html';
@@ -282,23 +302,54 @@ const weeklySchedule = [
 					waitlistBtn.textContent = 'Join Waitlist';
 					block.appendChild(waitlistBtn);
 				}
-			
+
 				col.appendChild(block);
 			});
 		}
-  
+
 		row.appendChild(col);
 	}
-  
+
 	container.appendChild(row);
-	}
-  
+}
+
+// filter dropdown
+function initFilters() {
+	const toggle = document.getElementById("filterToggle");
+	const menu = document.getElementById("filterMenu");
+
+	if (!toggle || !menu) return;
+
+	toggle.onclick = () => {
+		menu.classList.toggle("hidden");
+	};
+
+	menu.querySelectorAll("[data-filter]").forEach(opt => {
+		opt.onclick = () => {
+			activeFilter = opt.dataset.filter;
+			menu.classList.add("hidden");
+			renderWeek();
+		};
+	});
+
+	// 👇 THIS PART closes on outside click
+	document.addEventListener("click", (e) => {
+		if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+			menu.classList.add("hidden");
+		}
+	});
+}
+
 function changeWeek(offsetChange) {
 	currentOffset += offsetChange;
 	renderWeek();
 }
-  
-document.addEventListener('DOMContentLoaded', renderWeek);
+
+// init
+document.addEventListener('DOMContentLoaded', () => {
+	initFilters();
+	renderWeek();
+});
 
 
 
