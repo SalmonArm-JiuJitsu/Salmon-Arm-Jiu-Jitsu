@@ -12,7 +12,7 @@
 			</script>
         <!-- End Google Tag -->
 
-		<title>Salmon Arm Jiu-Jitsu | New Students</title>
+		<title>Salmon Arm Jiu-Jitsu | Free Trial</title>
 		<meta charset = "utf-8" />
         <meta name = "viewport" content = "width = device-width, initial-scale = 1, user-scalable = yes" />
 		<link rel = "stylesheet" href = "assets/css/style.css" />
@@ -28,7 +28,7 @@
 						<li class = "close"><a><i class = "fa-solid fa-times style4"></i></a></li>
 						<li><a href = "schedule.html" class = "menu-link">Schedule</a></li>
 						<li><a href = "programs.html" class = "menu-link">Programs</a></li>
-						<li><a href = "trial.html" class = "menu-link">New Students</a></li>
+						<li><a href = "trial.html" class = "menu-link">Free Trial</a></li>
 						<li><a href = "about.html" class = "menu-link">About</a></li>
 						<a class = "contact-button" href = "#footer">Contact</a>
 					</ul>
@@ -42,67 +42,224 @@
         <!-- Main -->
             <main>
 
-                <!-- Trial -->
-					<h1>Free Trial</h1>
+				<h2 style = padding:50px 0;">Request Free Trial</h2>	
 
-					<p class = "style5" style = "max-width: 1400px; margin: 80px auto; margin-top: 0;">All new visitors must book an appointment for a safety & hygiene orientation (with a parent/guardian if under 19)</p>
+				<!-- Form -->
+					 <!-- Choice -->
+						<section class = "registration-container" id = "trialChoice" style = "text-align:center;">
 
-					<div class = "trial">
+							<p class = "style7" style = "margin-bottom:30px; color: black;">
+							Who is this trial for?</p>
 
-							<div class = "tile">								
-								<i class = "fa-solid fa-calendar-week style3"></i>
-								<h3>When Can I Come?</h3>
-								<p class = "style1">Check out our schedule and get in touch to book your free trial!</p>
-								<button class = "style3"><a href = "schedule.html">Schedule</a></button>					
+							<div class = "trial-choice-buttons">
+
+							<button class = "style5" onclick = "showTrialForm('adult')">Adult (Myself)</button>
+							<button class = "style5" onclick = "showTrialForm('child')">Child (Parent/Guardian)</button>
 							</div>
 
+						</section>
 
-							<div class = "tile">								
-								<i class = "fa-solid fa-user-ninja style3"></i>
-								<h3>Do I Need Experience?</h3>
-								<p class = "style1">No experience? No problem! Our knowledgeable instructors can adapt each task-based exercise to better suit your level of experience!</p>
-								<button class = "style3"><a href = "programs.html">More Info</a></button>					
-							</div>
 
-							<div class = "tile">								
-								<i class = "fa-solid fa-shirt style3"></i>
-								<h3>What Do I Bring?</h3>
-								<p class = "style1">Comfortable gym clothes without zippers or pockets (nothing too loose, low-cut, or short). A water bottle and a mouthguard are also recommended.<br><br>
-									Please remove all jewelry before class starts.
-								</p>							
-							</div>
+					<!-- Child Form -->
+						<div id = "childForm" style = "display:none;">
+							<section class = "registration-container">
 
-							<div class = "tablet">								
-								<i class = "fa-solid fa-address-book style3"></i>
-								<h3>Get In Touch</h3>
-								<p class = "style1">Have more questions? Please reach out and one of our staff members will be happy 
-									to help you!
-								</p>
-								<button class = "style3"><a href = "#footer">Contact</a></button>									
-							</div>
+								<form class = "form" id = "registrationForm" method = "POST" action = "https://formsubmit.co/5706783fd4c76300c52561682502228e">
+							
+									<h2>Parent Info</h2>
+							
+									<div class = "field-left">
+										<input type = "text" id = "parentFirstName" name = "parentFirstName" placeholder = "First Name" required>
+									</div>
+							
+									<div class = "field-right">
+										<input type = "text" id = "parentLastName" name = "parentLastName" placeholder = "Last Name" required>
+									</div>
+							
+									<div class = "field">
+										<input type = "email" id = "parentEmail" name = "parentEmail" placeholder = "Email" required>
+									</div>
+							
+									<div class = "field">
+										<input type = "tel" id = "parentPhone" name = "parentPhone" placeholder = "Phone" required>
+									</div>
+							
 
+									<div id = "childrenContainer">
+										<h2>Child 1</h2>
+
+										<div class = "child-section">
+											<div class = "field-left">
+												<input type = "text" id = "child1FirstName" name = "child1FirstName" placeholder = "First Name" required>
+											</div>
+							
+											<div class = "field-right">
+												<input type = "text" id = "child1LastName" name = "child1LastName" placeholder = "Last Name" required>
+											</div>
+							
+											<div class = "field">
+												<label for = "child1DOB">Birth Date</label>
+												<input type = "date" id = "child1DOB" name = "child1DOB" required>
+											</div>
+
+										</div>
+									</div>
+							
+									<!-- Child control buttons -->
+										<div id = "childControls" class = "field">
+											<button type = "button" class = "style5" id = "addChildBtn">Add Child</button>
+											<button type = "button" class = "style5" id = "removeChildBtn" style = "display: none;">Remove Last Child</button>
+										</div>
+									
+									<!-- Message -->
+										<p class = "style6" style = "color: #202020; font-weight: bold; text-align: center">** We'll get in touch with available dates! **</p>
+									
+									<!-- Submit Button -->
+									<div class = "field submit-wrapper">
+										<button type = "submit" class = "submit-button" onclick = "return validateRegistrationForm()">Submit</button>
+									</div>
+								</form>
+							</section>
+						</div>
+
+
+					<!-- Adult Form -->
+						<div id = "adultForm" style = "display:none;">
+							<section class = "registration-container">
+
+							<!-- Form -->
+								<form class = "form" id = "registrationForm" method = "POST" action = "https://formsubmit.co/5706783fd4c76300c52561682502228e">
+									
+									<h2>Contact Info</h2>
+							
+									<div class = "field-left">
+										<input type = "text" id = "parentFirstName" name = "FirstName" placeholder = "First Name" required>
+									</div>
+							
+									<div class = "field-right">
+										<input type = "text" id = "parentLastName" name = "LastName" placeholder = "Last Name" required>
+									</div>
+							
+									<div class = "field">
+										<input type = "email" id = "parentEmail" name = "Email" placeholder = "Email" required>
+									</div>
+							
+									<div class = "field">
+										<input type = "tel" id = "parentPhone" name = "Phone" placeholder = "Phone" required>
+									</div>
+							
+
+									<div id = "childrenContainer">
+										<h2>Training Info</h2>
+
+										<div class = "field-left">
+											<input type = "text" id = "Age" name = "Age" placeholder = "Age" required>
+										</div>
+
+										<div class="field-right">
+											<label for="Gender" class="sr-only">Gender</label>
+											<select id="Gender" name="Gender" required>
+											<option value="" disabled selected>Select Gender</option>
+											<option value="male">Male</option>
+											<option value="female">Female</option>
+											</select>
+										</div>
+
+										<div class = "field">
+											<textarea id = "Experience" name = "Experience" placeholder = "Have you done jiu-jitsu before?" rows = "3" required></textarea>
+										</div>
+
+									</div>
+									
+									<!-- Message -->
+									<p class = "style6" style = "color: #202020; font-weight: bold; text-align: center">** We'll get in touch with available bookings **</p>
+
+									<!-- Submit Button -->
+									<div class = "field submit-wrapper">
+										<button type = "submit" class = "submit-button" onclick = "return validateRegistrationForm()">Submit</button>
+									</div>
+
+								</form>
+							</section>
+						</div>
 					</div>
 
+				<!-- What to Wear -->
+					<h2 style = "margin: 100px 0 50px 0;">What To Wear To Class</h2>
 
-				<!-- What To Wear -->
-					<h2 style = "margin: 80px 0;">What To Wear / Not Wear</h2>
-
-
-					<div class = "trial attire">
-
-							<div class = "tile">								
-								<h3 style = "margin-top: 0;">Suitable Attire</h3>
-								<img src = "images/trial/appropriate.jpg" />				
+						<!-- Attire -->
+						<div class = "attire-grid">
+					
+							<!-- Unsuitable -->
+								<div class = "attire-tile">
+									<div class = "attire-title red">Unsuitable</div>
+						
+									<div class = "attire-content">
+										<img src = "images/trial/unsuitable.jpg">
+						
+										<div class = "attire-labels">
+											<p>Hoodies / Pockets / Zippers</p>
+											<p>Crop Tops / Low Cuts / Short Shorts</p>
+										</div>
+									</div>
+								</div>
+					
+							<!-- Suitable -->
+								<div class = "attire-tile">
+									<div class = "attire-title blue">Suitable</div>
+						
+									<div class = "attire-content">
+										<img src = "images/trial/suitable.jpg">
+						
+										<div class = "attire-labels">
+											<p>T-Shirts & Shorts</p>
+											<p>T-Shirts & Long Shorts</p>
+										</div>
+									</div>
+								</div>
+					
+							<!-- Recommended -->
+								<div class = "attire-tile">
+									<div class = "attire-title green">Recommended</div>
+						
+									<div class = "attire-content">
+										<img src = "images/trial/recommended.jpg">
+						
+										<div class = "attire-labels">
+											<p>Long Sleeves & Spats</p>
+											<p>
+												Full Coverage<br>
+												<span class = "subtext">More Skin Protection</span>
+											</p>
+										</div>
+									</div>
+								</div>
+					
+						</div>
+					
+						<!-- For Everyone's Safety -->
+							<div class = "attire-tile full-width">
+								<div class = "attire-title gray">For Everyone's Safety</div>
+						
+								<div class = "attire-icons">
+						
+									<div>
+										<i class = "fa-solid fa-user"></i>
+										<p>Hair Tied Back</p>
+									</div>
+						
+									<div>
+										<i class = "fa-solid fa-hand"></i>
+										<p>Short, Trimmed Nails</p>
+									</div>
+						
+									<div>
+										<i class = "fa-solid fa-ring"></i>
+										<p>No Jewelry</p>
+									</div>
+						
+								</div>
 							</div>
-
-
-							<div class = "tile">								
-								<h3 style = "margin-top: 0;">Unsuitable Attire</h3>
-								<img src = "images/trial/inappropriate.jpg" />				
-							</div>
-
-
-					</div>
 					
             </main>
 
