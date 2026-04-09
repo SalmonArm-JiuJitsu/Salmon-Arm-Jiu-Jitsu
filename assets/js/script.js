@@ -249,7 +249,7 @@ const weeklySchedule = [
 					// Book class
 					if (isInFuture && isWithin14Days) {
 						const btn = document.createElement('a');
-						btn.href = 'freeTrialRequests.html';
+						btn.href = 'adult-request.html';
 						btn.className = 'schedule-button button-book';
 						btn.textContent = 'Book Free Trial';
 						block.appendChild(btn);
@@ -268,7 +268,7 @@ const weeklySchedule = [
 				// Form new class
 				else if (c.capacity === 'forming') {
 					const formingBtn = document.createElement('a');
-					formingBtn.href = 'youthClassTryout.html';
+					formingBtn.href = 'youth-request.html';
 					formingBtn.className = 'schedule-button forming-button';
 					formingBtn.textContent = 'Join Spring Session';
 					block.appendChild(formingBtn);
@@ -277,7 +277,7 @@ const weeklySchedule = [
 				// Waitlist
 				else {
 					const waitlistBtn = document.createElement('a');
-					waitlistBtn.href = 'youthWaitlist.html';
+					waitlistBtn.href = 'youth-waitlist.html';
 					waitlistBtn.className = 'schedule-button waitlist-button';
 					waitlistBtn.textContent = 'Join Waitlist';
 					block.appendChild(waitlistBtn);
