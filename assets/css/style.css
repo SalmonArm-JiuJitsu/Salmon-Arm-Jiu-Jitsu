@@ -787,6 +787,15 @@ i {
 		height: 16pt;
 	}
 
+	i.style6 {
+		background: none;
+		padding: 13px 11px 11px 13px;
+		width: 16pt;
+		height: 16pt;
+		display: flex;
+		justify-content: center;
+	}
+
 
 /* Home */
 
@@ -1263,7 +1272,6 @@ img {
 		#scheduleApp button {
 			padding: 9px 12px;
 			background-color: #444;
-			color: white;
 			border: none;
 			border-radius: 6px;
 			cursor: pointer;
@@ -1395,10 +1403,11 @@ img {
 	}
 	
 	#filterToggle {
-		background: #303030;
-		border-radius: 50%;
-		width: 40px;
-		height: 40px;
+		padding: 9px 12px;
+		background-color: #444;
+		border: none;
+		border-radius: 6px;
+		cursor: pointer;
 		display: flex;
 		align-items: center;
 		justify-content: center;
