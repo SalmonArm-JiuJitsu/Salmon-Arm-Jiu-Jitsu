@@ -336,11 +336,7 @@ strong {
 	--haze-footer: linear-gradient(#070707, #292929);
 	--haze-invert: linear-gradient(#222, #070707);
 	--haze-light: radial-gradient(ellipse at left top, #181818, #333);
-
-	/* Color */
-	--pop1: linear-gradient(#009fff, #7500fa);
-	--pop2: linear-gradient(90deg, blue, cyan);
-	--pop2: linear-gradient(70deg, #75ffa1 60%, #07afed);
+	--haze-med: linear-gradient(#3a3a3a, #1e1e1e);	
 }
 	
 
@@ -726,6 +722,30 @@ button {
 				button.style5:active {
 					color: #03e9f4;
 					background: #404040;
+				}
+
+			button.style6 {
+				color: #50c88c;
+				width: auto;
+				font-size: 13pt;
+				letter-spacing: 1px;
+				border-radius: 30px;
+				padding: 10px 15px;
+				text-transform: none;
+				background: var(--haze-med);
+				box-shadow: 0 4px 12px 0 rgba(0,0,0,0.35);
+			}
+	
+				button.style6:hover,
+				button.style6:active {
+					color: #03e9f4;
+					background: #404040;
+				}
+
+				@media screen and (max-width: 662px) {
+					button.style6 {
+						width: 280px;
+					}
 				}
 
 
