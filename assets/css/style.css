@@ -258,6 +258,16 @@ p {
         font-size: 16pt;
     }
 
+	p.style8 {
+        font-family: "nimbus-sans-regular";
+        color: #02023b;
+        font-size: 14pt;
+		background-color: #ccc;
+		margin-top: 50px;
+		padding: 20px;
+		border-radius: 10px;
+    }
+
 strong {
 	font-weight: bolder;
 }
