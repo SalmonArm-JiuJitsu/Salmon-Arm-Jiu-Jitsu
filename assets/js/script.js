@@ -87,48 +87,34 @@ window.addEventListener('scroll', function() {
 
 const weeklySchedule = [ 
 	// Monday
-	{ day: 'Mon', time: '3:10 PM - 3:55 PM', title: 'Kids (Ages 7-9) Group C', capacity: 'forming', color: '#00758f', textColor: '#eee' },
-	{ day: 'Mon', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'forming', color: '#4a0391', textColor: '#ccc' },
-	{ day: 'Mon', time: '5:00 PM - 6:00 PM', title: 'Teens (Ages 12-16)', capacity: 'forming', color: '#039e44' },
-	{ day: 'Mon', time: '6:00 PM - 7:15 PM', title: 'All-Levels No-Gi', capacity: 'available', color: '#303030' },
-	{ day: 'Mon', time: '7:20 PM - 8:20 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc' },
+	{ day: 'Mon', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
+	{ day: 'Mon', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 9-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
+	{ day: 'Mon', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 13+)', capacity: 'available', color: '#4a0391', textColor: '#ccc'  },
 
 	// Tuesday	
-	//{ day: 'Tue', time: '12:00 PM - 1:00 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc'  },
-	{ day: 'Tue', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#1ae195', textColor: '#505050'},
-	{ day: 'Tue', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 9-12)', capacity: 'forming', color: '#00d5ff', textColor: '#505050' },
-	{ day: 'Tue', time: '6:00 PM - 7:15 PM', title: 'All-Levels No-Gi', capacity: 'available', color: '#303030' },
-	{ day: 'Tue', time: '7:20 PM - 8:20 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#910364' },
+	{ day: 'Tue', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
+	{ day: 'Tue', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 9-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
+	{ day: 'Tue', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 13+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
 
 	// Wednesday
-	{ day: 'Wed', time: '3:10 PM - 3:55 PM', title: 'Kids (Ages 7-9) Group C', capacity: 'forming', color: '#00758f', textColor: '#eee' },
-	{ day: 'Wed', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'forming', color: '#4a0391', textColor: '#ccc' },
-	{ day: 'Wed', time: '5:00 PM - 6:00 PM', title: 'Teens (Ages 12-16)', capacity: 'forming', color: '#039e44' },
-	{ day: 'Wed', time: '6:00 PM - 7:15 PM', title: 'All-Levels No-Gi', capacity: 'available', color: '#303030' },
-	{ day: 'Wed', time: '7:20 PM - 8:20 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc'  },
+	{ day: 'Wed', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
+	{ day: 'Wed', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 9-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
+	{ day: 'Wed', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 13+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
 
 	// Thursday
-	//{ day: 'Thu', time: '12:00 PM - 1:00 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc'  },
-	{ day: 'Thu', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#1ae195', textColor: '#505050' },
-	{ day: 'Thu', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 9-12)', capacity: 'forming', color: '#00d5ff', textColor: '#505050' },
-	{ day: 'Thu', time: '6:00 PM - 7:15 PM', title: 'All-Levels No-Gi', capacity: 'available', color: '#303030' },
-	{ day: 'Thu', time: '7:20 PM - 8:20 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#910364' },
+	{ day: 'Thu', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
+	{ day: 'Thu', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 9-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
+	{ day: 'Thu', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 13+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
 
 	// Friday
-	{ day: 'Fri', time: '3:10 PM - 3:55 PM', title: 'Kids (Ages 7-9) Group C', capacity: 'forming', color: '#00758f', textColor: '#eee' },
-	{ day: 'Fri', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9) Group B', capacity: 'forming', color: '#4a0391', textColor: '#ccc' },
-	{ day: 'Fri', time: '5:00 PM - 6:00 PM', title: 'Teens (Ages 12-16)', capacity: 'forming', color: '#039e44' },
-	{ day: 'Fri', time: '6:00 PM - 7:15 PM', title: 'All-Levels No-Gi', capacity: 'available', color: '#303030' },
-	{ day: 'Fri', time: '7:20 PM - 8:20 PM', title: 'Beginner No-Gi', capacity: 'available', color: '#0202bf', textColor: '#ccc'  },
+	{ day: 'Fri', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 9-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
+	{ day: 'Fri', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 13+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
 
 	// Saturday - Closed
 	{ day: 'Sat', time: '', title: 'Closed', capacity: 'closed' },
 
 	// Sunday
-	{ day: 'Sun', time: '10:30 AM - 11:30 AM', title: 'Open Mat', capacity: 'available', color: '#8805fa' },
-	{ day: 'Sun', time: '12:00 PM - 12:45 PM', title: 'Kids (Ages 7-9) Group A', capacity: 'available', color: '#1ae195', textColor: '#505050' },
-	{ day: 'Sun', time: '1:00 PM - 2:00 PM', title: 'Kids (Ages 9-12)', capacity: 'forming', color: '#00d5ff', textColor: '#505050' },
-	{ day: 'Sun', time: '2:00 PM - 3:00 PM', title: 'Ladies No-Gi', capacity: 'available', color: '#910364' }
+	{ day: 'Sun', time: '10:30 AM - 11:30 AM', title: 'Open Mat', capacity: 'available', color: '#7c4dff' },
   
  ];
 
@@ -154,15 +140,10 @@ function formatDateRange(startDate) {
 // determine program
 function getProgram(title) {
 	if (title.includes('7-9')) return 'kids-7-9';
-	if (title.includes('9-12')) return 'kids-9-12';
-	if (title.includes('Teens')) return 'teens';
-
-	if (title.includes('Ladies')) return 'ladies';
-	if (title.includes('Beginner')) return 'adult-beginner';
-	if (title.includes('All-Levels')) return 'adult-all';
-	if (title.includes('Open Mat')) return 'both'; 
-
-	return 'adult-all';
+	if (title.includes('9-13')) return 'kids-9-13';
+	if (title.includes('13+')) return 'no-gi-13+';
+	if (title.includes('Open Mat')) return 'open-mat';
+	return '';
 }
 
 function renderWeek() {
@@ -214,8 +195,8 @@ function renderWeek() {
 		
 				const program = getProgram(c.title);
 		
-				if (program === "both") {
-					return activeFilter === "adult-beginner" || activeFilter === "adult-all";
+				if (program === "open-mat") {
+					return activeFilter === "kids-9-13" || activeFilter === "no-gi-13+";
 				}
 		
 				return program === activeFilter;
@@ -273,7 +254,13 @@ function renderWeek() {
 
 					if (isInFuture && isWithin14Days) {
 						const btn = document.createElement('a');
-						btn.href = 'adult-request.html';
+						const program = getProgram(c.title);
+
+					if (program === 'kids-7-9' || program === 'kids-9-13') {
+						btn.href = 'youth-request.html';
+					} else {
+						btn.href = '13+request.html';
+					}
 						btn.className = 'schedule-button button-book';
 						btn.textContent = 'Book Free Trial';
 						block.appendChild(btn);
@@ -332,7 +319,7 @@ function initFilters() {
 		};
 	});
 
-	// 👇 THIS PART closes on outside click
+	// THIS PART closes on outside click
 	document.addEventListener("click", (e) => {
 		if (!menu.contains(e.target) && !toggle.contains(e.target)) {
 			menu.classList.add("hidden");
@@ -493,21 +480,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		
 		document.addEventListener('DOMContentLoaded', generateWaitlistOptions);
 
-  
-		// Optional: Print form button for Youth Enrollment
 
-		const printBtn = document.createElement("button");
-		printBtn.textContent = "Print Form";
-		printBtn.type = "button";
-		printBtn.classList.add("submit-button");
-
-		const form = document.getElementById("registrationForm");
-		form.appendChild(printBtn);
-
-		printBtn.addEventListener("click", () => {
-			window.print();
-		});
-
+		// Trial Choice (Adult & Minor)
+		
 		function showTrialForm(type) {
 
 			// hide chooser
