@@ -259,7 +259,7 @@ function renderWeek() {
 					if (program === 'kids-7-9' || program === 'kids-9-13') {
 						btn.href = 'youth-request.html';
 					} else {
-						btn.href = '13+request.html';
+						btn.href = 'teens&adults-request.html';
 					}
 						btn.className = 'schedule-button button-book';
 						btn.textContent = 'Book Free Trial';
