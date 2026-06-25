@@ -22,6 +22,7 @@ const weeklySchedule = [
 	{ day: 'Thu', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 13+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
 
 	// Friday
+	{ day: 'Fri', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
 	{ day: 'Fri', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 9-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
 	{ day: 'Fri', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 13+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
 
