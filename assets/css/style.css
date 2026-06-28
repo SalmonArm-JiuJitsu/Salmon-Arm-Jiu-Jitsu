@@ -1464,6 +1464,12 @@ img {
     margin-bottom: 25px;
 }
 
+	@media screen and (max-width: 600px) {
+		.registration-complete h2{
+			font-size: 29pt;
+		}
+	}
+
 .registration-complete h4 {
     color: #131313;
     font-size: 18pt;
