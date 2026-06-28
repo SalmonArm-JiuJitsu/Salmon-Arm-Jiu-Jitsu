@@ -258,6 +258,13 @@ p {
         font-size: 16pt;
     }
 
+	p.style8 {
+		font-family: "Source Sans Pro";
+		margin-top: 30px;
+		color: #444;
+		font-size: 12pt;
+	}
+
 strong {
 	font-weight: bolder;
 }
@@ -818,6 +825,23 @@ i {
 		justify-content: center;
 	}
 
+	i.style7 {
+		background: none;
+		color: #03e9f4;
+		font-size: 22pt;
+		width: 30px;
+		height: 30px;
+		padding: 0;
+	}
+
+	i.style8 {
+		background: none;
+		width: auto;
+		height: auto;
+		font-size: 16pt;
+		color: #131313;
+	}
+
 
 /* Home */
 
@@ -1009,6 +1033,66 @@ img {
 		}
 
 
+/* Help Box */
+
+.help-box {
+	margin: 20px 0 40px 0;
+}
+
+.help-toggle {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #5b8fcf;
+	color: #131313;
+	padding: 15px 18px;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 14pt;
+	font-family: "nimbus-sans-bold";
+}
+
+.help-toggle span {
+	flex: 1;
+	text-align: left;
+	margin-left: 12px;
+	padding-top: 6px;
+	font-size: 12pt;
+}
+
+	@media screen and (max-width:700px) {
+		.help-toggle span {
+			font-size: 10pt;
+		}
+	}
+
+.help-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.25s ease, padding 0.25s ease;
+
+	background: #444;
+	border-radius: 0 0 8px 8px;
+	padding: 0 18px;
+}
+
+.help-content p {
+	margin: 15px 0;
+	color: #ddd;
+}
+
+.help-box.open .help-content {
+	max-height: 200px;
+	padding: 10px 18px 15px 18px;
+}
+
+.help-box.open .arrow {
+	transform: rotate(180deg);
+	transition: transform 0.2s ease;
+}
+
+
 /* Holiday Closures */			
 
 .holiday-list {
@@ -1031,19 +1115,43 @@ img {
     border-bottom: none;
 }
 
-	.holiday-row i {
-		background: none;
-		color: #03e9f4;
-		font-size: 22pt;
-		width: 30px;
-		height: 30px;
-		padding: 0;
-	}
-
 	.holiday-row span {
 		font-size: 16pt;
 		letter-spacing: 1px;
 	}
+
+
+/* Loading Overlay */
+
+#loadingOverlay {
+	display: none;
+	position: fixed;
+	inset: 0;
+	background: rgba(0,0,0,0.35);
+	z-index: 9999;
+
+	justify-content: center;
+	align-items: center;
+}
+
+#loadingOverlay.show {
+	display: flex;
+}
+
+.loader {
+	width: 50px;
+	height: 50px;
+	border: 10px solid #000;
+	border-top: 10px solid cyan;
+	border-radius: 50%;
+	animation: spin .9s linear infinite;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
 
 
 /* Privacy Policy */
@@ -1137,11 +1245,11 @@ img {
 	color: #131313;
 }
 
-#registrationForm .submit-button:hover {
-	outline: solid 1px #03e9f4;
-	color: #03e9f4;
-	background: #404040;
-}
+	#registrationForm .submit-button:hover {
+		outline: solid 1px #03e9f4;
+		color: #03e9f4;
+		background: #404040;
+	}
 
 #childControls button {
 	margin-bottom: 15px;
@@ -1181,6 +1289,21 @@ img {
 		}
 	}
 
+#registrationForm ul {
+	padding: 25px 15px;
+}
+
+#registrationForm li {
+	color: #02023b;
+	font-weight: 600;
+	margin-left: 15px;
+	list-style: disc;
+	padding: 12px;
+}
+
+
+	/* Waitlist Times */
+
 	.interest-grid {
 		display: flex;
 		flex-direction: column;
@@ -1214,54 +1337,96 @@ img {
 		color: #555;
 	}
 
-	#registrationForm ul {
-		padding: 25px 15px;
+
+	/* Trial chooser buttons */
+	
+	.trial-choice-buttons {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+		flex-wrap: wrap;
 	}
 
-		#registrationForm li {
-			color: #02023b;
-			font-weight: 600;
-			margin-left: 15px;
-			list-style: disc;
-			padding: 12px;
+	.trial-choice-buttons button {
+		min-width: 200px;
+	}
+
+
+	/* Registration Schedule Selection */
+
+	.programs-container {
+		margin-top: 40px;
+		padding: 15px 0;
+		border-radius: 14px;
+		background: rgba(0, 0, 0, 0.1);
+	}
+
+	.programs {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 15px;
+	}
+	
+		#registrationForm .programs label {
+			margin: 0;
 		}
 
-		/* Trial chooser buttons */
-		
-		.trial-choice-buttons {
-			display: flex;
-			justify-content: center;
-			gap: 20px;
-			flex-wrap: wrap;
+	.adult-programs {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+		padding: 0 20px;
+	}
+
+	.program-schedules {
+		background: #5b8fcf;
+		border-radius: 8px;
+		padding: 18px;
+		cursor: pointer;	
+		display: flex;
+		align-items: flex-start;
+		gap: 10px;
+		width: 100%;
+	}
+	
+	.program-schedules input[type = "radio"] {
+		width: auto !important;
+		height: auto !important;	
+		margin: 4px 0 0 0;
+		transform: scale(1.2);
+	}
+	
+	.heading {
+		font-size: 18pt;
+		font-family: "nimbus-sans-bold";
+		color: #131313;
+		margin-bottom: 6px;
+	}
+	
+	.subheading {
+		font-size: 14pt;
+		color: #131313;
+		margin-bottom: 3px;
+	}
+	
+	.details {
+		font-size: 11pt;
+		color: #404040;
+	}
+	
+		@media screen and (max-width: 720px) {
+			.programs {
+				grid-template-columns: 1fr;
+			}
+
+			.adult-programs {
+				grid-template-columns: 1fr;
+			}
 		}
 
-		.trial-choice-buttons button {
-			min-width: 200px;
-		}
-
-		/* Printable Form */
-
-		@media print {
-			body * {
-				visibility: hidden;
-			}
-
-			button {
-				display: none;
-			}
-
-			#printableDocument, 
-			#printableDocument * {
-				visibility: visible;
-			}
-		
-			#printableDocument {
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 100%;
-			}
-		}
+	.program-note {
+		padding: 0 20px 10px 20px;
+	}
 
 
 /* Schedule */
