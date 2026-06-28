@@ -265,6 +265,14 @@ p {
 		font-size: 12pt;
 	}
 
+	p.style9 {
+		color: #1f4f8b;
+		font-size: 14pt;
+		font-family: "nimbus-sans-regular";
+		line-height: 1.6;
+		margin-bottom: 60px;
+	}
+
 strong {
 	font-weight: bolder;
 }
@@ -756,6 +764,20 @@ button {
 				}
 
 
+		/* Form Chooser Buttons */
+
+		.form-choice-buttons {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+
+		.form-choice-buttons button {
+			min-width: 200px;
+		}
+
+
 /* Icon */
 
 i {
@@ -840,6 +862,16 @@ i {
 		height: auto;
 		font-size: 16pt;
 		color: #131313;
+	}
+
+	i.style9 {
+		background: none;
+		color: #42c76e;
+		font-size: 70px;
+		width: auto;
+		height: auto;
+		margin-bottom: 25px;
+		filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
 	}
 
 
@@ -1338,20 +1370,6 @@ img {
 	}
 
 
-	/* Trial chooser buttons */
-	
-	.trial-choice-buttons {
-		display: flex;
-		justify-content: center;
-		gap: 20px;
-		flex-wrap: wrap;
-	}
-
-	.trial-choice-buttons button {
-		min-width: 200px;
-	}
-
-
 	/* Registration Schedule Selection */
 
 	.programs-container {
@@ -1427,6 +1445,30 @@ img {
 	.program-note {
 		padding: 0 20px 10px 20px;
 	}
+
+
+/* Registration Complete */
+
+.registration-complete {
+    max-width: 800px;
+    padding: 65px 60px 70px 60px;
+    text-align: center;
+    border-radius: 14px;
+}
+
+.registration-complete h2 {
+    color: #131313;
+    font-family: "nimbus-sans-bold";
+    font-size: 34pt;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.registration-complete h4 {
+    color: #131313;
+    font-size: 18pt;
+    margin-bottom: 25px;
+}
 
 
 /* Schedule */
