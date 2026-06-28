@@ -56,10 +56,10 @@ window.addEventListener('scroll', function() {
 
 // Trial Choice (Adult & Youth)
 		
-function showTrialForm(type) {
+function showForm(type) {
 
 	// hide chooser
-	const choice = document.getElementById("trialChoice");
+	const choice = document.getElementById("formChoice");
 	if (choice) choice.style.display = "none";
 
 	// hide both forms first
