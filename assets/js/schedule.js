@@ -3,28 +3,28 @@
 const weeklySchedule = [ 
 	// Monday
 	{ day: 'Mon', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
-	{ day: 'Mon', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 9-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
-	{ day: 'Mon', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 13+)', capacity: 'available', color: '#4a0391', textColor: '#ccc'  },
+	{ day: 'Mon', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
+	{ day: 'Mon', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc'  },
 
 	// Tuesday	
 	{ day: 'Tue', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
-	{ day: 'Tue', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 9-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
-	{ day: 'Tue', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 13+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
+	{ day: 'Tue', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
+	{ day: 'Tue', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
 
 	// Wednesday
 	{ day: 'Wed', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
-	{ day: 'Wed', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 9-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
-	{ day: 'Wed', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 13+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
+	{ day: 'Wed', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
+	{ day: 'Wed', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
 
 	// Thursday
 	{ day: 'Thu', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
-	{ day: 'Thu', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 9-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
-	{ day: 'Thu', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 13+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
+	{ day: 'Thu', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
+	{ day: 'Thu', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
 
 	// Friday
 	{ day: 'Fri', time: '4:00 PM - 4:45 PM', title: 'Kids (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
-	{ day: 'Fri', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 9-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
-	{ day: 'Fri', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 13+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
+	{ day: 'Fri', time: '5:00 PM - 6:00 PM', title: 'Kids (Ages 10-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
+	{ day: 'Fri', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
 
 	// Saturday - Closed
 	{ day: 'Sat', time: '', title: 'Closed', capacity: 'closed' },
@@ -55,9 +55,9 @@ function formatDateRange(startDate) {
 
 // determine program
 function getProgram(title) {
-	if (title.includes('7-9')) return 'kids-7-9';
-	if (title.includes('9-13')) return 'kids-9-13';
-	if (title.includes('13+')) return 'no-gi-13+';
+	if (title.includes('7-9')) return 'no-gi-7-9';
+	if (title.includes('10-13')) return 'no-gi-10-13';
+	if (title.includes('14+')) return 'no-gi-14+';
 	if (title.includes('Open Mat')) return 'open-mat';
 	return '';
 }
@@ -112,7 +112,7 @@ function renderWeek() {
 				const program = getProgram(c.title);
 		
 				if (program === "open-mat") {
-					return activeFilter === "kids-9-13" || activeFilter === "no-gi-13+";
+					return activeFilter === "no-gi-10-13" || activeFilter === "no-gi-14+";
 				}
 		
 				return program === activeFilter;
@@ -172,7 +172,7 @@ function renderWeek() {
 						const btn = document.createElement('a');
 						const program = getProgram(c.title);
 
-					if (program === 'kids-7-9' || program === 'kids-9-13') {
+					if (program === 'kids-7-9' || program === 'kids-10-13') {
 						btn.href = 'youth-request.html';
 					} else {
 						btn.href = 'teens&adults-request.html';
