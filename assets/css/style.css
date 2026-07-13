@@ -42,15 +42,15 @@ main {
 	padding: 0 50px;
 }
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 550px) {
 		main {
 			padding: 0 30px;
 		}
 	}
 
-	@media screen and (max-width: 380px) {
+	@media screen and (max-width: 450px) {
 		main {
-			padding: 0 10px;
+			padding: 0 12px;
 		}
 	}
 	
@@ -242,8 +242,14 @@ p {
         font-size: 25pt;
 		text-align: center;
 		letter-spacing: 1px;
-		margin-bottom: 80px;
+		margin: 0 15px 80px 15px;
 	}
+
+		@media screen and (min-width: 550px) {
+			p.style5 {
+				margin: 0 0 80px 0;
+			}
+		}
 
 	p.style6 {
 		font-family: "nimbus-sans-light";
@@ -257,6 +263,30 @@ p {
         color: #eee;
         font-size: 16pt;
     }
+
+	p.style8 {
+		font-family: "Source Sans Pro";
+		margin-top: 30px;
+		color: #444;
+		font-size: 12pt;
+	}
+
+	p.style9 {
+		font-family: "Source Sans Pro";
+		margin-bottom: 50px;
+		color: #999;
+		font-size: 18pt;
+		text-align: center;
+	}
+
+	p.style10 {
+		font-family: "nimbus-sans-light";
+		padding: 20px 0 50px 0;
+		color: #02023b;
+		font-size: 16pt;
+		text-align: center;
+	}
+
 
 strong {
 	font-weight: bolder;
@@ -749,6 +779,20 @@ button {
 				}
 
 
+		/* Form Chooser Buttons */
+
+		.form-choice-buttons {
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+
+		.form-choice-buttons button {
+			min-width: 200px;
+		}
+
+
 /* Icon */
 
 i {
@@ -816,6 +860,52 @@ i {
 		height: 16pt;
 		display: flex;
 		justify-content: center;
+	}
+
+	i.style7 {
+		background: none;
+		color: #03e9f4;
+		font-size: 22pt;
+		width: 30px;
+		height: 30px;
+		padding: 0;
+	}
+
+	i.style8 {
+		background: none;
+		width: auto;
+		height: auto;
+		font-size: 16pt;
+		color: #131313;
+	}
+
+	i.style9 {
+		background: none;
+		color: #42c76e;
+		font-size: 70px;
+		width: auto;
+		height: auto;
+		margin-bottom: 25px;
+		filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
+	}
+
+	i.style10 {
+		background: none;
+		width: auto;
+		height: auto;
+		font-size: 18pt;
+		color: #eee;
+		margin-right: 18px;
+	}
+
+	i.style11 {
+		background: none;
+		color: #efefef;
+		font-size: 30pt;
+		width: auto;
+		height: auto;
+		padding: 0;
+		margin-bottom: 20px;
 	}
 
 
@@ -1009,6 +1099,66 @@ img {
 		}
 
 
+/* Help Box */
+
+.help-box {
+	margin: 20px 0 40px 0;
+}
+
+.help-toggle {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #5b8fcf;
+	color: #131313;
+	padding: 15px 18px;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 14pt;
+	font-family: "nimbus-sans-bold";
+}
+
+.help-toggle span {
+	flex: 1;
+	text-align: left;
+	margin-left: 12px;
+	padding-top: 6px;
+	font-size: 12pt;
+}
+
+	@media screen and (max-width:700px) {
+		.help-toggle span {
+			font-size: 10pt;
+		}
+	}
+
+.help-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.25s ease, padding 0.25s ease;
+
+	background: #444;
+	border-radius: 0 0 8px 8px;
+	padding: 0 18px;
+}
+
+.help-content p {
+	margin: 15px 0;
+	color: #ddd;
+}
+
+.help-box.open .help-content {
+	max-height: 200px;
+	padding: 10px 18px 15px 18px;
+}
+
+.help-box.open .arrow {
+	transform: rotate(180deg);
+	transition: transform 0.2s ease;
+}
+
+
 /* Holiday Closures */			
 
 .holiday-list {
@@ -1031,19 +1181,43 @@ img {
     border-bottom: none;
 }
 
-	.holiday-row i {
-		background: none;
-		color: #03e9f4;
-		font-size: 22pt;
-		width: 30px;
-		height: 30px;
-		padding: 0;
-	}
-
 	.holiday-row span {
 		font-size: 16pt;
 		letter-spacing: 1px;
 	}
+
+
+/* Loading Overlay */
+
+#loadingOverlay {
+	display: none;
+	position: fixed;
+	inset: 0;
+	background: rgba(0,0,0,0.35);
+	z-index: 9999;
+
+	justify-content: center;
+	align-items: center;
+}
+
+#loadingOverlay.show {
+	display: flex;
+}
+
+.loader {
+	width: 50px;
+	height: 50px;
+	border: 10px solid #000;
+	border-top: 10px solid cyan;
+	border-radius: 50%;
+	animation: spin .9s linear infinite;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
 
 
 /* Privacy Policy */
@@ -1137,11 +1311,11 @@ img {
 	color: #131313;
 }
 
-#registrationForm .submit-button:hover {
-	outline: solid 1px #03e9f4;
-	color: #03e9f4;
-	background: #404040;
-}
+	#registrationForm .submit-button:hover {
+		outline: solid 1px #03e9f4;
+		color: #03e9f4;
+		background: #404040;
+	}
 
 #childControls button {
 	margin-bottom: 15px;
@@ -1181,63 +1355,247 @@ img {
 		}
 	}
 
-	.interest-grid {
-		display: flex;
-		flex-direction: column;
-		gap: 50px;
+#registrationForm ul {
+	padding: 25px 15px;
+}
+
+#registrationForm li {
+	font-weight: 600;
+	margin-left: 15px;
+	list-style: disc;
+	padding: 12px;
+}
+
+
+	/* Registration Schedule Selection */
+
+	.programs-container {
+		margin-top: 40px;
+		padding: 15px 0;
+		border-radius: 14px;
+		background: rgba(0, 0, 0, 0.1);
 	}
 
-	.interest-option {
+	.programs {
 		display: grid;
-		grid-template-columns: 22px auto;
-		justify-content: center;
-		column-gap: 12px;
-		align-items: start;
-		cursor: pointer;
-		background-color: #42c76e;
-		padding: 20px;
-		border-radius: 8px;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 15px;
+	}
+	
+		#registrationForm .programs label {
+			margin: 0;
+		}
+
+	.adult-programs {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+		padding: 0 20px;
 	}
 
-	.interest-option .style5 {
-		display: block;
-		margin-bottom: 12px;
-	  }
-
-	.interest-option input {
-		margin-top: 4px;
+	.program-schedules {
+		background: #5b8fcf;
+		border-radius: 8px;
+		padding: 18px;
+		cursor: pointer;	
+		display: flex;
+		align-items: flex-start;
+		gap: 10px;
+		width: 100%;
+	}
+	
+	.program-schedules input[type = "radio"] {
+		width: auto !important;
+		height: auto !important;	
+		margin: 4px 0 0 0;
 		transform: scale(1.2);
 	}
-
-	.interest-option em {
-		font-size: 12pt;
-		color: #555;
+	
+	.heading {
+		font-size: 18pt;
+		font-family: "nimbus-sans-bold";
+		color: #131313;
+		margin-bottom: 6px;
 	}
-
-	#registrationForm ul {
-		padding: 25px 15px;
+	
+	.subheading {
+		font-size: 14pt;
+		color: #131313;
+		margin-bottom: 3px;
 	}
+	
+	.details {
+		font-size: 11pt;
+		color: #404040;
+	}
+	
+		@media screen and (max-width: 720px) {
+			.programs {
+				grid-template-columns: 1fr;
+			}
 
-		#registrationForm li {
-			color: #02023b;
-			font-weight: 600;
-			margin-left: 15px;
-			list-style: disc;
-			padding: 12px;
+			.adult-programs {
+				grid-template-columns: 1fr;
+			}
 		}
 
-		/* Trial chooser buttons */
+	.program-note {
+		padding: 0 20px 10px 20px;
+	}
+
+
+/* Season Info */
+
+.season-info {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	margin: auto;
+}
+
+.season-card {
+	background: var(--haze-light);
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.season-card-header {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 16px 22px;
+	font-family: "nimbus-sans-bold";
+	font-size: 18pt;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #efefef;
+}
+
+	.season-card-header.blue {
+		background: #1f4f8b;
+	}
+
+	.season-card-header.green {
+		background: #2e7d4f;
+	}
+
+	.season-card-header.orange {
+		background: #d27b2c;
+	}
+
+.season-card-content {
+	padding: 30px;
+	font-family: "nimbus-sans-regular";
+}
+
+	.season-card-content h4 {
+		margin: 0 0 18px 0;
+		font-size: 17pt;
+	}
+
+	.season-card-content li {
+		margin: 0 0 14px 0 !important;
+		padding: 0 !important;
+		font-weight: normal !important;
+		display: flex;
+		align-items: flex-start;
+		gap: 12px;
+		line-height: 1.5;
+	}
+
+		.season-card-content li::before {
+			content: "\f00d";
+			font-family: "Font Awesome 6 Pro";
+			font-weight: 900;
+			color: #d27b2c;
+			margin-top: 2px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;	
+			width: 18px;
+			min-width: 18px;
+			line-height: 1;
+		}
+
+		.season-details {
+			text-align: center;
+			padding: 30px 20px;
+		}
 		
-		.trial-choice-buttons {
-			display: flex;
-			justify-content: center;
-			gap: 20px;
-			flex-wrap: wrap;
-		}
+			.season-details h3 {
+				margin: 0 0 12px 0;
+			}
+			
+			.season-details p {
+				margin: 0;
+				font-size: 16pt;
+			}
 
-		.trial-choice-buttons button {
-			min-width: 200px;
+
+/* Registration Complete */
+
+.registration-complete {
+    max-width: 800px;
+    padding: 65px 60px 70px 60px;
+    text-align: center;
+    border-radius: 14px;
+}
+
+.registration-complete h2 {
+    color: #131313;
+    font-family: "nimbus-sans-bold";
+    font-size: 34pt;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+	@media screen and (max-width: 600px) {
+		.registration-complete h2{
+			font-size: 28pt;
 		}
+	}
+
+.registration-complete h4 {
+    color: #131313;
+    font-size: 18pt;
+    margin-bottom: 25px;
+}
+
+
+/* Waitlist Times */
+
+.interest-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.interest-option {
+	display: grid;
+	grid-template-columns: 22px auto;
+	justify-content: center;
+	column-gap: 12px;
+	align-items: start;
+	cursor: pointer;
+	background-color: #42c76e;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+.interest-option .style5 {
+	display: block;
+	margin-bottom: 12px;
+  }
+
+.interest-option input {
+	margin-top: 4px;
+	transform: scale(1.2);
+}
+
+.interest-option em {
+	font-size: 12pt;
+	color: #555;
+}
 
 
 /* Schedule */
