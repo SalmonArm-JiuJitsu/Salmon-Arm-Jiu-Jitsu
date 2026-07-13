@@ -1,7 +1,7 @@
 // Registration Upload & Payment
 
 const SHEETS_URL = "https://script.google.com/macros/s/AKfycbwnUYf-rUyWLS6Pfid8Ez0JNhpQ3tqJLvUpCqDRFT2bbtdqSosOj6eKKXuJnDAe5T4/exec";
-const SQUARE_URL = "https://square.link/u/6dYq5Ews";
+const SQUARE_URL = "https://square.link/u/i5TY5RjJ";
 
 async function handleRegistrationPayment() {
 
