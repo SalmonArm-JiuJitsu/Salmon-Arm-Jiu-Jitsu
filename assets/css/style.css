@@ -280,9 +280,9 @@ p {
 	}
 
 	p.style10 {
-		font-family: "nimbus-sans-light";
+		font-family: "nimbus-sans-bold";
 		padding: 20px 0 50px 0;
-		color: #02023b;
+		color: #1f4f8b;
 		font-size: 16pt;
 		text-align: center;
 	}
