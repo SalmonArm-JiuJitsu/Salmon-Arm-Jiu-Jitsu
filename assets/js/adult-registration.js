@@ -9,8 +9,22 @@ async function handleRegistrationPayment() {
 
     // HTML Validation
     if (!form.checkValidity()) {
-        alert("Form is invalid");
-        form.reportValidity();
+
+        const firstInvalid = form.querySelector(":invalid");
+    
+        if (firstInvalid) {
+            firstInvalid.focus();
+    
+            firstInvalid.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+        }
+    
+        if (typeof form.reportValidity === "function") {
+            form.reportValidity();
+        }
+    
         return;
     }
 
