@@ -9,6 +9,7 @@ async function handleRegistrationPayment() {
 
     // HTML Validation
     if (!form.checkValidity()) {
+        alert("Form is invalid");
         form.reportValidity();
         return;
     }
