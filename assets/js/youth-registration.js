@@ -72,6 +72,10 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.addEventListener("click", handleRegistrationPayment);
     }
 
+    window.addEventListener("pageshow", () => {
+        document.getElementById("loadingOverlay")?.classList.remove("show");
+    });
+
 });
 
 document.addEventListener("DOMContentLoaded", () => {
