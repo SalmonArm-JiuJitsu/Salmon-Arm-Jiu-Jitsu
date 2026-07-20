@@ -111,28 +111,26 @@ function contactForm() {
 
 
 
-// Validate Trials, Enrollment & Waitlist Forms
+// Validate Trials & Waitlist Forms
 
-function validateRegistrationForm(event) {
+function validateRegistrationForm() {
 
-	let form = event.target.closest("form");
+	const phone = document.getElementById("parentPhone");
 
-	// Browser validation (email, required fields, etc.)
-	if (!form.checkValidity()) {
-		form.reportValidity();
+	if (!document.getElementById("registrationForm").checkValidity()) {
+		document.getElementById("registrationForm").reportValidity();
 		return false;
 	}
 
-	// Find phone inside the form being submitted
-	const phone = form.querySelector('input[type="tel"]');
-
 	if (phone.value.length !== 10) {
 		alert("Please enter a 10-digit phone number.");
+		phone.focus();
 		return false;
 	}
 
 	if (!/^\d+$/.test(phone.value)) {
 		alert("Please include only numbers.");
+		phone.focus();
 		return false;
 	}
 
@@ -153,15 +151,15 @@ function validateRegistrationForm(event) {
 
 	if (fakeNumbers.includes(phone.value)) {
 		alert("Please enter a real phone number.");
+		phone.focus();
 		return false;
 	}
 
-	// Waitlist Class Selection
-	const interests = form.querySelectorAll('input[name="classInterest[]"]');
+	const interests = document.querySelectorAll('input[name="classInterest[]"]');
 
 	if (interests.length > 0) {
 
-		const checked = form.querySelectorAll('input[name="classInterest[]"]:checked');
+		const checked = document.querySelectorAll('input[name="classInterest[]"]:checked');
 
 		if (checked.length === 0) {
 			alert("Please select at least one class option.");

@@ -1,4 +1,4 @@
-// Trials, Enrollment & Waitlist Forms
+// Youth Trials & Waitlist Forms
 
 document.addEventListener("DOMContentLoaded", function () {
     const addChildBtn = document.getElementById("addChildBtn");
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         childSection.innerHTML = `
             <h2 style = "margin-top: 90px;">Child ${childCount}</h2>
             <div class = "field-left">
-                <input type = "t\ext" id = "child${childCount}FirstName" name = "child${childCount}FirstName" placeholder = "First Name" required>
+                <input type = "text" id = "child${childCount}FirstName" name = "child${childCount}FirstName" placeholder = "First Name" required>
             </div>
 
             <div class = "field-right">
