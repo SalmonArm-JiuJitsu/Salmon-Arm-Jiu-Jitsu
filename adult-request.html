@@ -39,69 +39,65 @@
 			</header>
 
 
-        <!-- Main -->
             <main>
-                <br><br><h2>Request Free Trial</h2><br><br>		  
-									  
-				<!-- Registration Form -->
-					<section class = "registration-container">
-						<form class = "form" id = "registrationForm" method = "POST" action = "https://formsubmit.co/5706783fd4c76300c52561682502228e">
-	
-							<h2>Parent Info</h2>
-					
-							<div class = "field-left">
-								<input type = "text" id = "parentFirstName" name = "parentFirstName" placeholder = "First Name" required>
-							</div>
-					
-							<div class = "field-right">
-								<input type = "text" id = "parentLastName" name = "parentLastName" placeholder = "Last Name" required>
-							</div>
-					
-							<div class = "field">
-								<input type = "email" id = "parentEmail" name = "parentEmail" placeholder = "Email" required>
-							</div>
-					
-							<div class = "field">
-								<input type = "tel" id = "parentPhone" name = "parentPhone" placeholder = "Phone" required>
-							</div>
-					
 
-							<div id = "childrenContainer">
-								<h2>Child 1</h2>
-
-								<div class = "child-section">
-									<div class = "field-left">
-										<input type = "text" id = "child1FirstName" name = "child1FirstName" placeholder = "First Name" required>
-									</div>
-					
-									<div class = "field-right">
-										<input type = "text" id = "child1LastName" name = "child1LastName" placeholder = "Last Name" required>
-									</div>
-					
-									<div class = "field">
-										<label for = "child1DOB">Birth Date</label>
-										<input type = "date" id = "child1DOB" name = "child1DOB" required>
-									</div>
-
-								</div>
-							</div>
-					
-							<!-- Child control buttons -->
-								<div id = "childControls" class="field">
-									<button type = "button" class = "style5" id = "addChildBtn">Add Child</button>
-									<button type = "button" class = "style5" id = "removeChildBtn" style = "display: none;">Remove Last Child</button>
-								</div>
-							
-							<!-- Message -->
-								<p class = "style6" style = "color: #202020; font-weight: bold; text-align: center">** We'll get in touch with available dates! **</p>
-							
-							<!-- Submit Button -->
-							<div class = "field submit-wrapper">
-								<button type = "submit" class = "submit-button" onclick = "return validateRegistrationForm()">Submit</button>
-							</div>
-						</form>
-					</section>				
-
+                <h2 style="padding: 60px 0;">Request Free Trial</h2>
+            
+                <section class="registration-container">
+            
+                    <form class="form" id="registrationForm" method="POST" action="https://formsubmit.co/5706783fd4c76300c52561682502228e">
+            
+                        <h2>Contact Info</h2>
+            
+                        <div class="field-left">
+                            <input type="text" id="adultFirstName" name="adultFirstName" placeholder="First Name" required>
+                        </div>
+            
+                        <div class="field-right">
+                            <input type="text" id="adultLastName" name="adultLastName" placeholder="Last Name" required>
+                        </div>
+            
+                        <div class="field">
+                            <input type="email" id="adultEmail" name="adultEmail" placeholder="Email" required>
+                        </div>
+            
+                        <div class="field">
+                            <input type="tel" id="adultPhone" name="adultPhone" placeholder="Phone" required>
+                        </div>
+            
+                        <h2>Training Info</h2>
+            
+                        <div class="field-left">
+                            <input type="text" id="Age" name="Age" placeholder="Age" required>
+                        </div>
+            
+                        <div class="field-right">
+                            <label for="Gender" class="sr-only">Gender</label>
+                            <select id="Gender" name="Gender" required>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+            
+                        <div class="field">
+                            <textarea id="Experience" name="Experience" placeholder="Have you done jiu-jitsu before?" rows="3" required></textarea>
+                        </div>
+            
+                        <p class="style6" style="color:#202020; font-weight:bold; text-align:center;">
+                            ** We'll get in touch with available bookings. **
+                        </p>
+            
+                        <div class="field submit-wrapper">
+                            <button type="submit" class="submit-button" onclick="return validateRegistrationForm(event)">
+                                Submit
+                            </button>
+                        </div>
+            
+                    </form>
+            
+                </section>
+            
             </main>
 
 
