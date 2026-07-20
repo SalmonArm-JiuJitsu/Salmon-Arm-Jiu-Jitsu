@@ -28,6 +28,21 @@ async function handleRegistrationPayment() {
         return;
     }
 
+    // Phone Validation
+    const phone = form.querySelector('input[type="tel"]');
+
+    if (phone.value.length !== 10) {
+        alert("Please enter a 10-digit phone number.");
+        phone.focus();
+        return;
+    }
+
+    if (!/^\d+$/.test(phone.value)) {
+        alert("Please include only numbers.");
+        phone.focus();
+        return;
+    }
+
     // Payload
     const payload = {
         parentFirstName: document.getElementById("parentFirstName").value,

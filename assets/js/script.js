@@ -113,31 +113,55 @@ function contactForm() {
 
 // Validate Trials, Enrollment & Waitlist Forms
 
-function validateRegistrationForm() {
-	const parentPhone = document.getElementById('parentPhone');
+function validateRegistrationForm(event) {
 
-	if (parentPhone.value.length !== 10) {
-		alert("Please enter a 10-digit phone number.")
+	let form = event.target.closest("form");
+
+	// Browser validation (email, required fields, etc.)
+	if (!form.checkValidity()) {
+		form.reportValidity();
 		return false;
 	}
 
-	if (!/^\d+$/.test(parentPhone.value)) {
-		alert("Please include only numbers.")
+	// Find phone inside the form being submitted
+	const phone = form.querySelector('input[type="tel"]');
+
+	if (phone.value.length !== 10) {
+		alert("Please enter a 10-digit phone number.");
 		return false;
 	}
 
-	const fakeNumbers = ['1234567890, 0123456789, 1231231231', '1231231232', '1231231233, 1231231234, 1231231235, 1231231236, 1231231237, 1231231238, 1231231239, 1231231230'];
+	if (!/^\d+$/.test(phone.value)) {
+		alert("Please include only numbers.");
+		return false;
+	}
 
-	if (fakeNumbers.includes(parentPhone.value)) {
+	const fakeNumbers = [
+		'1234567890',
+		'0123456789',
+		'1231231231',
+		'1231231232',
+		'1231231233',
+		'1231231234',
+		'1231231235',
+		'1231231236',
+		'1231231237',
+		'1231231238',
+		'1231231239',
+		'1231231230'
+	];
+
+	if (fakeNumbers.includes(phone.value)) {
 		alert("Please enter a real phone number.");
 		return false;
 	}
 
 	// Waitlist Class Selection
-	const interests = document.querySelectorAll('input[name="classInterest[]"]');
+	const interests = form.querySelectorAll('input[name="classInterest[]"]');
 
 	if (interests.length > 0) {
-		const checked = document.querySelectorAll('input[name="classInterest[]"]:checked');
+
+		const checked = form.querySelectorAll('input[name="classInterest[]"]:checked');
 
 		if (checked.length === 0) {
 			alert("Please select at least one class option.");
@@ -145,7 +169,5 @@ function validateRegistrationForm() {
 		}
 	}
 
-	else {
-		return true;
-	}
+	return true;
 }
