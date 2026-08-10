@@ -1026,7 +1026,7 @@ i {
 		}
 
 			.season-title p.subtext {
-				color: #aaa;
+				color: #42c76e;
 				font-size: 11pt;
 				margin-top: 10px;
 			}
@@ -1046,7 +1046,7 @@ i {
 			margin: 0;
 		}
 		
-			@media screen and (max-width: 800px) {
+			@media screen and (max-width: 900px) {
 				.mobile-divider {
 					display: block;
 				}
@@ -1084,14 +1084,14 @@ i {
 			align-items:center;
 			gap:25px;
 			padding:25px 30px;
-			border:2px solid #03e9f4;
+			border:1px solid #03e9f4;
 			border-radius:14px;
-			background:rgba(0,0,0,.35);
+			background:#151515;
 		}
 		
 		.trial-buttons i {
 			font-size:40pt;
-			margin-left: 30px;
+			margin-left: 60px;
 		}
 		
 		.trial-buttons p:first-child {
@@ -1118,7 +1118,7 @@ i {
 		
 			/* Mobile */
 
-			@media screen and (max-width:800px) {
+			@media screen and (max-width:900px) {
 			
 				.current-season {
 					grid-template-columns:1fr;
@@ -1138,6 +1138,15 @@ i {
 			
 				.season-title h2 {
 					font-size:24pt;
+				}
+
+				.trial-buttons i {
+					font-size:34pt;
+					margin-left: 18px;
+				}
+
+				.trial-buttons p:first-child {
+					font-size: 18pt;
 				}
 			
 			}
