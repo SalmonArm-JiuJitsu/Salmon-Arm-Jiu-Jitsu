@@ -931,7 +931,7 @@ i {
 	.home:after {
 		display: block;
 		position: absolute;
-		background-color: rgba(7, 7, 7, 0.95);
+		background-color: rgba(7, 7, 7, 0.9);
 		content: '';
 		inset: 0;
 		z-index: 1;
@@ -1086,7 +1086,7 @@ i {
 			padding:25px 30px;
 			border:1px solid #03e9f4;
 			border-radius:14px;
-			background:#151515;
+			background:#222;
 		}
 		
 		.trial-buttons i {
@@ -1141,12 +1141,16 @@ i {
 				}
 
 				.trial-buttons i {
-					font-size:34pt;
-					margin-left: 18px;
+					font-size:30pt;
+					margin-left: 13px;
 				}
 
 				.trial-buttons p:first-child {
 					font-size: 18pt;
+				}
+
+				.trial-buttons p:last-child {
+					font-size:13pt;
 				}
 			
 			}
