@@ -624,6 +624,7 @@ button {
         display: inline-block;
 		position: relative;
 		background: #101010;
+		border-radius: 12px;
 		color: #03e9f4;
         outline: solid 2px rgba(0, 233, 244, 0.35);
         outline-offset: -2px;
@@ -638,7 +639,7 @@ button {
 			content: '';
             left: 0;
             top: 0;
-            width: 100%;
+            width: 105%;
             height: 200%;
             background: linear-gradient(transparent, #03e9f4, #03e9f4, transparent);
             animation: glowtate 1.4s linear infinite;
@@ -649,6 +650,7 @@ button {
         button.style2:after {
             content: '';
             position: absolute;
+			border-radius: 12px;
             left: 2px;
             top: 2px;
             width: calc(100% - 4px);
@@ -908,20 +910,20 @@ i {
 		margin-bottom: 20px;
 	}
 
-
+			
 /* Home */
 
 .home {
 	display: flex;
 	position: relative;
-	align-items: center;
-	/*background-image: url("../../images/index/indexDesktop.jpg"); */
+	align-items: flex-start;
+	background-image: url("../../images/about/aboutUs.jpg"); 
 	background-attachment: fixed;
 	background-position: center 60px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
-	height: calc(100svh - 60px);
+	min-height: calc(100vh - 60px);
 	width: 100vw;
 	animation: fadeIn 6s;
 }
@@ -929,119 +931,215 @@ i {
 	.home:after {
 		display: block;
 		position: absolute;
-		/*background-image: linear-gradient(90deg, rgba(0, 0, 255, 0.5), rgba(237, 87, 42, 0.5));*/
-		background-color: rgba(7, 7, 7, 0.83);
+		background-color: rgba(7, 7, 7, 0.95);
 		content: '';
-		height: calc(100vh - 60px);
-		width: 100vw;
+		inset: 0;
 		z-index: 1;
 	}
 
 
-	/* Heading */
+	/* Content */
 
-	.home .heading {
-		margin: 0 auto;
-		margin-bottom: 150px;
+	.home .content {
+		margin: auto;
 		z-index: 2;
 	}
 
-
 		/* Title */
 
-		.home .heading .title {
+		.home .content .title {
 			max-width: 1100px;
-			margin: 0 50px;
+			margin: 50px 50px;
 			animation: fly-right ease 1.25s;
 		}
 
 			@media screen and (max-width: 640px) {
-				.home .heading .title {
-					margin: 0 20px;
+				.home .content .title {
+					margin: 50px 20px;
 				}
 			}
 
-			.home .heading .title img.desktop {
+			/* Title Image */
+
+			.home .content .title img.desktop {
 				display: none;
 			}
 
 				@media screen and (min-width: 801px) {
-					.home .heading .title img.desktop {
+					.home .content .title img.desktop {
 						display: block;
 					}				
 				}
 
-			.home .heading .title img.mobile {
+			.home .content .title img.mobile {
 				display: block;
 			}
 
 				@media screen and (min-width: 801px) {
-					.home .heading .title img.mobile {
+					.home .content .title img.mobile {
 						display: none;
 					}				
 				}
 
+		/* Current Season */
 
-		/* Subtitle */
-
-		.home .heading .subtitle {
-			margin: 35px 50px 0 70px;
-			display: block;
-			position: absolute;
-			visibility: hidden;
-			letter-spacing: 8px;
-			font-size: 16pt;
-			animation: appear 2s forwards;
-			animation-delay: 1.25s;
+		.current-season {
+			display:grid;
+			grid-template-columns:1fr 1fr;
+			gap:80px;
+			background:rgba(7,7,7,.88);
+			border:2px solid #03e9f4;
+			border-radius:20px;
+			padding:50px;
+			margin:40px 50px 0;
+			max-width:1100px;
+		}
+		
+		.current-season i {
+			background:none;
+			border-radius:0;
+			padding:0;
+			width:auto;
+			height:auto;
+			color:#03e9f4;
+			transform:none;
+		}
+		
+		.current-season-info {
+			display:flex;
+			align-items:center;
+		}
+		
+		.season-title h2 {
+			color:#eee;
+			font-size:28pt;
+			font-family: 'nimbus-sans-bold';
+			letter-spacing:3px;
+			margin:0 0 10px 0;
+		}
+		
+		.season-title p {
+			color:#03e9f4;
+			font-size:17pt;
+			letter-spacing:3px;
+			margin:0;
 		}
 
+			.season-title p.subtext {
+				color: #aaa;
+				font-size: 11pt;
+				margin-top: 10px;
+			}
+		
+		.divider {
+			height:1px;
+			background:#03e9f4;
+			opacity:.35;
+			margin:30px 0;
+		}
+
+		.mobile-divider {
+			display: none;
+			height: 1px;
+			background: #03e9f4;
+			opacity:.35;
+			margin: 0;
+		}
+		
 			@media screen and (max-width: 800px) {
-				.home .heading .subtitle {
-					margin: 50px 0 0 75px;
-					font-size: 14pt;
+				.mobile-divider {
+					display: block;
 				}
 			}
-
-			@media screen and (max-width: 640px) {
-				.home .heading .subtitle {
-					margin: 50px 0 0 40px;
-					letter-spacing: 6px;
-				}
-			}
-
-			@media screen and (max-width: 480px) {
-				.home .heading .subtitle {
-					margin: 50px 0 0 40px;
-					font-size: 12pt;
-					letter-spacing: 4px;
-				}
-			}
-
-		.home .heading .subtitle .text {
-			background: var(--platinum-90-text);
-			background-clip: text;
-			color: transparent;
-			text-transform: uppercase;
-			font-weight: 600;
+		
+		.current-season-details {
+			display:flex;
+			align-items:center;
+			gap:40px;
+			margin:18px 0;
 		}
+		
+			.current-season-details i {
+				font-size:30pt;
+				width:30px;
+				margin-right: 20px;
+			}
 
+			.current-season-details p {
+				color:#eee;
+				font-size:17pt;
+				margin-top:8px;
+			}
+		
+		/* Trial Buttons */
 
-		/* Icon */
-
-		.home .icon i {
-			display: flex;
-			position: absolute;
-			bottom: 0;
-			left: calc(50% - 18pt);
-			margin-bottom: 30px;
-			background: transparent;
-			color: #03e9f4;
-			font-size: 36pt;
-			animation: fadeIn 10s, bounce 1.75s linear infinite;
+		.trial-buttons {
+			display:flex;
+			flex-direction:column;
+			gap:20px;
 		}
+		
+		.trial-buttons a {
+			display:flex;
+			align-items:center;
+			gap:25px;
+			padding:25px 30px;
+			border:2px solid #03e9f4;
+			border-radius:14px;
+			background:rgba(0,0,0,.35);
+		}
+		
+		.trial-buttons i {
+			font-size:40pt;
+			margin-left: 30px;
+		}
+		
+		.trial-buttons p:first-child {
+			color:#eee;
+			font-family:"nimbus-sans-bold";
+			font-size:22pt;
+			margin:0;
+		}
+		
+		.trial-buttons p:last-child {
+			color:#03e9f4;
+			font-size:14pt;
+			margin:0;
+		}
+		
+		.trial-buttons a:hover {
+			background:#03e9f4;
+		}
+		
+		.trial-buttons a:hover i,
+		.trial-buttons a:hover p {
+			color:#050505;
+		}
+		
+			/* Mobile */
 
-			.home .disappear {
-				animation: vanish 1s forwards;
+			@media screen and (max-width:800px) {
+			
+				.current-season {
+					grid-template-columns:1fr;
+					margin:30px 20px;
+					margin-top: 70px;
+					padding:40px 30px;
+					gap: 40px;
+				}
+			
+				.current-season-info {
+					gap:20px;
+				}
+			
+				.current-season-info > i {
+					font-size:50pt;
+				}
+			
+				.season-title h2 {
+					font-size:24pt;
+				}
+			
 			}
 
 
