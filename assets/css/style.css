@@ -1116,10 +1116,9 @@ i {
 			color:#050505;
 		}
 		
-			/* Mobile */
+			/* Media Queries */
 
 			@media screen and (max-width:900px) {
-			
 				.current-season {
 					grid-template-columns:1fr;
 					margin:30px 20px;
@@ -1142,17 +1141,30 @@ i {
 
 				.trial-buttons i {
 					font-size:30pt;
-					margin-left: 13px;
+					margin-left: 10px;
 				}
 
 				.trial-buttons p:first-child {
-					font-size: 18pt;
+					font-size: 17pt;
 				}
 
 				.trial-buttons p:last-child {
 					font-size:13pt;
 				}
 			
+			}
+
+			@media screen and (max-width:450px) {
+				.current-season-details p {
+					color:#eee;
+					font-size:15pt;
+					margin-top:8px;
+				}
+
+				.current-season-details i {
+					font-size:26pt;
+					margin-right: 0;
+				}
 			}
 
 
