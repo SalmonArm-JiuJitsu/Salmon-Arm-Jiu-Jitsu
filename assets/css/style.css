@@ -1138,19 +1138,6 @@ i {
 				.season-title h2 {
 					font-size:24pt;
 				}
-
-				.trial-buttons i {
-					font-size:30pt;
-					margin-left: 10px;
-				}
-
-				.trial-buttons p:first-child {
-					font-size: 17pt;
-				}
-
-				.trial-buttons p:last-child {
-					font-size:13pt;
-				}
 			
 			}
 
@@ -1164,6 +1151,19 @@ i {
 				.current-season-details i {
 					font-size:26pt;
 					margin-right: 0;
+				}
+
+				.trial-buttons i {
+					font-size:30pt;
+					margin-left: 0;
+				}
+
+				.trial-buttons p:first-child {
+					font-size: 17pt;
+				}
+
+				.trial-buttons p:last-child {
+					font-size:12pt;
 				}
 			}
 
