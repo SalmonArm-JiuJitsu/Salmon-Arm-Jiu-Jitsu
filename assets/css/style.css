@@ -943,6 +943,7 @@ i {
 	.home .content {
 		margin: auto;
 		z-index: 2;
+		padding-bottom: 50px;
 	}
 
 		/* Title */
@@ -1030,7 +1031,28 @@ i {
 				font-size: 11pt;
 				margin-top: 10px;
 			}
+
+		/* Get Started */
+
+		.get-started h2 {
+			color: #03e9f4;
+			font-size: 28pt;
+			font-family: 'nimbus-sans-bold';
+			letter-spacing: 3px;
+			margin: 0;
+		}
+
+		.get-started p {
+			color: #aaa;
+			font-size: 14pt;
+			letter-spacing: 1px;
+			margin: 0 0 40px 0;
+			text-align: center;
+			font-family: 'nimbus-sans-light';
+		}
 		
+		/* Dividers */
+
 		.divider {
 			height:1px;
 			background:#03e9f4;
@@ -1115,6 +1137,49 @@ i {
 		.trial-buttons a:hover p {
 			color:#050505;
 		}
+
+		/* Registration CTA */
+
+		.registration-cta {
+			grid-column: 1 / -1;
+			background: #222;
+			border-radius: 12px;
+			padding: 25px 30px;
+			margin-top: 20px;
+			text-align: center;
+		}
+		
+		.registration-cta h3 {
+			color: #eee;
+			font-family: 'nimbus-sans-bold';
+			font-size: 17pt;
+			letter-spacing: 2px;
+			margin: 0 0 8px 0;
+		}
+		
+		.registration-cta p {
+			color: #aaa;
+			font-size: 13pt;
+			font-family: 'nimbus-sans-light';
+			margin: 0 0 18px 0;
+		}
+		
+		.registration-cta a {
+			display: inline-block;
+			padding: 12px 24px;
+			border: 1px solid #03e9f4;
+			border-radius: 10px;
+			color: #03e9f4;
+			background: transparent;
+			font-family: 'nimbus-sans-bold';
+			font-size: 12pt;
+			letter-spacing: 1px;
+		}
+		
+		.registration-cta a:hover {
+			background: #03e9f4;
+			color: #050505;
+		}
 		
 			/* Media Queries */
 
@@ -1122,9 +1187,9 @@ i {
 				.current-season {
 					grid-template-columns:1fr;
 					margin:30px 20px;
-					margin-top: 70px;
+					margin-top:70px;
 					padding:40px 30px;
-					gap: 40px;
+					gap:40px;
 				}
 			
 				.current-season-info {
@@ -1137,6 +1202,10 @@ i {
 			
 				.season-title h2 {
 					font-size:24pt;
+				}
+			
+				.registration-cta {
+					grid-column:1;
 				}
 			
 			}
