@@ -2,27 +2,27 @@
 
 const weeklySchedule = [ 
 	// Monday
-	{ day: 'Mon', time: '4:00 PM - 4:45 PM', title: 'No-Gi (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
+	{ day: 'Mon', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
 	{ day: 'Mon', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 10-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
 	{ day: 'Mon', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc'  },
 
 	// Tuesday	
-	{ day: 'Tue', time: '4:00 PM - 4:45 PM', title: 'No-Gi (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
+	{ day: 'Tue', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
 	{ day: 'Tue', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 10-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
 	{ day: 'Tue', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
 
 	// Wednesday
-	{ day: 'Wed', time: '4:00 PM - 4:45 PM', title: 'No-Gi (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
+	{ day: 'Wed', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
 	{ day: 'Wed', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 10-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
 	{ day: 'Wed', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
 
 	// Thursday
-	{ day: 'Thu', time: '4:00 PM - 4:45 PM', title: 'No-Gi (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
+	{ day: 'Thu', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
 	{ day: 'Thu', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 10-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
 	{ day: 'Thu', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
 
 	// Friday
-	{ day: 'Fri', time: '4:00 PM - 4:45 PM', title: 'No-Gi (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
+	{ day: 'Fri', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
 	{ day: 'Fri', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 10-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
 	{ day: 'Fri', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
 
