@@ -27,7 +27,7 @@ const weeklySchedule = [
 	{ day: 'Fri', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
 
 	// Saturday - Closed
-	{ day: 'Sat', time: '', title: 'Closed', capacity: 'closed' },
+	{ day: 'Sat', time: '10:30 AM - 11:30 AM', title: 'Open Mat', capacity: 'available', color: '#7c4dff' },
 
 	// Sunday
 	{ day: 'Sun', time: '10:30 AM - 11:30 AM', title: 'Open Mat', capacity: 'available', color: '#7c4dff' },
