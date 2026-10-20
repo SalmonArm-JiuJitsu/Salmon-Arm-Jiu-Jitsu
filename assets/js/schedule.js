@@ -5,26 +5,31 @@ const weeklySchedule = [
 	{ day: 'Mon', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
 	{ day: 'Mon', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 10-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
 	{ day: 'Mon', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc'  },
+	{ day: 'Mon', time: '7:15 PM - 8:15 PM', title: 'MMA (Ages 14+)', capacity: 'available', color: '#252525', textColor: '#ccc'  },
 
 	// Tuesday	
 	{ day: 'Tue', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
 	{ day: 'Tue', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 10-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
 	{ day: 'Tue', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
+	{ day: 'Tue', time: '7:15 PM - 8:15 PM', title: 'MMA (Ages 14+)', capacity: 'available', color: '#252525', textColor: '#ccc'  },
 
 	// Wednesday
 	{ day: 'Wed', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
 	{ day: 'Wed', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 10-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
 	{ day: 'Wed', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
+	{ day: 'Wed', time: '7:15 PM - 8:15 PM', title: 'MMA (Ages 14+)', capacity: 'available', color: '#252525', textColor: '#ccc'  },
 
 	// Thursday
 	{ day: 'Thu', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
 	{ day: 'Thu', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 10-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
 	{ day: 'Thu', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
+	{ day: 'Thu', time: '7:15 PM - 8:15 PM', title: 'MMA (Ages 14+)', capacity: 'available', color: '#252525', textColor: '#ccc'  },
 
 	// Friday
 	{ day: 'Fri', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 7-9)', capacity: 'available', color: '#1ae195', textColor: '#505050' },
 	{ day: 'Fri', time: '5:00 PM - 6:00 PM', title: 'No-Gi (Ages 10-13)', capacity: 'available', color: '#00d5ff', textColor: '#505050'},
 	{ day: 'Fri', time: '6:00 PM - 7:15 PM', title: 'No-Gi (Ages 14+)', capacity: 'available', color: '#4a0391', textColor: '#ccc' },
+	{ day: 'Fri', time: '7:15 PM - 8:15 PM', title: 'MMA (Ages 14+)', capacity: 'available', color: '#252525', textColor: '#ccc'  },
 
 	// Saturday - Closed
 	{ day: 'Sat', time: '10:30 AM - 11:30 AM', title: 'Open Mat', capacity: 'available', color: '#7c4dff' },
