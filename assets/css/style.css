@@ -1601,6 +1601,10 @@ img {
 		gap: 10px;
 		width: 100%;
 	}
+
+		.adult-programs .program-schedules:nth-child(3) {
+			grid-column: 1 / -1;
+		}
 	
 	.program-schedules input[type = "radio"] {
 		width: auto !important;
